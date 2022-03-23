@@ -26,17 +26,17 @@ body {
     z-index: 10;
   }
 
-  #flex{
+  #flexlist{
       display: flex;
       align-self: center;
   }
 
-  #flex li{
+  #flexlist li{
       margin: 0px 8px;
       list-style-type: none;
   }
 
-  #flex a {
+  #flexlist a {
     color: #fec16a;
     font-size: 14px;
     text-transform: uppercase;
@@ -48,14 +48,14 @@ body {
     position: relative;
   }
   
-  #flex a:after {  
+  #flexlist a:after {  
     content: "";
     transition: 0.3s;
     height: 0px;
     width: 0px;
   }
   
-  #flex a:hover:after {  
+  #flexlist a:hover:after {  
     content: "";
     height: 2px;
     width: 100%;
