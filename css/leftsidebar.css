@@ -92,8 +92,8 @@
   }
   
   .widgett {
-    padding: 25px;
-    min-height: 250px;/*ALTERAR TAMANHO DA SIDEBAR ESQUERDA*/
+    padding: 10px;
+    min-height: 215px;/*ALTERAR TAMANHO DA SIDEBAR ESQUERDA*/
     border-bottom: 1px solid #fec152;
   }
   

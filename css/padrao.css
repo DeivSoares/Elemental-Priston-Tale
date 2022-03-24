@@ -24,7 +24,7 @@ body {
     min-height: 100vh; 
   }
 /* BARRA DE NAVEGAÇÃO CABEÇALHO */
-#navbar {
+body #navbar {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -77,7 +77,7 @@ body {
 /* CABEÇALHO LOGO */
   header{
     display: flex;
-    height: 320px;
+    height: 230px;
     margin-top: 66px;
     position: relative;
     justify-content: center;
@@ -88,9 +88,10 @@ body {
     text-decoration: none;
 }
 
-.container_web {
+body>.container_web {
   display: flex;
   position: relative;
+  width: 100%;
 }
 
 .container_web:before {

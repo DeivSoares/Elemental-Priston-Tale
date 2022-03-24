@@ -1,6 +1,6 @@
 .status-block {
     background-color: #013a50;
-    height: 80px;
+    height: 50px;
 }
 
 .server-x {
@@ -63,7 +63,21 @@ table td {
 }
 
 .banner-block {
-  min-height: 100px;
+  color:#fec16a;
+  margin-top: 20px;
+}
+
+a#ref:hover {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#github{
+  width: 50px;
+}
+
+#github:hover{
+  filter: brightness(200%);
 }
 
 .banner-FB {
@@ -124,8 +138,8 @@ table td {
   }
   
   .widget3 {
-    padding: 25px;
-    min-height: 250px;/*ALTERAR TAMANHO DA SIDEBAR ESQUERDA*/
+    padding: 10px;
+    /*min-height: 250px;*//*ALTERAR TAMANHO DA SIDEBAR ESQUERDA*/
     border-bottom: 1px solid #fec152;
   }
   
@@ -163,8 +177,8 @@ table td {
   /*RATES*/
 
   .widget4 {
-    padding: 25px;
-    min-height: 250px;/*ALTERAR TAMANHO DA SIDEBAR ESQUERDA*/
+    padding: 10px;
+    min-height: 254px;/*ALTERAR TAMANHO DA SIDEBAR ESQUERDA*/
     border-bottom: 1px solid #fec152;
   }
   
