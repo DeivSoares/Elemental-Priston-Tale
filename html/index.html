@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/padrao.css">
     <title>Elemental Priston Tale</title>
 </head>
+
 <body>
     <!--NAVEGAÇÃO-->
     <nav id="navbar">
@@ -27,36 +29,124 @@
         </div>
     </header>
     <!--BLOCO ESQUERDO-->
-    <aside>
+    <div class="container_web">
+        <aside class="left-sidebar sidebar">
+            <div class="bloco-download">
+                <a href="download.php" class="flex-c-c"><span>Download<b>Jogue Gratuitamente!</b></span></a>
+            </div>
+            <div class="widget red-dark">
+                <div class="widget-title">
+                    Top 10 Level <span>Os Melhores Jogadores!</span>
+                </div>
+                <ul class="top-block">
+                    <iframe name="1" border="0" frameborder="0" height="350" title="-" scrolling="no" align="top"
+                        src="http://elementalpt.ddns.net/include/index.php" width="240">
+                    </iframe>
+            </div>
+            <div class="widget red-dark">
+                <div class="widget-title"> Boss List <span>Horário dos Boss's</span></div>
+                <ul class="eventBody top-block">
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="bloodcastle_name"></span>
+                            <a href="bosstime.php"><span class="smalltext"><b>Valento</b> - Confira </span></a>
+                        </div>
+                        <div style="width:50%;" class="text-right">
+                            <span id="bloodcastle_next"></span>
+                            <span class="smalltext" id="bloodcastle"></span>
+                        </div>
+                    </li>
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="devilsquare_name"></span>
+                            <a href="bosstime.php"><span class="smalltext"><b>Kelvezu</b> - Confira </span></a>
+                        </div>
+                        <div style="width:50%;" class="text-right">
+                            <span id="devilsquare_next"></span>
+                            <span class="smalltext" id="devilsquare"></span>
+                        </div>
+                    </li>
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="chaoscastle_name"></span>
+                            <a href="bosstime.php"><span class="smalltext"><b>Valento</b> - Confira </span></a>
+                        </div>
+                        <div style="width:50%;" class="text-right">
+                            <span id="chaoscastle_next"></span>
+                            <span class="smalltext" id="chaoscastle"></span>
+                        </div>
+                    </li>
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="dragoninvasion_name"></span>
+                            <a href="bosstime.php"><span class="smalltext"><b>Tulla</b> - Confira </span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="widget red">
+            </div>
+        </aside>
+        <!--PRINCIPAL-->
+        <main class="content">
+            <div class="slider">
+                <div class="next arrows"></div>
+                <div class="prev arrows"></div>
+                <div class="slides">
+                    <div class="slide active" style="background-image: url(../images/01.jpg);">
+                    </div>
+                </div>
+                <div class="navigation">
+                </div>
+            </div>
 
-    </aside>
-    <!--PRINCIPAL-->
-    <main>
-        <!--ARTIGO[POSTS]-->
-        <article></article>
-    </main>
-    <!--BLOCO DIREITO-->
-    <aside>
+            <article>
+                <section class="content-wrapper">
 
-    </aside>
+                    <div class="panel panel-news">
+                        <div class="cabecalho-painel">
+                            <h3 class="titulo-painel"><img border="0" src="../images/pt1logo.png"> Confira nossa tabela de Aging!</h3>
+                        </div>
+                        <div class="corpo-painel">
+                            <p><strong>Olá Jogadores,</strong></p>
+                            <p>Quer conferir nossa tabela de aging?<br>
+                                <strong>Clique <a href="mix.php">aqui</a>!</strong> <br>
+                                Não se esqueça! Convide os seus amigos, curtam nossa página do <a href="https://www.facebook.com/ElementalPT" target="_blank">facebook</a> e seja bem vindo ao ElementalPT!
+                            </p>
+                        </div>
+                        <div class="rodape-painel">
+                            <div class="col-xs-6 nopadding"></div>
+                            <div class="col-xs-6 nopadding text-right">
+                                Postado por Administrator, Março - 2022
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <!--BLOCO DIREITO-->
+        <aside>
+        </aside>
+    </div>
     <!--RODAPÉ-->
     <footer>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="../painel/cadtermos.php">Cadastro</a></li>
-                <li><a href="download.html">Downloads</a></li>
-                <li><a href="rankings.html">Rankings</a></li>
-                <li><a href="guia.html">Guia do Jogo</a></li>
-                <li><a href="#">Regras</a></li>
-                <li><a href="donate.html">Donate</a></li>
-            </ul>
-            
-            <div>
-                <a href="https://www.facebook.com/ElementalPT" class="facebook" target="_blank"></a>
-                <a href="/ElementalPT" class="twitter"></a>
-                <a href="/ElementalPT" class="twitch"></a>
-                <a href="/ElementalPT" class="youtube"></a>
-            </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="../painel/cadtermos.php">Cadastro</a></li>
+            <li><a href="download.html">Downloads</a></li>
+            <li><a href="rankings.html">Rankings</a></li>
+            <li><a href="guia.html">Guia do Jogo</a></li>
+            <li><a href="#">Regras</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+
+        <div>
+            <a href="https://www.facebook.com/ElementalPT" class="facebook" target="_blank"></a>
+            <a href="/ElementalPT" class="twitter"></a>
+            <a href="/ElementalPT" class="twitch"></a>
+            <a href="/ElementalPT" class="youtube"></a>
+        </div>
     </footer>
 </body>
+
 </html>
