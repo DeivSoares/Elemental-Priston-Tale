@@ -178,6 +178,11 @@
     overflow-y: scroll;
     height: 465px;
   }
+  .content-wrapper2{
+    background-color: #01445f;
+    padding:15px;
+    border-radius: 6px;
+  }
   
   .panel-news {
     margin-bottom: 30px;
@@ -206,18 +211,22 @@
   }
   
   .cabecalho-painel {
+    display: flex;
+    align-content: center;
     background-color: #013a50;
     padding: 10px 15px;
     border-bottom: 1px solid #777;
     border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-right-radius: 3px;    
   }
   
   .panel-news .titulo-painel {
+    display: flex;
+    align-items: center;
     color: #fec16a;
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bold;    
   }
   
   .titulo-painel {
@@ -226,6 +235,33 @@
     font-size: 16px;
     color: inherit;
   }
+
+  .rankings_menu {
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.rankings_menu a.active {
+  background: #bd4601;
+  border: 1px solid #fec16a;
+}
+
+.rankings_menu a {
+  display: inline-block;
+  background-color: #bd4601;
+  border: 1px solid #fec16a;
+  border-radius: 5px;
+  text-shadow: -1px -1px 0 rgb(0 0 0 / 60%);
+  margin: 5px 5px 5px 5px;
+  padding: 6px 12px;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;  
+}
   
   h1, h2, h3 {
     color: #ebf0f4;

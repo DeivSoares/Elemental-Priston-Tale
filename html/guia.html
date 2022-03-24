@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/padrao.css">
+    <link rel="stylesheet" href="../css/leftsidebar.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/rightsidebar.css">
     <title>Elemental Priston Tale</title>
 </head>
 
@@ -14,7 +17,7 @@
     <nav id="navbar">
         <ul id="flexlist">
             <li><a href="index.html">Home</a></li>
-            <li><a href="">Painel</a></li>
+            <li><a href="#">Painel</a></li>
             <li><a href="download.html">Download</a></li>
             <li><a href="https://discord.gg/b6PGaSSgdd" target="_blank">Discord</a></li>
             <li><a href="guia.html">Guia</a></li>
@@ -25,32 +28,309 @@
     <!--LOGO-->
     <header>
         <div class="logo">
-            <a href="index.php"><img src="../images/banner2.png" alt="Elemental Priston Tale"></a>
+            <a href="index.html" id="brilho"><img class="logo" src="../images/banner2.png"
+                    alt="Elemental Priston Tale"></a>
         </div>
     </header>
-    <!--BLOCO ESQUERDO-->
-    <aside>
+    <!--FLUTUANTE-->
+    <div class="Buttons">
+        <a href="https://discord.gg/b6PGaSSgdd" class="fac">
+            <img src="../images/forum-icon.png" alt="">
+            <p>Discord</p>
+        </a>
+        <a href="https://www.facebook.com/ElementalPT" class="fac2">
+            <img src="../images/event-icon.png" alt="">
+            <p>Facebook</p>
+        </a>
+        <a href="https://chat.whatsapp.com/H78EAiUADPW6cnABvOYc7Z" class="fac3">
+            <img src="../images/shop-icon.png" alt="">
+            <p>Whatsapp</p>
+        </a>
+    </div>
+    <!--BLOCO-->
+    <div class="container_web">
+        <!--BLOCO ESQUERDO-->
+        <aside class="left-sidebar sidebar">
+            <div class="bloco-download">
+                <a href="download.html" class="flex-c-c"><span>Download<b>Jogue Gratuitamente!</b></span></a>
+            </div>
+            <div class="widget red-dark">
+                <div class="widget-title">
+                    Top 10 Level <span>Os Melhores Jogadores!</span>
+                </div>
+                <ul class="top-block">
+                    <iframe name="1" border="0" frameborder="0" height="280" title="-" scrolling="no" align="top"
+                        src="http://elementalpristontale.com/include/index.php" width="240">
+                    </iframe>
+            </div>
 
-    </aside>
-    <!--PRINCIPAL-->
-    <main>
-        <!--ARTIGO[POSTS]-->
-        <article></article>
-    </main>
-    <!--BLOCO DIREITO-->
-    <aside>
+            <div class="widgett red-dark">
+                <div class="widget-titlee"> Boss List <span>Horário dos Boss's</span></div>
+                <ul class="eventBody top-block">
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="bloodcastle_name"></span>
+                            <a href="bosstime.html"><span class="smalltext"><b>Valento</b> - Confira </span></a>
+                        </div>
+                        <div style="width:50%;" class="text-right">
+                            <span id="bloodcastle_next"></span>
+                            <span class="smalltext" id="bloodcastle"></span>
+                        </div>
+                    </li>
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="devilsquare_name"></span>
+                            <a href="bosstime.html"><span class="smalltext"><b>Kelvezu</b> - Confira </span></a>
+                        </div>
+                        <div style="width:50%;" class="text-right">
+                            <span id="devilsquare_next"></span>
+                            <span class="smalltext" id="devilsquare"></span>
+                        </div>
+                    </li>
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="chaoscastle_name"></span>
+                            <a href="bosstime.html"><span class="smalltext"><b>Valento</b> - Confira </span></a>
+                        </div>
+                        <div style="width:50%;" class="text-right">
+                            <span id="chaoscastle_next"></span>
+                            <span class="smalltext" id="chaoscastle"></span>
+                        </div>
+                    </li>
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="dragoninvasion_name"></span>
+                            <a href="bosstime.html"><span class="smalltext"><b>Tulla</b> - Confira </span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!--PRINCIPAL-->
+        <main class="content">
+            <div class="slider">
+                <div class="next arrows"></div>
+                <div class="prev arrows"></div>
+                <div class="slides">
+                    <div class="slide active" style="background-image: url(../images/01.jpg);">
+                    </div>
+                </div>
+                <div class="navigation">
+                </div>
+            </div>
 
-    </aside>
+            <article>
+                <section class="content-wrapper">
+
+                    <div class="panel panel-news">
+                        <div class="cabecalho-painel">
+                            <h3 class="titulo-painel"><img border="0" src="../images/pt1logo.png"> Confira nossa tabela de Aging!</h3>
+                        </div>
+                        <div class="corpo-painel">
+                            <p><strong>Olá Jogadores,</strong></p>
+                            <p>Quer conferir nossa tabela de aging?<br>
+                                <strong>Clique <a href="mix.html">aqui</a>!</strong> <br>
+                                Não se esqueça! Convide os seus amigos, curtam nossa página do <a href="https://www.facebook.com/ElementalPT" target="_blank">facebook</a> e seja bem vindo ao ElementalPT!
+                            </p>
+                        </div>
+                        <div class="rodape-painel">
+                            <div class="col-xs-6 nopadding"></div>
+                            <div class="col-xs-6 nopadding text-right">
+                                Postado por Administrator, Março - 2022
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-news">
+                        <div class="cabecalho-painel">
+							<h3 class="titulo-painel"><a href="#"><img border="0" src="../images/pt1logo.png"></a> Informaçoes do Servido!</h3>
+						</div>
+						<div class="corpo-painel">
+							<table class="table" width="545">
+                                <tr>
+                                    <td style="width: 85%" align="center">
+                                        <p align="left">
+                                            <font face="Cambria">
+                                                <span style="font-size: 15pt; font-weight: 700"></span>
+                                            </font>
+                                            <span style="font-weight: 700">
+                                                <font style="font-size: 15pt" face="Cambria">
+                                                    --> Level Inicial 01 com kit 12h ativado. <br><br>
+
+                                                    --> Level Cap 102<br><br>
+
+                                                    --> Up MOB VS MOB (1x1)<br><br>
+
+                                                    --> linha de itens até 80d<br><br>
+
+                                                    --> Taxa de XP: 20x<br><br>
+
+                                                    --> Taxa de Drop: Customizada<br><br>
+
+                                                    --> Bless Castle 100%<br><br>
+
+                                                    --> Sod 100% Funcional<br><br>
+
+                                                    --> Camera in-game com mais aproximação e distânciamento<br><br>
+
+                                                    --> Pedra da Perfeição, Deixando o item 100% perfeito<br><br>
+
+                                                    --> itens Premiuns não são contados na cidade, bc e deslogado<br><br>
+
+                                                    --> Novas Poções Capilares<br><br>
+
+                                                    --> Diversos novos mobs/boss personalizados<br><br>
+
+                                                    --> NPC para limpar seus itens mixados<br><br>
+
+                                                    --> Loja de Minutos dentro do jogo<br><br>
+
+                                                    --> Loja de Creditos dentro do jogo<br><br>
+
+                                                    --> Nova Qualidade Gráfica<br><br>
+
+                                                    --> Nova Interface<br><br>
+
+                                                    --> Novas poções capilares<br><br>
+
+                                                    --> Configuração ativa na tecla F10<br><br>
+
+                                                    --> Todos os itens são dropaveis, Donate caindo de Bosses<br><br>
+
+                                                    --> Camera com auto distanciamento (Um Angulo melhor)<br><br>
+
+                                                    --> Widescreen e SuperWidescreen com resolução até 21:9<br><br>
+
+                                                    --> Sistema de Traje na tecla "T"<br><br>
+
+                                                    --> Sistama de Skins de Itens, A, B, C, (Itens com Mesmo status e com uma skin diferente)<br><br>
+
+                                                    --> Sistema de Chat global<br><br>
+
+                                                    --> Sistema de Rei do PVP com Efeito e bônus Exclusivo<br><br>
+
+                                                    --> Sistema de Alerta PVP<br><br>
+
+                                                    --> Sistema de Alerta Boss<br><br>
+
+                                                    --> Sistema de Visualizar o status perfeito de um item na tecla "P"<br><br>
+
+                                                    --> Sistema Booster FPS, Permitindo jogar sem lag algum<br><br>
+
+                                                    --> Sistema de Auto ajust, Maximize a janela e não perca a qualidade na resolução.<br><br>
+
+                                                    --> O Nosso Servidor Funciona em Windows Vista/7/8/8.1 e 10.<br><br>
+
+                                                    --> Para manter a camera parada, use o comando "/camera_wave_off".<br><br>
+
+                                                    --> Para Distribuir seus pontos de 10 em 10, Aperte a tecla "B" e Segure.<br><br>
+
+                                                    --> Para usar o chat global use: /G> e digite sua mensagem.<br><br>
+
+                                                    --> Para saber o horário do BOSS, use o comando "/get_bosstime" no chat.<br><br>
+
+                                                    --> se você estiver em modo janela e quiser deixar o jogo em modo full, não precisa relogar, basta aperta "F12" no seu teclado e o jogo muda automaticamente, Simples e rápido!</font>
+                                            </span>
+                                        </p>
+                                        <table id="mix_
+</table>
+<table id=" mix_list_table22" width="502" cellspacing="1" cellpadding="0">
+
+
+                                        </table>
+                                        &nbsp;
+                            </table>
+						</div>
+						<div class="rodape-painel">
+							<div class="col-xs-6 nopadding"></div>
+							<div class="col-xs-6 nopadding text-right">Postado por Administrator, Fevereiro - 2022</div>
+						</div>
+					</div>
+                </section>
+            </article>
+            <div class="banner-block flex-c-c">
+                <img id="github" src="../images/github.png" alt="GitHub Logo">
+                <p style="margin: 0px; padding-left: 15px;">Desenvolvido por <a id="ref" href="" style="color: #fec16a;">Deivison Soares</a></p>
+            </div>
+            <div class="banner-FB">&nbsp;</div>
+        </main>
+        <!--BLOCO DIREITO-->
+        <!---->
+        <aside class="right-sidebar sidebar">
+            <div class="status-block flex-c-c">
+                <div class="server-x"></div>
+                <div class="server">
+                    <div class="flex-s-c">
+                        <iframe name="I1" border="0" frameborder="0" height="70" title="-" scrolling="no" align="center" src="http://elementalpristontale.com/include/status.php" width="150"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="widget4 red-dark">
+                <div class="widget-title4">Rates do Servidor<span></span> </div>
+                <table class="table" style="color:#face8f; font-size:12px;">
+                    <tbody>
+
+                        <tr>
+                            <td>Level Inicial:</td>
+                            <td>01 kit (12h)</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bônus New Player</td>
+                            <td>Até Level 60</td>
+                        </tr>
+
+                        <tr>
+                            <td>EXP Rate</td>
+                            <td>20x</td>
+                        </tr>
+
+                        <tr>
+                            <td>Level Máximo</td>
+                            <td>102</td>
+                        </tr>
+
+                        <tr>
+                            <td>Aging Máx:</td>
+                            <td>+16</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bless Castle</td>
+                            <td>Domingo,16 horas!</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="widget red-dark">
+                <div class="widget-title2">Bless Castle<span>Clan vencedor do Castelo!</span></div>
+                <div id="top_guilds" style="text-align: center;">
+                    <iframe name="I1" border="0" frameborder="0" height="143" title="-" scrolling="no" align="top"
+                        src="http://elementalpristontale.com/include/liderbc.php" width="219"></iframe>
+                </div>
+            </div>
+            <div class="widget3 red-dark">
+                <div class="widget-title3">
+                    Belatra<span>Clan vencedor de SOD!</span></div>
+                <div id="top_guilds0" style="text-align: center;">
+                    <iframe name="I2" border="0" frameborder="0" height="100" title="-" scrolling="no" align="top"
+                        src="http://elementalpristontale.com/include/lidersod.php" width="200"></iframe>
+                </div>
+            </div>
+        </aside>
+    </div>
     <!--RODAPÉ-->
     <footer>
         <ul>
-            <li><a href="index.php">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="../painel/cadtermos.php">Cadastro</a></li>
-            <li><a href="download.php">Downloads</a></li>
-            <li><a href="rankings.php">Rankings</a></li>
-            <li><a href="guia.php">Guia do Jogo</a></li>
+            <li><a href="download.html">Downloads</a></li>
+            <li><a href="ranking.html">Rankings</a></li>
+            <li><a href="guia.html">Guia do Jogo</a></li>
             <li><a href="#">Regras</a></li>
-            <li><a href="donate.php">Donate</a></li>
+            <li><a href="donate.html">Donate</a></li>
         </ul>
 
         <div>
