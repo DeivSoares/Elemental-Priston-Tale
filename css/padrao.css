@@ -13,21 +13,23 @@ ol, ul, li {
 }
 
 body {
-    width: 100%;
-    background-color: #13272c;
     background: #14171d url(../images/images-background.png) no-repeat top center;
-    font-family: 'Open Sans', sans-serif;  
-    font-weight: 400;  
-    font-size: 13px;  
-    color: #230707;  
-    line-height: 1;  
-    min-height: 100vh; 
+    background-color: #13272c;
+    background-size: 1330px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #230707;
+    line-height: 1;
+    min-height: 100vh;
+    position: absolute;
   }
 /* BARRA DE NAVEGAÇÃO CABEÇALHO */
 body #navbar {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 1349px;
     top: 0px;
     height: 66px;
     position: absolute;

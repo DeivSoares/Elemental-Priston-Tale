@@ -1,0 +1,26 @@
+/*
+	Pacote de scripts para rankings versão 1.0
+	Escrito por Ravel
+	Disponibilizado para o fórum Priston4Fun (www.priston4fun.com)
+	Por favor, respeite os créditos, bom uso =)
+*/
+body {
+	margin: 0;
+	padding: 0;
+	font: 400 16px/1.6 'Antic', "Arial", "Helvetica", sans-serif;
+	color: #face8f;
+	background: #0f0717;
+	
+	}
+
+.bbc_table th {
+	color: #b5970f;
+	background-color: #0f0717;
+}
+.bbc_table td {
+	border: 1px solid #0f0717;
+	padding: 3px;
+}
+.bbc_table tr:hover {
+	background-color: #251138;
+}

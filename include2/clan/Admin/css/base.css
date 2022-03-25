@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ol,
+li,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:active{ 
+    background-color: transparent !important;
+}.fco-gdpr-box tr{ background: none; }  .fco-gdpr-box td{ font-size:20px; }

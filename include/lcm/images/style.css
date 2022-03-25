@@ -1,0 +1,12 @@
+/* Cor do link */
+A {
+	COLOR: #FFFFFF; TEXT-DECORATION: none
+}
+/* Cor do link QUANDO passa o mause */
+A:hover {
+	COLOR: #FF0000; TEXT-DECORATION: none
+}
+/* Cor do link apos ser clicado */
+A:active {
+	COLOR: #FFFFFF; TEXT-DECORATION: none
+}

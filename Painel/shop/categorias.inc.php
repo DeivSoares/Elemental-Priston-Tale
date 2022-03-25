@@ -1,0 +1,1 @@
+<?if (DexteR!=1) exit;?>

@@ -1,0 +1,33 @@
+
+
+<% 'Written by Sandurr
+noticias1()
+%>
+
+
+
+obs: aonde quiser colocar as noticias basta colar este codigo
+
+
+<% 'Written by Sandurr
+noticias1()
+%>
+
+
+<% 'Written by Sandurr
+noticias2()
+%>
+
+<% 'Written by Sandurr
+noticias3()
+%>
+
+
+<% 'Written by Sandurr
+noticias4()
+%>
+
+
+<% 'Written by Sandurr
+noticias5()
+%>

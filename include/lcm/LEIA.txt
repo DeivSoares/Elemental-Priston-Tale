@@ -1,0 +1,26 @@
+Eu sei que geralmente a primeira coisa que se faz e deletar esse arquivo então botei ele so para vocês deletarem mesmo!!!
+
+
+To brincando...
+
+
+pra configurar e facil, abre o arquivo config.php
+
+Galera meu outro script algumas pessoas estavam tendo problemas,
+existem algumas coisas que podem impedir esse script de funcionar,
+a primeira coisa e SUA tabela CT dentro do banco de dados ClanDB pdoe não esta recebendo os dados do seu servidor verifique se tem algum erroLog na pasta de logs no seu sevidor e tente resolvelos.
+
+Outra coisa e se você estiver usando a versão para MSSQL_CONNECT,
+essa função de estar desabilitada no seu php.
+
+Procure a linha PHP no seu arquivo PHP.INI
+
+;extension=php_mssql.dll
+
+e retire o ";", depois disso reinicie os serviços do PHP que vai funcionar!
+
+Se percistir o erro pode ser seu arquivo ntwdblib.dll
+procure uma verção mais nova na internet e subistitua ou use a verção ODBC
+
+Simples ne?
+Não tire os creditos por favor!!! agora pode passar pra deus e o mundo
