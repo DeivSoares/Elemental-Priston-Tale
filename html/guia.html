@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/leftsidebar.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/rightsidebar.css">
+    <link rel="stylesheet" href="../css/slides.css">
     <title>Elemental Priston Tale</title>
 </head>
 
@@ -108,16 +109,19 @@
         </aside>
         <!--PRINCIPAL-->
         <main class="content">
-            <div class="slider">
-                <div class="next arrows"></div>
-                <div class="prev arrows"></div>
-                <div class="slides">
-                    <div class="slide active" style="background-image: url(../images/01.jpg);">
-                    </div>
+            <div data-slide="slide" class="slide">
+                <div class="slide-items">
+                  <img src="../images/01.jpg" alt="Img 1">
+                  <img src="../images/pascoa.jpeg" alt="Img 2">
+                  <img src="../images/news.jpeg" alt="Img 3">
+                  <img src="../images/o-procurado.jpeg" alt="Img 4">
                 </div>
-                <div class="navigation">
-                </div>
-            </div>
+                <nav class="slide-nav">
+                  <div class="slide-thumb"></div>
+                  <button class="slide-prev">Anterior</button>
+                  <button class="slide-next">Próximo</button>
+                </nav>
+              </div>
 
             <article>
                 <section class="content-wrapper">
@@ -340,6 +344,7 @@
             <a href="/ElementalPT" class="youtube"></a>
         </div>
     </footer>
+    <script src="../js/slide-stories.js"></script>
 </body>
 
 </html>
