@@ -29,11 +29,11 @@ body {
 body #navbar {
     display: flex;
     justify-content: center;
-    width: 1349px;
+    width: 100%;
     top: 0px;
     height: 66px;
     position: absolute;
-    background: rgba(195, 147, 163, 0.2);
+    background: #13272cb5;
     border-bottom: 1px solid #fec16a;
     z-index: 10;
   }
@@ -94,6 +94,7 @@ body>.container_web {
   display: flex;
   position: relative;
   width: 100%;
+  justify-content: center;
 }
 
 .container_web:before {
@@ -110,13 +111,15 @@ body>.container_web {
   position: fixed;
   z-index: 2;
   right: 0px;
-  top: 50%;
+  top: 56%;
   margin-top: -300px;
   background: rgba(20, 16, 11, 0.6) url(../images/bordasocial.png);
+  background-size: 71px;
+  background-repeat: no-repeat;
   padding: 0px 20px;
   border-radius: 28px 0px 0px 8px;
   z-index: 10;
-  height: 341px;
+  height: 224px;
 }
 
 .Buttons a {
