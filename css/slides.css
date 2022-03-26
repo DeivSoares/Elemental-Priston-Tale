@@ -1,7 +1,4 @@
-/*ORIGAMID*/
-
-  
-  .slide {
+.slide {
     max-width: 630px;
     height: 280px;
     display: grid;
