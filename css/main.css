@@ -3,7 +3,7 @@
     line-height: 1.3;
     background: url(images/block-bottom-bg.jpg) right bottom no-repeat;
     padding-bottom: 20px;
-    margin: 0px 74px;  /*ATIVAR */
+    margin: 0px 78px;  /*ATIVAR */
   }
 
   @media (min-width: 1367px){
@@ -12,9 +12,110 @@
       line-height: 1.3;
       background: url(images/block-bottom-bg.jpg) right bottom no-repeat;
       padding-bottom: 20px;
-      margin: 0px 144px;  /*ATIVAR */
+      margin: 0px 154px;  /*ATIVAR */
     }
   }
+
+  
+  @media (min-width: 1517px){
+    .content{
+      width: 100%;
+      line-height: 1.3;
+      background: url(images/block-bottom-bg.jpg) right bottom no-repeat;
+      padding-bottom: 20px;
+      margin: 0px 163px;  /* ATIVAR */
+    }
+
+    div.col-xs-6 {
+      width: 50%;
+      float: left;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 60px;
+    }
+  }
+
+  @media (min-width: 1707px){
+    .content{
+      width: 100%;
+      line-height: 1.3;
+      background: url(images/block-bottom-bg.jpg) right bottom no-repeat;
+      padding-bottom: 20px;
+      margin: 0px 257px;  /* ATIVAR */
+    }
+
+    div.col-xs-6 {
+      width: 50%;
+      float: left;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 60px;
+    }
+  }
+
+  @media (min-width: 1821px){
+    .content{
+      width: 100%;
+      line-height: 1.3;
+      background: url(images/block-bottom-bg.jpg) right bottom no-repeat;
+      padding-bottom: 20px;
+      margin: 0px 190px;  /* ATIVAR */
+    }
+
+    div.slide{
+      max-width: 880px;
+      height: 390px;
+    }
+
+    .slide-items > .active {
+    position: relative;
+    opacity: 1;
+    pointer-events: initial;
+    width: 880px;
+  }
+
+  div.col-xs-6 {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 175px;
+  }
+}
+
+@media (min-width: 2049px){
+  .content{
+    width: 100%;
+    line-height: 1.3;
+    background: url(images/block-bottom-bg.jpg) right bottom no-repeat;
+    padding-bottom: 20px;
+    margin: 0px 190px;  /* ATIVAR */
+  }
+
+  div.slide{
+    max-width: 1107px;
+    height: 492px;
+  }
+
+  .slide-items > .active {
+  position: relative;
+  opacity: 1;
+  pointer-events: initial;
+  width: 1107px;
+  }
+
+  div.col-xs-6 {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 270px;
+}
+}
   
   /* MEIO[POSTS] */
   

@@ -92,10 +92,29 @@ body #navbar {
 /* CABEÇALHO LOGO */
   header{
     display: flex;
-    height: 230px;
-    margin-top: 66px;
+    height: 300px;
+    margin-top: -300px;
     position: relative;
     justify-content: center;
+  }
+
+  .header-shadow {
+    background-image: url(../images/shadow.png);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    height: 370px;
+    animation: smoke 8s linear infinite;
+    animation-fill-mode: none;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes smoke {
+    from {
+      background-position:0 bottom
+    }
+    to {
+      background-position:1920px bottom
+    }
   }
 
   #brilho:hover{
