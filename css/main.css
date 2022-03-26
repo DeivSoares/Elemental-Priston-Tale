@@ -1,13 +1,3 @@
-@media (max-width: 1366px){
-  .content {
-    width: 630px;
-    line-height: 1.3;
-    background: url(images/block-bottom-bg.jpg) right bottom no-repeat;
-    padding-bottom: 20px;
-    margin: 0px 144px;  /*ATIVAR */
-  }
-}
-
 .content {
     width: 630px;
     line-height: 1.3;
