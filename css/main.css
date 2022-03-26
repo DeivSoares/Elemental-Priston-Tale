@@ -6,9 +6,8 @@
     margin: 0px 74px;  /*ATIVAR */
   }
 
-  @media (min-width: 1300px){
+  @media (min-width: 1367px){
     .content{
-      border: 5px solid red;
       width: 630px;
       line-height: 1.3;
       background: url(images/block-bottom-bg.jpg) right bottom no-repeat;
