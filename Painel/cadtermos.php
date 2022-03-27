@@ -1,13 +1,13 @@
 <?
 /*----------------------------------------------------------------------
-Painel Player Versão 0.4
+Painel Player Versï¿½o 0.4
 Desenvolvidor Por: Mak (sirmakloud@gmail.com)
 Editado Por: Jiraya (richard.cva21@hotmail.com(
 ----------------------------------------------------------------------*/
 include_once "incluir/configura.php";
 include_once "injection.php";
 ?>
-<html>
+<html lang="pt-br">
  <head>        
         <!-- META SECTION -->
         <title>Painel de Controle ElementalPT</title>
@@ -36,29 +36,29 @@ include_once "injection.php";
 							<textarea name="textarea" id="textarea" cols="50" rows="15" readonly="readonly">
 1. Termos de Usos
 
-1.1. O Usuário concorda que qualquer outro usuário e a ElementalPT podem fotografar (snapshot), capturar a imagem, filmar e gravar vídeos do seu personagem no jogo dentro do ambiente virtual in-game e concede o direito de uso do material, livre de royalties, para ser utilizado, reproduzido, distribuído, transmitido ou modificado em todos os tipos de mídia.
+1.1. O Usuï¿½rio concorda que qualquer outro usuï¿½rio e a ElementalPT podem fotografar (snapshot), capturar a imagem, filmar e gravar vï¿½deos do seu personagem no jogo dentro do ambiente virtual in-game e concede o direito de uso do material, livre de royalties, para ser utilizado, reproduzido, distribuï¿½do, transmitido ou modificado em todos os tipos de mï¿½dia.
 
-1.2. O Usuário concorda que o ElementalPT possui total direito podendo adicionar,entrar,editar,modificar,suspender e excluir total ou mediano acesso ou conta,personagem,créditos do jogador.
+1.2. O Usuï¿½rio concorda que o ElementalPT possui total direito podendo adicionar,entrar,editar,modificar,suspender e excluir total ou mediano acesso ou conta,personagem,crï¿½ditos do jogador.
 
-2. Interrupção de Serviço
+2. Interrupï¿½ï¿½o de Serviï¿½o
 
-2.1. O ElementalPT se reserva o direito de interromper os Serviços ocasionalmente, de forma regular, ou não, com a devida notificação prévia, a fim de realizar manutenção.
+2.1. O ElementalPT se reserva o direito de interromper os Serviï¿½os ocasionalmente, de forma regular, ou nï¿½o, com a devida notificaï¿½ï¿½o prï¿½via, a fim de realizar manutenï¿½ï¿½o.
 
-2.2. O Usuário está ciente de que os Serviços poderão ser interrompidos por razões fora do controle do ElementalPT, e que em tais circunstâncias o ElementalPT não poderá garantir que o Usuário seja capaz de acessar os Serviços sempre que desejar.
+2.2. O Usuï¿½rio estï¿½ ciente de que os Serviï¿½os poderï¿½o ser interrompidos por razï¿½es fora do controle do ElementalPT, e que em tais circunstï¿½ncias o ElementalPT nï¿½o poderï¿½ garantir que o Usuï¿½rio seja capaz de acessar os Serviï¿½os sempre que desejar.
 
-2.3. O ElementalPT não poderá ser responsabilizada por qualquer interrupção, atraso no serviço ou incapacidade de desempenhá-lo devido a quaisquer causas que estejam fora de seu controle, caso fortuito ou força maior.
+2.3. O ElementalPT nï¿½o poderï¿½ ser responsabilizada por qualquer interrupï¿½ï¿½o, atraso no serviï¿½o ou incapacidade de desempenhï¿½-lo devido a quaisquer causas que estejam fora de seu controle, caso fortuito ou forï¿½a maior.
 
 3. Responsabilidade
 
-3.1. O USUÁRIO ESTÁ CIENTE E CONCORDA QUE O ElementalPT NÃO ASSUMIRÁ E NÃO TERÁ RESPONSABILIDADE POR QUALQUER AÇÃO POR PARTE DO ElementalPT DE CONTEÚDO COM RELAÇÃO À CONDUTA, COMUNICAÇÃO OU CONTEÚDO DOS SERVIÇOS.
+3.1. O USUï¿½RIO ESTï¿½ CIENTE E CONCORDA QUE O ElementalPT Nï¿½O ASSUMIRï¿½ E Nï¿½O TERï¿½ RESPONSABILIDADE POR QUALQUER Aï¿½ï¿½O POR PARTE DO ElementalPT DE CONTEï¿½DO COM RELAï¿½ï¿½O ï¿½ CONDUTA, COMUNICAï¿½ï¿½O OU CONTEï¿½DO DOS SERVIï¿½OS.
 
-3.2. O ElementalPT NÃO SERÁ RESPONSÁVEL POR QUAISQUER DANOS INDIRETOS, INCIDENTAIS, ESPECIAIS, PUNITIVOS, EXEMPLARES OU CONSEQUENTES, INCLUSIVE, SEM LIMITAÇÕES, LUCROS CESSANTES, INTERRUPÇÃO DE NEGÓCIOS, PERDA DE INFORMAÇÕES DE NEGÓCIOS, OU QUALQUER OUTRA PERDA PECUNIÁRIA EM CONEXÃO COM OS SERVIÇOS OU QUALQUER PRODUTO FORNECIDO PELO ElementalPT.
+3.2. O ElementalPT Nï¿½O SERï¿½ RESPONSï¿½VEL POR QUAISQUER DANOS INDIRETOS, INCIDENTAIS, ESPECIAIS, PUNITIVOS, EXEMPLARES OU CONSEQUENTES, INCLUSIVE, SEM LIMITAï¿½ï¿½ES, LUCROS CESSANTES, INTERRUPï¿½ï¿½O DE NEGï¿½CIOS, PERDA DE INFORMAï¿½ï¿½ES DE NEGï¿½CIOS, OU QUALQUER OUTRA PERDA PECUNIï¿½RIA EM CONEXï¿½O COM OS SERVIï¿½OS OU QUALQUER PRODUTO FORNECIDO PELO ElementalPT.
 
-3.3. O USUÁRIO CONCORDA EM QUE O ElementalPT NÃO PODERÁ SER CONSIDERADO RESPONSÁVEL OU PASSÍVEL DE RESPONSABILIZAÇÃO DEVIDO A QUALQUER EVENTO QUE OCORRER OU RESULTAR DO ACESSO AOS SERVIÇOS POR MOTIVO DE FORÇA MAIOR OU CASO FORTUITO, ALHEIO À AÇÃO, OMISSÃO OU VONTADE DO ElementalPT.
+3.3. O USUï¿½RIO CONCORDA EM QUE O ElementalPT Nï¿½O PODERï¿½ SER CONSIDERADO RESPONSï¿½VEL OU PASSï¿½VEL DE RESPONSABILIZAï¿½ï¿½O DEVIDO A QUALQUER EVENTO QUE OCORRER OU RESULTAR DO ACESSO AOS SERVIï¿½OS POR MOTIVO DE FORï¿½A MAIOR OU CASO FORTUITO, ALHEIO ï¿½ Aï¿½ï¿½O, OMISSï¿½O OU VONTADE DO ElementalPT.
 
 4. Compartilhamento de conta, venda e troca
 
-4.1. E proibido o compartilhamento de contas e senha (Share), tendo como consequência a quem desobedecer esta regra a perca de atendimento no suporte e consequentemente não terá restauração em caso de roubo de itens.
+4.1. E proibido o compartilhamento de contas e senha (Share), tendo como consequï¿½ncia a quem desobedecer esta regra a perca de atendimento no suporte e consequentemente nï¿½o terï¿½ restauraï¿½ï¿½o em caso de roubo de itens.
 
 5. Regras In-Game
 
@@ -66,45 +66,45 @@ include_once "injection.php";
 
 5.2. E proibido o uso de ferramentas que burlem as regras do jogo, tais como programas ou falhas no jogo.
 
-5.3. Em caso de uso de hacks o usuário ira receber bloqueio permanente na conta.
+5.3. Em caso de uso de hacks o usuï¿½rio ira receber bloqueio permanente na conta.
 
-5.4. Em caso de uso de bugs ou falhas do jogo para próprio benéfico o usuário sera notificado com um bloqueio de 15 dias na conta, caso haja reincidência recebera bloqueio permanente.
+5.4. Em caso de uso de bugs ou falhas do jogo para prï¿½prio benï¿½fico o usuï¿½rio sera notificado com um bloqueio de 15 dias na conta, caso haja reincidï¿½ncia recebera bloqueio permanente.
 
-5.5. Em Caso de Lag, o usuário sera notificado com um bloqueio de 1 a 7 dias dependendo da gravidade do seu lag.
+5.5. Em Caso de Lag, o usuï¿½rio sera notificado com um bloqueio de 1 a 7 dias dependendo da gravidade do seu lag.
 
-5.6. E proibido fazer qualquer tipo de falsa acusação & calunia no fórum ou em qualquer outro meio.
+5.6. E proibido fazer qualquer tipo de falsa acusaï¿½ï¿½o & calunia no fï¿½rum ou em qualquer outro meio.
 
 5.6.1 Quando constatado:
 
-1 Vez - Na primeira vez o player será bloqueado por 3 dias;
+1 Vez - Na primeira vez o player serï¿½ bloqueado por 3 dias;
 
-2 Vez - Na Segunda vez o Player será bloqueado por 7 dias;
+2 Vez - Na Segunda vez o Player serï¿½ bloqueado por 7 dias;
 
-3 Vez - Na Terceira ocorrência o player terá a conta bloqueada por 30 dias.
+3 Vez - Na Terceira ocorrï¿½ncia o player terï¿½ a conta bloqueada por 30 dias.
 
 6. Itens
 
-6.1. O servidor não e responsável por qualquer item que tenha sido conseguido no jogo, nos isentamos de qualquer responsabilidade de recuperação do item caso seja perdido tanto por roubo ou problemas do jogo.
+6.1. O servidor nï¿½o e responsï¿½vel por qualquer item que tenha sido conseguido no jogo, nos isentamos de qualquer responsabilidade de recuperaï¿½ï¿½o do item caso seja perdido tanto por roubo ou problemas do jogo.
 
-6.2. O servidor se responsabiliza pela restauração de itens alpha & zeus desde que sejam perdidos em lag, problemas do jogo ou DCs e o pedido de restauração seja enviado em no máximo 7 dias apos o acontecido.
+6.2. O servidor se responsabiliza pela restauraï¿½ï¿½o de itens alpha & zeus desde que sejam perdidos em lag, problemas do jogo ou DCs e o pedido de restauraï¿½ï¿½o seja enviado em no mï¿½ximo 7 dias apos o acontecido.
 
-6.3. O servidor só se responsabiliza por itens roubados que tenham sido comprados no site por quem os perdeu, caso o usuário tenha um item comprado no jogo roubado ele não terá direito a restauração. Itens comprados no jogo se aplicam apenas a regra 6.2
+6.3. O servidor sï¿½ se responsabiliza por itens roubados que tenham sido comprados no site por quem os perdeu, caso o usuï¿½rio tenha um item comprado no jogo roubado ele nï¿½o terï¿½ direito a restauraï¿½ï¿½o. Itens comprados no jogo se aplicam apenas a regra 6.2
 
-7. Alterações
+7. Alteraï¿½ï¿½es
 
-7.1. O usuário concorda que todas as Contas, personagem, itens, créditos, pertencer ao servidor ElementalPT, poderemos fazer alterações, verificações, e exclusões sem prévio aviso.
+7.1. O usuï¿½rio concorda que todas as Contas, personagem, itens, crï¿½ditos, pertencer ao servidor ElementalPT, poderemos fazer alteraï¿½ï¿½es, verificaï¿½ï¿½es, e exclusï¿½es sem prï¿½vio aviso.
 
-7.2 Todas as regras anteriores poderá ser alteradas sem prévio aviso, automaticamente se cadastrando no servidor você concorda com todas nossas regras.
+7.2 Todas as regras anteriores poderï¿½ ser alteradas sem prï¿½vio aviso, automaticamente se cadastrando no servidor vocï¿½ concorda com todas nossas regras.
 
-7.3. O Usuário não poderá modificar, publicar, criar trabalhos derivativos, e/ou de qualquer forma explorar qualquer conteúdo existente no ElementalPT inclusive, sem limitação, de conteúdos que o Website e as redes sociais do ElementalPT lhes permita fazer download, sem a permissão expressa da equipe ElementalPT.
+7.3. O Usuï¿½rio nï¿½o poderï¿½ modificar, publicar, criar trabalhos derivativos, e/ou de qualquer forma explorar qualquer conteï¿½do existente no ElementalPT inclusive, sem limitaï¿½ï¿½o, de conteï¿½dos que o Website e as redes sociais do ElementalPT lhes permita fazer download, sem a permissï¿½o expressa da equipe ElementalPT.
 
 7.3.1 Quando constatado:
 
-1 Vez - Na primeira vez o player será bloqueado por 3 dias;
+1 Vez - Na primeira vez o player serï¿½ bloqueado por 3 dias;
 
-2 Vez - Na Segunda vez o Player será bloqueado por 7 dias;
+2 Vez - Na Segunda vez o Player serï¿½ bloqueado por 7 dias;
 
-3 Vez - Na Terceira ocorrência o player terá a conta bloqueada por 90 dias.</textarea><br/><br/>
+3 Vez - Na Terceira ocorrï¿½ncia o player terï¿½ a conta bloqueada por 90 dias.</textarea><br/><br/>
 <div class="login-footer">
                     <div><label>
 						  <input name="aceitatermos" id="aceitatermos" value="Sim" type="checkbox">

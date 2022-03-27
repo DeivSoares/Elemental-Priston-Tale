@@ -57,15 +57,14 @@ if(!$_SESSION["ID"])
 header("Content-type:text/html;charset=UTF-8");
 ?> 
 <!DOCTYPE html>
-<html lang="en" class="body-full-height">
+<html lang="pt-br" class="body-full-height">
     <head>        
         <!-- META SECTION -->
         <title>Painel de Controle ElementalPT</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="../images/favicons/favicon.ico" type="image/x-icon">
         <!-- END META SECTION -->
         
         <!-- CSS INCLUDE -->        
@@ -73,6 +72,10 @@ header("Content-type:text/html;charset=UTF-8");
         <!-- EOF CSS INCLUDE -->                                    
     </head>
     <body>
+
+        <header>
+            <img src="../images/banner2.png" alt="Logo Elemental Priston Tale" style="width: 200px;">
+        </header>
         
         <div class="login-container">
         

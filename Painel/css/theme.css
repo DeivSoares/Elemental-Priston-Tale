@@ -48,8 +48,15 @@ body {
   position: relative;
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
-  color: #01445f;
+  color: #565249;
   overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .body-full-height {
   height: 100%;
@@ -105,7 +112,7 @@ body {
 .page-container .page-content {
   min-height: 100%;
   margin-left: 220px;
-  background: #f5f5f5 url('../img/bg.png') left top repeat;
+  background: #01445f url('../img/bg.png') left top repeat;
   position: relative;
   zoom: 1;
 }
@@ -3875,7 +3882,7 @@ background: #1caf9a !important;
   float: left;
   width: 100%;
   min-height: 100%;
-  background: url("../img/bg.png") left top repeat #565249;
+  background: url("../img/bg.png") left top repeat #01445f;
 }
 .login-container .login-box {
   width: 400px;

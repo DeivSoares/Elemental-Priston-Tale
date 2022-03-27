@@ -20,7 +20,7 @@ if (!file_exists($arquivo_bonus)) {
 @fclose($abreB);
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>        
         <title>Painel de Controle ElementalPT</title>            
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

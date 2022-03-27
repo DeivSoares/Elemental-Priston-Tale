@@ -72,11 +72,11 @@ a#ref:hover {
   font-weight: bold;
 }
 
-#github{
-  width: 50px;
+#whatsapp{
+  width: 200px;
 }
 
-#github:hover{
+#whatsapp:hover{
   filter: brightness(200%);
 }
 
