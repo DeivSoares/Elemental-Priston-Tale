@@ -220,6 +220,10 @@
     color: inherit;
   }
 
+  .titulo-painel img{
+    width: 90px;
+  }
+
   .rankings_menu {
     width: 100%;
     overflow: auto;

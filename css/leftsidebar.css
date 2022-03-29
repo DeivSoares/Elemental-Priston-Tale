@@ -138,6 +138,7 @@
   }
   
   .top-list {
+    width: 280px;
     height: 36px;
     display: flex;
     align-items: center;
@@ -150,6 +151,7 @@
   .top-block span {
     display: block;
     padding-bottom: 1px;
+    font-size: 16px;
   }
   
   .top-list a {
