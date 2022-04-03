@@ -80,7 +80,9 @@ body #navbar {
     width: 0px;
   }
   
-  #flexlist a:hover:after {  
+  /* BARRA DE NAVEGAÇÃO OCULTA CABEÇALHO
+  
+  #flexlistinv a:hover:after {  
     content: "";
     height: 2px;
     width: 100%;
@@ -89,6 +91,46 @@ body #navbar {
     position: absolute;
     background: #000000;
   }
+
+  #flexlistinv{
+    display: flex;
+    align-self: center;
+}
+
+#flexlistinv li{
+    margin: 0px 8px;
+    list-style-type: none;
+}
+
+#flexlistinv a {
+  color: #fec16a;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0px 26px;
+  display: block;
+  height: 66px;
+  line-height: 66px;
+  position: relative;
+}
+
+#flexlistinv a:after {  
+  content: "";
+  transition: 0.3s;
+  height: 0px;
+  width: 0px;
+}
+
+#flexlistinv a:hover:after {  
+  content: "";
+  height: 2px;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  background: #000000;
+} */
+
 /* CABEÇALHO LOGO */
   header{
     display: flex;
