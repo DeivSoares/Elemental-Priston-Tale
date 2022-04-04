@@ -61,7 +61,7 @@ Else
 	Response.End
 End if
 
-If (CInt(MemCnt) + 1) > 100 Then
+If (CInt(MemCnt) + 1) > 30 Then
 	Set RS=Nothing
 	objConn.Close
 	Set objConn = Nothing
