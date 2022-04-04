@@ -51,9 +51,20 @@ body #navbar {
     z-index: 10;
   }
 
+  #navbar #flexlist ul{
+    display: none;
+}
+
+  #navbar #flexlist li:hover > ul{
+    display: block;
+    background: #13272cb5;
+    border-bottom: 1px solid #fec16a;
+}
+
   #flexlist{
       display: flex;
       align-self: center;
+      margin: auto;
   }
 
   #flexlist li{
