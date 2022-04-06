@@ -1,0 +1,46 @@
+ol, ul, li {
+    margin: 0;  
+    padding: 0;  
+    border: 0;  
+  }
+  
+  
+  
+  * {  
+    -webkit-box-sizing: border-box;  
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box;  
+  }
+  
+  body {  
+    background: url(images/fon-bg-top.png) center top no-repeat, url(images/fon-bg-repeat.jpg) center repeat-y;
+    background-color: #13272c;
+    width: 99%;
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;  
+    font-weight: 400;  
+    font-size: 13px;  
+    color: #fec16a;  
+    line-height: 1;  
+  }
+  
+  table {  
+    width: 100%;  
+  }
+  
+  table td {  
+    border-collapse: collapse;  
+    padding: 4px;  
+    border: 1px solid #fec16a;
+  }
+  
+  table tr:nth-child(odd) {  
+    background-color: rgba(170, 115, 132, 0.2);  
+  }
+
+  .footer {  
+    background: url(../images/banner2.png) center bottom no-repeat;  
+    height: 310px;
+    position: relative;
+    margin-top: 25px;
+  }

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/padraowiki.css">
+    <link rel="stylesheet" href="css/age.css">
+    <title>Elemental Priston Tale</title>
+</head>
+<body>
+    <aside>
+        <header>
+            <a href="index.html"><p class="itens-btn-lateral" style="margin-top: 25px;width: 210px;height: 15px;">Voltar para o Site</p></a>
+
+            <picture>
+                <img id="logo" src="../images/pt2logo.png" alt="Logo Elemental Priston Tale">
+            </picture>
+        </header>
+
+        <div class="itens-lateral">
+            <hr style="width: 370px;">
+            <a href="mix.html"><p class="itens-btn-lateral">Lista de Mix</p></a>
+            <hr>
+            <a href="aging.html"><p class="itens-btn-lateral">Lista de Aging</p></a>
+            <hr>
+            <a href="index.html"><p class="itens-btn-lateral">Equipamentos</p></a>
+            <hr>
+            <a href="tabelaxp.html"><p class="itens-btn-lateral">Tabela de XP</p></a>
+            <hr style="width: 370px;">
+        </div>
+        
+        <footer>
+            <p>Desenvolvido por <a href="https://api.whatsapp.com/send/?phone=5522992533137&text=Olá+Deivison&app_absent=0" target="_blank"><abbr title="Entre em contato pelo WhatsApp" style="text-decoration: none;">Deivison Soares</abbr></a></p>
+        </footer>
+    </aside>
+
+    <main>
+        <div class="titulo-main2">
+            <h1>Elemental Wiki</h1>
+            <h4>Lista de Aging</h4>
+        </div>
+
+        <div style="height: 100%;overflow-y: scroll;">
+            <table id="mix_list_table" cellspacing="1" cellpadding="0">
+                <colgroup>
+                    <col width="40">
+                    <col width="22">
+                    <col width="22">
+                    <col width="22">
+                    <col width="22">
+                    <col width="22">
+                    <col width="22">
+                    <col width="22">
+                    <col width="22">
+                    <col width="22">
+                    <col width="22">
+                    <col width="22">
+                    <col width="22">
+                    <col width="50">
+                    <col width="50">
+                    <col width="50">
+                </colgroup>
+                <tbody>
+                    <tr class="table_header">
+                        <td style="text-align: center; vertical-align: middle;">Aging</td>
+                        <td><img src="../images/mixing/fadeo.png" alt="Fadeo"></td>
+                        <td><img src="../images/../images/mixing/sparky.png" alt="Sparky"></td>
+                        <td><img src="../images/../images/mixing/raident.png" alt="Raident"></td>
+                        <td><img src="../images/../images/mixing/transparo.png" alt="Transparo"></td>
+                        <td><img src="../images/../images/mixing/murky.png" alt="Murky"></td>
+                        <td><img src="../images/../images/mixing/devine.png" alt="Devine"></td>
+                        <td><img src="../images/../images/mixing/celesto.png" alt="Celesto"></td>
+                        <td><img src="../images/../images/mixing/mirage.png" alt="Mirage"></td>
+                        <td><img src="../images/../images/mixing/inferna.png" alt="Inferna"></td>
+                        <td><img src="../images/../images/mixing/enigma.png" alt="Enigma"></td>
+                        <td><img src="../images/../images/mixing/bellum.png" alt="Bellum"></td>
+                        <td><img src="../images/../images/mixing/oredo.png" alt="Oredo"></td>
+                        <td><img src="../images/../images/mixing/not.png" alt="not" style="text-align: center; vertical-align: middle;"><br>Falha</td>
+                        <td><img src="../images/../images/mixing/pedraage.png" alt="PedraAging" style="text-align: center; vertical-align: middle;"><br>Falha</td>
+                        <td><img src="../images/mixing/spedraage.png" alt="sPedraAging" style="text-align: center; vertical-align: middle;"><br>Falha</td>
+                    </tr>
+                    <tr id="mix1" class="row0" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row0';" onclick="infoBox(1);">
+                        <td style="text-align: center;">+1</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                    </tr>
+                    <tr id="mix2" class="row1" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row1';" onclick="infoBox(2);">
+                        <td style="text-align: center;">+2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                    </tr>
+                    <tr id="mix3" class="row0" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row0';" onclick="infoBox(3);">
+                        <td style="text-align: center;">+3</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                    </tr>
+                    <tr id="mix4" class="row1" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row1';" onclick="infoBox(4);">
+                        <td style="text-align: center;">+4</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                    </tr>
+                    <tr id="mix5" class="row0" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row0';" onclick="infoBox(5);">
+                        <td style="text-align: center;">+5</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                    </tr>
+                    <tr id="mix6" class="row1" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row1';" onclick="infoBox(6);">
+                        <td style="text-align: center;">+6</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                    </tr>
+                    <tr id="mix7" class="row0" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row0';" onclick="infoBox(7);">
+                        <td style="text-align: center;">+7</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                    </tr>
+                    <tr id="mix8" class="row1" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row1';" onclick="infoBox(8);">
+                        <td style="text-align: center;">+8</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                    </tr>
+                    <tr id="mix9" class="row0" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row0';" onclick="infoBox(9);">
+                        <td style="text-align: center;">+9</td>
+                        <td></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                        <td style="text-align: center;">0%</td>
+                    </tr>
+                    <tr id="mix10" class="row1" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row1';" onclick="infoBox(10);">
+                        <td style="text-align: center;">+10</td>
+                        <td></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">6%</td>
+                        <td style="text-align: center;">5%</td>
+                        <td style="text-align: center;">5%</td>
+                    </tr>
+                    <tr id="mix11" class="row0" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row0';" onclick="infoBox(11);">
+                        <td style="text-align: center;">+11</td>
+                        <td></td>
+                        <td></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">12%</td>
+                        <td style="text-align: center;">10%</td>
+                        <td style="text-align: center;">10%</td>
+                    </tr>
+                    <tr id="mix12" class="row1" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row1';" onclick="infoBox(12);">
+                        <td style="text-align: center;">+12</td>
+                        <td></td>
+                        <td></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">20%</td>
+                        <td style="text-align: center;">17%</td>
+                        <td style="text-align: center;">17%</td>
+                    </tr>
+                    <tr id="mix13" class="row0" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row0';" onclick="infoBox(13);">
+                        <td style="text-align: center;">+13</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">27%</td>
+                        <td style="text-align: center;">23%</td>
+                        <td style="text-align: center;">23%</td>
+                    </tr>
+                    <tr id="mix14" class="row1" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row1';" onclick="infoBox(14);">
+                        <td style="text-align: center;">+14</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">36%</td>
+                        <td style="text-align: center;">31%</td>
+                        <td style="text-align: center;">31%</td>
+                    </tr>
+                    <tr id="mix15" class="row0" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row0';" onclick="infoBox(15);">
+                        <td style="text-align: center;">+15</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">43%</td>
+                        <td style="text-align: center;">37%</td>
+                        <td style="text-align: center;">37%</td>
+                    </tr>
+                    <tr id="mix16" class="row1" onmouseover="this.className='row_hl';"
+                        onmouseout="this.className='row1';" onclick="infoBox(16);">
+                        <td style="text-align: center;">+16</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;">50%</td>
+                        <td style="text-align: center;">43%</td>
+                        <td style="text-align: center;">43%</td>
+                    </tr>
+                    <tr class="table_header">
+                        <td style="text-align: center; vertical-align: middle;">Aging</td>
+                        <td><img src="../images/mixing/fadeo.png" alt="Fadeo"></td>
+                        <td><img src="../images/mixing/sparky.png" alt="Sparky"></td>
+                        <td><img src="../images/mixing/raident.png" alt="Raident"></td>
+                        <td><img src="../images/mixing/transparo.png" alt="Transparo"></td>
+                        <td><img src="../images/mixing/murky.png" alt="Murky"></td>
+                        <td><img src="../images/mixing/devine.png" alt="Devine"></td>
+                        <td><img src="../images/mixing/celesto.png" alt="Celesto"></td>
+                        <td><img src="../images/mixing/mirage.png" alt="Mirage"></td>
+                        <td><img src="../images/mixing/inferna.png" alt="Inferna"></td>
+                        <td><img src="../images/mixing/enigma.png" alt="Enigma"></td>
+                        <td><img src="../images/mixing/bellum.png" alt="Bellum"></td>
+                        <td><img src="../images/mixing/oredo.png" alt="Oredo"></td>
+                        <td><img src="../images/mixing/not.png" alt="not" style="text-align: center; vertical-align: middle;"><br>Falha</td>
+                        <td><img src="../images/mixing/pedraage.png" alt="PedraAging" style="text-align: center; vertical-align: middle;"><br>Falha</td>
+                        <td><img src="../images/mixing/spedraage.png" alt="sPedraAging" style="text-align: center; vertical-align: middle;"><br>Falha</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
