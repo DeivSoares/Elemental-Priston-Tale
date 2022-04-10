@@ -35,7 +35,7 @@ aside{
     box-shadow: 6px 1px 10px 8px #0000007a;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 245px;
     height: 100vh;    
 }
 
@@ -64,8 +64,8 @@ picture{
     display: flex;
     width: 165px;
     height: 35px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding: 8px;
     align-items: center;
     justify-content: center;
