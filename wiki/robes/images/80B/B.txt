@@ -1,0 +1,10 @@
+Roupão Alquimista
+Defesa: 255 - 270
+Absorção: 12.2 - 12.6
+Integridade: 110 - 130
+Res. Orgânica: 8 - 15
+Res. a Fogo: 8 - 15
+Res. a Gelo: 8 - 15
+Res. a Raio: 8 - 15
+Res. a Veneno: 8 - 15
+Nível Necessário: 85

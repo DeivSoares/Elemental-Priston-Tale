@@ -1,0 +1,10 @@
+Roupão Astral
+Defesa: 270 - 290
+Absorção: 14.0 - 14.4
+Integridade: 120 - 140
+Res. Orgânica: 8 - 15
+Res. a Fogo: 8 - 15
+Res. a Gelo: 8 - 15
+Res. a Raio: 8 - 15
+Res. a Veneno: 8 - 15
+Nível Necessário: 90

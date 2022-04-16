@@ -1,0 +1,10 @@
+Roupão Archon
+Defesa: 290 - 310
+Absorção: 16.1 - 16.5
+Integridade: 130 - 150
+Res. Orgânica: 8 - 15
+Res. a Fogo: 8 - 15
+Res. a Gelo: 8 - 15
+Res. a Raio: 8 - 15
+Res. a Veneno: 8 - 15
+Nível Necessário: 95

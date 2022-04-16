@@ -1,0 +1,10 @@
+Armadura Salamandra
+Defesa: 330 - 360
+Absorção: 15.8 - 16.2
+Integridade: 155 - 190
+Res. Orgânica: 7 - 14
+Res. a Fogo: 7 - 14
+Res. a Gelo: 7 - 14
+Res. a Raio: 7 - 14
+Res. a Veneno: 7 - 14
+Nível Necessário: 90
