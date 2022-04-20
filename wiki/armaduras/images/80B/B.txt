@@ -1,0 +1,10 @@
+Armadura Demoníaca
+Defesa: 310 - 330
+Absorção: 13.8 - 14.2
+Integridade: 144 - 180
+Res. Orgânica: 7 - 13
+Res. a Fogo: 7 - 13
+Res. a Gelo: 7 - 13
+Res. a Raio: 7 - 13
+Res. a Veneno: 7 - 13
+Nível Necessário: 85

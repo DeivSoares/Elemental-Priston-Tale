@@ -1,0 +1,10 @@
+Armadura Wyvern
+Defesa: 360 - 380
+Absorção: 18.1 - 18.6
+Integridade: 165 - 200
+Res. Orgânica: 8 - 13
+Res. a Fogo: 8 - 13
+Res. a Gelo: 8 - 13
+Res. a Raio: 8 - 13
+Res. a Veneno: 8 - 13
+Nível Necessário: 95

@@ -23,7 +23,10 @@ aside{
     justify-content: flex-start;
     align-items: center;
     background: #067272;
-    color:#fec16a;    
+    color: #fec16a;
+    box-shadow: 11px 17px 10px #0000007c;
+    border-radius: 8px;
+    margin-right: 18px;
     margin-bottom: 2em;
     width: 422px;
     height: 275px;
@@ -35,7 +38,8 @@ aside{
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;   
+    border-radius: 8px 0px 0px 8px; 
 }
 
 .info-area {
