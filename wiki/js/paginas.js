@@ -73,3 +73,7 @@ function orbitais(){
 function robes(){
     alert('Você está na aba de Robes!')
 }
+
+function sheltons(){
+    alert('Você está na aba de Sheltons!')
+}
