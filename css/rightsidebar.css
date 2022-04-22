@@ -141,6 +141,7 @@ a#ref:hover {
     padding: 10px;
     /*min-height: 250px;*//*ALTERAR TAMANHO DA SIDEBAR ESQUERDA*/
     border-bottom: 1px solid #fec152;
+    border-radius: 0px 0px 0px 8px;
   }
   
   .widget-title3 {
