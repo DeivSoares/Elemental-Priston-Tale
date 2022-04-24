@@ -94,8 +94,11 @@
   .widgett {
     padding: 10px;
     min-height: 215px;/*ALTERAR TAMANHO DA SIDEBAR ESQUERDA*/
+    height: 295px;
     border-bottom: 1px solid #fec152;
     border-radius: 0px 0px 8px 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   
   .widget-titlee {
@@ -131,8 +134,13 @@
   
   .top-block {
     width: 100%;
-    height: 240px;
+    height: 260px;
     color: #fec152;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+  }
+
+  .eventbody{
     overflow-y: scroll;
     overflow-x: hidden;
   }

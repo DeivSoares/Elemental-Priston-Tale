@@ -1,47 +1,58 @@
-<div align="center"></div>
-<?
-/*----------------------------------------------------------------------
-   Script Lider BC Semi Automatico V. 4.0
-   Desenvolvidor Por: Jeck(jeckmib@hotmail.com)
-   Id�ias: Vahvel(vahve-capeta@hotmail.com)
-   Por Postar: Lookin(lokin.bdc@hotmail.com)
-   ----------------------------------------------------------------------*/
+<HTML>
+<HEAD>
+<TITLE>Lider BC</TITLE>
 
-$BLESS = "C:\Server/BlessCastle.dat"; //Altere para a pasta do seu Servidor+BlessCastle.dat
-$fOpen = fopen($BLESS, "r");
-$fRead = fread($fOpen, filesize($BLESS));
-@fclose($fOpen);
-
-// details
-// $LiderBles = ord($fRead,0xF0,3);
-$LiderBles = bin2hex(substr($fRead, 0xF0, 1));
-$LiderBles2 = bin2hex(substr($fRead, 0xF1, 1));
-$LiderBles3 = bin2hex(substr($fRead, 0xF2, 1));
-$LiderBles1 = bin2hex(substr($fRead, 0xF3, 1));
-$Lider = hexdec("$LiderBles1" . "$LiderBles3" . "$LiderBles2" . "$LiderBles");
-// Conex�o com o SQL(Host)
-$host = "DRIVER={SQL Server};" . "SERVER=PTL\SQLEXPRESS;" . "DATABASE=ClanDB"; //Nome Instancia SQL + DB(Database)
-$user = "sa";  //Usuario SQL (Gealmente sa)
-$pw = "#$pdl32xq";     // Senha Usuario Sql
-
-$conexao = odbc_connect($host, $user, $pw); // Tentando Conectar
-$qr = odbc_exec($conexao, "SELECT * FROM CL WHERE MIconCnt =$Lider"); // Script Que Busca Informa�oes do Clan
-$linhas = odbc_num_rows($qr);
-if ($linhas == 0) {
-  echo 'Nenhum Clan';
+<style>
+.clan-img {
+  width: 32px;
+  height: 32px;
+  margin-top: .6rem;
 }
-while ($dados = odbc_fetch_array($qr)) {
-  $img = $dados['MIconCnt'];
-  $membros = $rank['MemCnt'];
-  $clanname = $rank['ClanName'];
-  $pontos = $rank['Cpoint'];
-  $lider = $rank['ClanZang'];
-  $frase = $rank['Note'];
-  $dir_classe = "http://192.168.1.90/brnxContent/$imagem.bmp";
-  $i++;
-  $nomelider = $dados['ClanZang'];
-  echo '<center><img src="' . $dir_img . '" width="32" height="32" />';
-  echo '<center><font color="#ffffff">' . $clan . '</font></center>';
-  echo '<strong><font color="#FFFFF">Lider: <b><font color="#ffffff">' . $nomelider . '</font></strong>';
-}
+</style>
+</HEAD>
+<body style="background-color: transparent" leftmargin="0" topmargin="0" marginwidth="0" marginheight="1" ALLOWTRANSPARENCY="true">
+<?php
+$IP = "http://www.elementalpristontale.com/clancontent/"; 
+	$fOpen = fopen("C:\Server\BlessCastle.dat", "r");
+	$fRead =fread($fOpen,4096);
+	@fclose($fOpen);
+
+   	$bc1 = bin2hex(substr($fRead,0x4,1));
+	$bc2 = bin2hex(substr($fRead,0x5,1));
+	$bc3 = bin2hex(substr($fRead,0x6,1));
+	$bc4 = bin2hex(substr($fRead,0x7,1));
+
+	$bc = hexdec("$bc4"."$bc3"."$bc2"."$bc1");
+    $caminho ="C:/inetpub/wwwroot/clancontent";
+    if(file_exists("$caminho/$bc.bmp")) {
+
+
+
+    $connection = odbc_connect( 'DRIVER={SQL Server};SERVER=PTL\SQLEXPRESS;DATABASE=ClanDb', 'sa', '#$pdl32xq' );
+
+    $query = "SELECT * FROM [ClanDb].[dbo].[CL]  WHERE [MIconCnt]='$bc'";
+    $q = odbc_exec($connection, $query);
+    $clan = odbc_fetch_array($q);
+	
+	$clanname = $clan['ClanName'];
+	$lider = $clan['ClanZang'];
+	
+	?>
+	
+<center>
+        <div class="clan-img" style="background: url('<?php echo $IP; echo $bc; ?>.bmp') no-repeat center center; background-size: cover;"></div>
+               </center>
+               <p style="color: #ACA8A5; text-align: center; margin-top: 5px; margin-bottom: 0px;"><?php echo $clanname; ?></p>
+               <p style="color: #ACA8A5; text-align: center; margin-top: 3px; margin-bottom: 0px;">L&iacute;der: <?=$lider?></p>
+	<?php
+    } else {
+     echo "<center><span style=\"color: #ACA8A5;\"></br></br>Sem Lider Atual";
+    
+    }            
 ?>
+</font></td>
+</tr>
+</table>
+
+</body>
+</html>
