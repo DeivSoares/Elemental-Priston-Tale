@@ -269,12 +269,12 @@
     padding: 15px;
   }
 
-  .corpo-painel td:hover{
+  .corpo-painel #amarelo:hover{
     background-color: #fec16a;
     color: black;
     font-size: 1.1em;
     font-weight: bold;
-    transition: 0,8s;
+    transition: 0.8s;
   }
 
   
@@ -288,6 +288,10 @@
   
   .corpo-painel a {
     color: #fec16a;
+  }
+
+  .corpo-painel a:hover {
+    color: black;
   }
   
   .panel-news .rodape-painel {
