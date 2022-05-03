@@ -45,29 +45,20 @@ if (!$_POST['aceitatermos'])
 					<form name="form_cad" action="<?=$_SERVER[PHP_SELF]."?".$_SERVER[QUERY_STRING]?>" method="post" enctype="multipart/form-data" onSubmit="disabledBttn(this);return verifica()">
 						<div class="form-group">
 						<div class="row">
-
 									<div class="col-md-3"><br/><font color="#fff">ID</div>
-
                                         <div class="col-md-9">
-
                                             <div class="form-group">
                                                 <input name="username" size="20" maxlength="15" type="text" class="form-control">
                                             </div>
-
                                         </div>
 										
 									</div><br/>
-
 									<div class="row">
-
 									<div class="col-md-3"><br/><font color="#fff">Senha</div>
-
                                         <div class="col-md-9">
-                                            
                                             <div class="form-group">
                                                 <input name="password" size="20" maxlength="15" type="password" class="form-control">
                                             </div>
-                                            
                                         </div>
 										
 									</div><br/>

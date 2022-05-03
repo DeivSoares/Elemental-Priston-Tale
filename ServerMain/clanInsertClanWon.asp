@@ -61,7 +61,7 @@ Else
 	Response.End
 End if
 
-If (CInt(MemCnt) + 1) > 30 Then
+If (CInt(MemCnt) + 1) > 100 Then
 	Set RS=Nothing
 	objConn.Close
 	Set objConn = Nothing
@@ -119,10 +119,22 @@ RS.Close
 
 ClanMembers = ClanMembers + 1
 
+If ClanMembers > 30 Then
+    Set RS=Nothing
+    objConn.Close
+    Set objConn = Nothing
+    strReturn = "Code=4" & strSplit
+    Response.Write(strReturn)
+    Response.End
+Else
+
 QUERY = "UPDATE CL SET MemCnt='" & ClanMembers & "' WHERE ClanName='" & clName & "'"
 RS.Open QUERY, objConn, 3, 1
 QUERY = "INSERT INTO UL ([IDX],[userid],[ChName],[ClanName],[ChType],[ChLv],[Permi],[JoinDate],[DelActive],[PFlag],[KFlag],[MIconCnt]) values('" & IDX & "','" & clwonUserid & "','" & clwon & "','" & clName & "','" & chtype & "','" & chlv & "','0',getdate(),'0','0','0','0')"
 RS.Open QUERY, objConn, 3, 1
+
+End if
+
 
 strReturn = "Code=1" & strSplit
 SET RS = Nothing

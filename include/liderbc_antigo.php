@@ -7,7 +7,7 @@
    Por Postar: Lookin(lokin.bdc@hotmail.com)
    ----------------------------------------------------------------------*/
 
-$BLESS = "C:\Server\BlessCastle.dat"; //Altere para a pasta do seu Servidor+BlessCastle.dat
+$BLESS = "C:\Server/BlessCastle.dat"; //Altere para a pasta do seu Servidor+BlessCastle.dat
 $fOpen = fopen($BLESS, "r");
 $fRead = fread($fOpen, filesize($BLESS));
 @fclose($fOpen);
