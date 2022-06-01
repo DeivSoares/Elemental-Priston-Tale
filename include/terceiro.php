@@ -28,7 +28,7 @@ while(odbc_fetch_row($go)){
 
 <div id="alinhamento"><img src="images/Bronze.png" width="22" height="22"></div>
 
-<div align="center"><font face="Verdana" size="1"><img src="http://51.222.17.94/Clancontent/<?=$img?>.bmp" width="32" 
+<div align="center"><font face="Verdana" size="1"><img src="http://site.elementalpristontale.com:31206/ClanContent/<?=$img?>.bmp" width="32" 
 height="32"><br>
     </font>
     <font color="#ffffff" face="Verdana" size="1">

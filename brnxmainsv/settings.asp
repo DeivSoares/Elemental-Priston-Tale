@@ -80,9 +80,9 @@ For Each s in Request.Cookies
 Next
 
 Sub FillSettings()
-        dbhost = "PTL\SQLEXPRESS"
+        dbhost = "PRIME"
         dbuser = "sa"
-        dbpass = "#$pdl32xq"
+        dbpass = "1q2w!@QW"
         dbname = "ClanDB"
 End Sub
 

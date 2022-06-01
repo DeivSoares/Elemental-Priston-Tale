@@ -5,13 +5,13 @@ $tituloerro="NetworkPK";
 // ** START SCRIPTS ** \\
 
 // IP CORRETO DO SERVIDOR LOCAL PARA MOSTRA STATUS ONLINE (SITE)
-$iplocal="http://51.222.17.94";
+$iplocal="189.79.242.5:31206";
 
 // DIRETORIO DO BLESSCASTLE.DAT
-$diretoriobc="C:\Server/BlessCastle.dat";
+$diretoriobc="'C:/Server/BlessCastle.dat'";
 
 // PORTA DO SERVER.EXE CORRETA
-$portasv="10009";
+$portasv="30010";
 
 // NOME E INSTANCIA DA MAQUINA
 $instanciasql="PTL\SQLEXPRESS";

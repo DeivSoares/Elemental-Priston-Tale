@@ -12,8 +12,8 @@
 </HEAD>
 <body style="background-color: transparent" leftmargin="0" topmargin="0" marginwidth="0" marginheight="1" ALLOWTRANSPARENCY="true">
 <?php
-$IP = "http://www.elementalpristontale.com/clancontent/"; 
-	$fOpen = fopen("C:\Server\BlessCastle.dat", "r");
+$IP = "http://189.79.242.5:3120631206/clancontent/"; 
+	$fOpen = fopen("C:/Server/BlessCastle.dat", "r");
 	$fRead =fread($fOpen,4096);
 	@fclose($fOpen);
 

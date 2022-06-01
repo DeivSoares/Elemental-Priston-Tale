@@ -7,9 +7,9 @@
 'Version 2.0 NOVEMBER 2006
 
 Sub FillSettings()
-	dbhost = "PTL\SQLEXPRESS"
+	dbhost = "PRIME"
 	dbuser = "sa"
-	dbpass = "#$pdl32xq"
+	dbpass = "1q2w!@QW"
 	dbname = "ClanDB"
 End Sub
 

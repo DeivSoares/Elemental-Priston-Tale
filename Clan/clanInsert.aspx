@@ -14,9 +14,9 @@
 
             Dim dbhost, dbuser, dbpass, dbname, userid, gserver, chname, clName, expl, chtype, lv
     
-            dbhost = "PTL\SQLEXPRESS"
+            dbhost = "PRIME"
             dbuser = "sa"
-            dbpass = "#$pdl32xq"
+            dbpass = "1q2w!@QW"
             dbname = "ClanDB"
     
             Dim strSplit As String

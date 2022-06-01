@@ -1,4 +1,4 @@
-<html><meta http-equiv="refresh" content="21;url=cavaleiro.php" />
+<html><meta http-equiv="refresh" content="21;url=index.php" />
 <center><script>
 function click() {
 if (event.button==2||event.button==3) {
@@ -100,9 +100,9 @@ a:hover {color:#999999; text-decoration: none;}
 <?
 include_once "incluir/configura.php";
 
-					$classechar = $_POST['classe'];
+					
                     $connection = odbc_connect( $connection_string, $user, $pass );
-					$query = "SELECT TOP 10 * FROM [rPTDB].[dbo].[LevelList] WHERE (CharName NOT LIKE 'DKinJR') AND (CharName NOT LIKE 'Xomps') AND (CharName NOT LIKE 'PoderosoGM') AND (CharName NOT LIKE '[ADM]lowang') AND (CharName NOT LIKE 'GM-Hermes') AND (CharName NOT LIKE '[GM]Kakashi') AND (CharName NOT LIKE 'ares') AND (CharName NOT LIKE 'Gaia') AND (CharName NOT LIKE 'GM-Papazone') AND (CharName NOT LIKE 'KronuZ') AND (CharName NOT LIKE 'GM-Midgard') AND (CharName NOT LIKE 'Pix0ka') AND (CharName NOT LIKE 'HadesGM') AND (CharName NOT LIKE 'HermesGM') AND (CharName NOT LIKE 'Orin') AND (CharName NOT LIKE 'GM-Design') AND (CharName NOT LIKE 'LexusGM') AND (CharName NOT LIKE 'gm-pandora') AND (CharName NOT LIKE 'gm-ryu') AND (CharName NOT LIKE 'gm-reaper') AND (CharName NOT LIKE 'vahvel') AND (CharName NOT LIKE 'GM-slim') AND (CharName NOT LIKE 'Administrador') AND (CharName NOT LIKE 'GmDeath') AND (CharName NOT LIKE '[ADM]Vahvel') AND (CharName NOT LIKE '[GM]Soluction') AND (CharName NOT LIKE '[GM]Osbourne') AND (CharName NOT LIKE 'lowang') AND (CharName NOT LIKE 'Kisame') AND (CharName NOT LIKE 'Johnnie') AND (CharName NOT LIKE 'GunZ') AND (CharName NOT LIKE 'Teste2') AND (CharName NOT LIKE '[GM]Meryt') AND (CharName NOT LIKE 'GM-FreeCell') AND (CharName NOT LIKE 'GM-Sune') AND (CharName NOT LIKE 'Error1111') AND (CharName NOT LIKE 'GM-Alucard') AND (CharName NOT LIKE 'Hermes') AND (CharName NOT LIKE 'GM-Dark') ORDER BY CharLevel DESC";
+					$query = "SELECT TOP 10 * FROM [ServerDB].[dbo].[PvP] ORDER BY lvl DESC";
 
                     $q = odbc_exec($connection, $query);
                     $qt = odbc_do($connection, $query);
@@ -114,9 +114,9 @@ include_once "incluir/configura.php";
       <?
 					$id=$i+1;
                     while($rank = odbc_fetch_array($qt)){
-                    $nome = $rank['CharName'];
-                    $level = $rank['CharLevel'];
-                    $classe = trim($rank['CharClass']);
+                    $nome = $rank['Name'];
+                    $level = $rank['Lvl'];
+                    $classe = trim($rank['Class']);
 								$i++;
 ?>
       <tr>
@@ -124,7 +124,7 @@ include_once "incluir/configura.php";
 		<font face="Tahoma" color="#FFFFFF" style="font-size: 7pt"><? echo $i; ?></font></strong></td>
         <td width="16%" align="center"><strong>
 		<font color="#FFFFFF" face="Tahoma" style="font-size: 8pt">
-		<img src="images/classe/<? echo $classe; ?>.gif" width="29" height="28" border="0"></font></strong></td>
+		<img src="images/classe/0<? echo $classe; ?>.gif" width="29" height="28" border="0"></font></strong></td>
         <td width="59%"  align="left"><strong style="font-weight: 400">
 		<font face="Tahoma" color="#FFFFFF" style="font-size: 8pt"><center><? echo $nome; ?></font></strong></td>
         <td width="15%"   align="center"><strong style="font-weight: 400">

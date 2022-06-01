@@ -8,9 +8,9 @@
     <td align="center" width="44">Mortes</td>
   </tr>
 <?php 
-	$connect['host'] = "PTL\SQLEXPRESS";
+	$connect['host'] = "PRIME";
 	$connect['user'] = "sa";
-	$connect['pass'] = "#$pdl32xq";
+	$connect['pass'] = "1q2w!@QW";
 	$connect['db'] = "ServerDB";
 	
 	$connect['string'] = "DRIVER={SQL Server};";

@@ -6,17 +6,17 @@
 -->
 <?php
 	//Conexão ao banco de dados
-	$sqlserver = "PTL\SQLEXPRESS"; //Instância do SQL
+	$sqlserver = "PRIME"; //Instância do SQL
 	$account = "sa"; //Usuário do SQL
-	$password = "#$pdl32xq"; //Senha do SQL
+	$password = "1q2w!@QW"; //Senha do SQL
 	$dbSOD = "SoD2DB"; //Define a database que seu SQL.dll conecta para salvar os pontos de SoD. => SodDB ou SoD2DB <= (SQL.dll do gregooverse.net por padrão salva na SodDB)
 	
 	//Caminhos
-	$IPhost = "51.222.17.94"; //IP do host onde está hospedado seu servidor
-	$PortaServer = "33003"; //Porta de conexão do seu servidor
+	$IPhost = "189.79.242.5"; //IP do host onde está hospedado seu servidor
+	$PortaServer = "31210"; //Porta de conexão do seu servidor
 	$DiretorioFiles = "C:\Server"; //Diretório da sua Server Files (sempre deixar com "/" no final do caminho. EX: C:/Sever/)
-	$UrlClanContent = "http://51.222.17.94/brnxcontent/"; //Url da sua pasta ClanContent (sempre deixar com "/" no final do caminho. EX: http://127.0.0.1/ClanContent/)
-	$Website = "http://51.222.17.94"; //URL do site do seu servidor (irá redirecionar caso alguém tente acessar a pasta dos scrips)
+	$UrlClanContent = "http://189.79.242.5/brnxcontent/"; //Url da sua pasta ClanContent (sempre deixar com "/" no final do caminho. EX: http://127.0.0.1/ClanContent/)
+	$Website = "http://189.79.242.5"; //URL do site do seu servidor (irá redirecionar caso alguém tente acessar a pasta dos scrips)
 	
 	//Remove personagens do ranking
 	$player1 = "Ravel"; //Nick do jogador

@@ -88,9 +88,9 @@ Next
 'Version 1.0 SEPTEMBER 2006 (Clan 2.0 SoD 1.0)
 
 Sub FillSettings()
-        dbhost = "PTL\SQLEXPRESS"
+        dbhost = "PRIME"
         dbuser = "sa"
-        dbpass = "#$pdl32xq"
+        dbpass = "1q2w!@QW"
         dbname = "SoD2DB"
 	dbname1 = "ClanDB"
 	dbname2 = "SOD2DB"

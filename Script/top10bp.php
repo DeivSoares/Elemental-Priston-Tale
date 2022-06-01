@@ -46,14 +46,14 @@ $linhas = 10;
 
 
 $where = "(Name NOT LIKE '%-%' and Name!='Suporte' and Name!='ADMJoker' and Name!='ADMAlfa' and Name!='GmRagnaros' and Name!='GmMyers')";
-$query = "SELECT TOP 10 * FROM [pristondb].[dbo].[PVP] WHERE ".$where." ORDER BY Kills DESC";
+$query = "SELECT TOP 10 * FROM [ServerDB].[dbo].[PVP] WHERE ".$where." ORDER BY Kills DESC";
 if (($classechar) <> "")
 {
 $where = "[CharClass]='$classechar' AND (Name NOT LIKE '%-%' and Name!='Suporte' and Name!='Eros' and Name!='')";
 }else{
 $where = "(Name NOT LIKE '' and Name!='%-%' and Name!='Hanzard' and Name!='Eros')";
 }
-$queryy = "SELECT Count(*) as tops FROM [pristondb].[dbo].[PVP] Where ".$where;
+$queryy = "SELECT Count(*) as tops FROM [ServerDB].[dbo].[PVP] Where ".$where;
 
 
 
@@ -113,7 +113,7 @@ $maior = $menor + $linhas;
           <td width="15%" height="30" align="center" class="conteudo">
           <span class="font1"><font color="#404040"><? echo $i; ?></font></td>
           <td width="15%" height="40" align="left" class="conteudo">
-          <font size="1" face="Verdana"><img src="http://rocketpt.com.br/ranking02/classe/<? echo $classe; ?>.png" border="1" width="40" height="40"></font><font></font></font></strong></td>
+          <font size="1" face="Verdana"><img src="http://189.79.242.5/ranking02/classe/<? echo $classe; ?>.png" border="1" width="40" height="40"></font><font></font></font></strong></td>
           <td width="28%" align="left" class="conteudo"><font color="#404040"><center><? echo $nome; ?></font></td>
 		 
 		  <td width="28%" align="left" class="conteudo"><font color="#404040"><center><? echo $level; ?></font></td>

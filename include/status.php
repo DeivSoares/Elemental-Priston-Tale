@@ -13,8 +13,8 @@ document.oncontextmenu = new Function("return false;")
 <html>
 <head>
 <?php
-$server['host'] = "142.44.204.43";
-$server['port'] = "80";
+$server['host'] = "189.79.242.5:31206";
+$server['port'] = "31206";
 $connection = @fsockopen($server['host'], $server['port'], $ERROR_NO, $ERROR_STR, (float)1.5);
 if($connection)
 {
