@@ -1,3 +1,11 @@
+:root{
+    --cor1: #01445f;
+    --cor2: #013a50;
+    --cor3: #13272c;
+    --cor4: #067272;
+    --bg-transparente: #01445fcf;
+}
+
 ::-webkit-scrollbar {
     width: 0.5rem;
 }
@@ -129,6 +137,7 @@ body {
 }
 
 .titulo-main2 {
+    background-color: var(--bg-transparente);
     border-bottom: 1px solid #fec16a;
     text-align: center;
     width: 100%;

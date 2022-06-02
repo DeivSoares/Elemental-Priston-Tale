@@ -21,6 +21,7 @@
     --cor2: #013a50;
     --cor3: #13272c;
     --cor4: #067272;
+    --bg-transparente: #01445fcf;
 }
 
 *{
@@ -106,7 +107,7 @@ footer {
 }
 
 main{
-    background-color: var(--cor1);
+    background-image: url(../../images/images-background.png);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -114,6 +115,7 @@ main{
 }
 
 .titulo-main{
+    background-color: var(--bg-transparente);
     border-bottom: 1px solid #fec16a;
     /* padding-bottom: 1em; */
     font-weight: 700;
