@@ -13,28 +13,64 @@
         width: 100%;
     }
 
+    .download{
+        display: flex;
+        width: 630px;
+    }
+
+    .bloco-download{
+        width: 315px;
+    }
+
+    .responsive{
+        display: block;
+    }
+
+    .bloco-download a {
+        background: url(../images/download-button.jpg) center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90px;
+        font-size: 20px;
+        text-shadow: 1px 2px 1px rgb(0 0 0 / 20%);
+        color: #fff;
+        border: 1px solid #a880a0;
+    }
+
+    .bloco-download a span {
+        padding-left: 50px;
+    }
+
+    .bloco-download a b {
+        font-weight: 400;
+        display: block;
+        color: #d2d2e1;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
     .sidebar {
         width: 630px;
         display: block;
         align-self: center;
     }
 
-    .content{
+    .content {
         align-self: center;
         margin: 0px;
         padding: 0px;
     }
 
-    .wrapper-responsive{
+    .wrapper-responsive {
         display: flex;
     }
 
-    .wrapper-responsive .widget{
+    .wrapper-responsive .widget {
         width: 315px;
         border-right: 1px solid #fec152;
     }
 
-    .widgett{
+    .widgett {
         width: 315px;
         height: 364px;
         padding: 10px;
