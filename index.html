@@ -17,24 +17,29 @@
 <body>
 
     <!--NAVEGAÇÃO-->
-    <nav id="navbar">
-        <ul id="flexlist">
+    <nav class="navbar">
+        <ul class="web">
             <li><a href="index.html">Home</a></li>
             <li><a href="http://site.elementalpristontale.com:31206/register/default_register.asp"
                     target="_blank">Cadastro</a></li>
             <li><a href="http://site.elementalpristontale.com:31206/panel/index.php" target="_blank">Painel</a></li>
             <li><a href="download.html">Download</a></li>
-            <li>
-                <a href="wiki/home.html" target="_blank" style="width: 95px;">Wiki</a>
-                <!-- <ul>
-                    <li><a href="tabelaxp.html">Tabela de XP</a></li>
-                    <li><a href="ages.html">Tabela de Aging</a></li>
-                    <li><a href="bosstime.html" target="_blank">Horário dos Bosses</a></li>
-                </ul> -->
+            <li><a href="wiki/home.html" target="_blank" style="width: 95px;">Wiki</a>
             </li>
             <li><a href="ranking.html">Ranking</a></li>
             <li><a href="donate.html">Donate</a></li>
         </ul>
+
+        <button aria-expanded="false" aria-label="Abrir Menu" onclick="openMenu()" class="open-menu">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#fec16a" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M10 12H30" stroke="#fec16a" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M18 28L30 28" stroke="#fec16a" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
     </nav>
     <!--LOGO-->
     <div class="header-shadow"></div>
@@ -385,7 +390,23 @@
         </div>
     </footer>
 
+    <div id="menu-mobile" class="menu-expanded desativado">
+        <ul class="mobile">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="http://site.elementalpristontale.com:31206/register/default_register.asp"
+                    target="_blank">Cadastro</a></li>
+            <li><a href="http://site.elementalpristontale.com:31206/panel/index.php" target="_blank">Painel</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="wiki/home.html" target="_blank" style="width: 95px;">Wiki</a>
+            </li>
+            <li><a href="ranking.html">Ranking</a></li>
+            <li><a href="donate.html">Donate</a></li><br>
+            <li><a href="#" onclick="closeMenu()">Fechar</a></li>
+        </ul>
+    </div>
+
     <script src="../js/slide-stories.js"></script>
+    <script src="js/mobile.js"></script>
 </body>
 
 </html>

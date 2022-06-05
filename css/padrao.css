@@ -238,7 +238,7 @@ body {
 }
 
 /* BARRA DE NAVEGAÇÃO CABEÇALHO */
-body #navbar {
+body .navbar {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -250,28 +250,24 @@ body #navbar {
   z-index: 10;
 }
 
-#navbar #flexlist ul {
-  display: none;
-}
-
-#navbar #flexlist li:hover>ul {
+.navbar ul li:hover>ul {
   display: block;
   background: #13272cb5;
   border-bottom: 1px solid #fec16a;
 }
 
-#flexlist {
+.navbar ul {
   display: flex;
   align-self: center;
   margin: auto;
 }
 
-#flexlist li {
+.navbar ul li {
   margin: 0px 8px;
   list-style-type: none;
 }
 
-#flexlist a {
+.navbar ul a {
   color: var(--fontcolor);
   font-size: 14px;
   font-weight: bold;
@@ -284,14 +280,14 @@ body #navbar {
   position: relative;
 }
 
-#flexlist a:after {
+.navbar ul a:after {
   content: "";
   transition: 0.3s;
   height: 0px;
   width: 0px;
 }
 
-#flexlist a:hover:after {
+.navbar ul a:hover:after {
   content: "";
   height: 2px;
   width: 100%;
