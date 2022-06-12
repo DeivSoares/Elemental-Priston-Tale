@@ -12,7 +12,7 @@
 </HEAD>
 <body style="background-color: transparent" leftmargin="0" topmargin="0" marginwidth="0" marginheight="1" ALLOWTRANSPARENCY="true">
 <?php
-$IP = "http://189.79.242.5:3120631206/clancontent/"; 
+$IP = "http://189.79.242.5:31206/clancontent/"; 
 	$fOpen = fopen("C:/Server/BlessCastle.dat", "r");
 	$fRead =fread($fOpen,4096);
 	@fclose($fOpen);
@@ -27,9 +27,9 @@ $IP = "http://189.79.242.5:3120631206/clancontent/";
     if(file_exists("$caminho/$bc.bmp")) {
 
 
+include_once "incluir/configura.php";
 
-    $connection = odbc_connect( 'DRIVER={SQL Server};SERVER=PTL\SQLEXPRESS;DATABASE=ClanDb', 'sa', '#$pdl32xq' );
-
+	$connection = odbc_connect( $connection_string, $user, $pass );
     $query = "SELECT * FROM [ClanDb].[dbo].[CL]  WHERE [MIconCnt]='$bc'";
     $q = odbc_exec($connection, $query);
     $clan = odbc_fetch_array($q);
@@ -42,8 +42,8 @@ $IP = "http://189.79.242.5:3120631206/clancontent/";
 <center>
         <div class="clan-img" style="background: url('<?php echo $IP; echo $bc; ?>.bmp') no-repeat center center; background-size: cover;"></div>
                </center>
-               <p style="color: #ACA8A5; text-align: center; margin-top: 5px; margin-bottom: 0px;"><?php echo $clanname; ?></p>
-               <p style="color: #ACA8A5; text-align: center; margin-top: 3px; margin-bottom: 0px;">L&iacute;der: <?=$lider?></p>
+               <p style="color: #ffffff; text-align: center; margin-top: 5px; margin-bottom: 0px;"><?php echo $clanname; ?></p>
+               <p style="color: #ffffff; text-align: center; margin-top: 3px; margin-bottom: 0px;">L&iacute;der: <?=$lider?></p>
 	<?php
     } else {
      echo "<center><span style=\"color: #ACA8A5;\"></br></br>Sem Lider Atual";

@@ -119,7 +119,7 @@ RS.Close
 
 ClanMembers = ClanMembers + 1
 
-If ClanMembers > 30 Then
+If ClanMembers > 20 Then
     Set RS=Nothing
     objConn.Close
     Set objConn = Nothing

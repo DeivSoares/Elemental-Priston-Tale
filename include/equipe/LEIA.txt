@@ -1,0 +1,10 @@
+Configure as linhas.
+
+$host = 'PTL\SQLEXPRESS'; //Sua instancia do SQL
+$user = 'sa'; //Seu usu�rio do SQL; Normalmente � SA
+$pass = '#$pdl32xq'; //Sua senha do SQL
+
+Para colocar os nicks do gm basta mudar.
+Basta mudar aonde ta escrito "GM1" "GM2" "GM3"
+
+Dentro da pasta "imgs" contem 2 tipos de "ON" e "OFF" use oque voc� gostar. :D

@@ -6,38 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ao realizar uma doação você estará recebendo como agradecimento créditos que poderão ser utilizados em uma Loja no jogo.">
-    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/padrao.css">
-    <link rel="stylesheet" href="css/slides.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="../images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/padrao.css">
+    <link rel="stylesheet" href="../css/slides.css">
     <title>Elemental Priston Tale</title>
 </head>
 
+<!-- ------------------------------------------------------------------------------
+Site desenvolvido por Deivison Soares.
+Email: deivisonsoares1610@outlook.com
+Tel: (22)9 9253-3137
+------------------------------------------------------------------------------
+Copyright (c) 2022 Deivison Soares - Todos os Direitos Reservados
+------------------------------------------------------------------------------ -->
+
 <body>
     <!--NAVEGAÇÃO-->
-    <nav class="navbar">
-        <ul class="web">
+    <nav id="navbar">
+        <ul id="flexlist">
             <li><a href="index.html">Home</a></li>
             <li><a href="http://site.elementalpristontale.com:31206/register/default_register.asp"
                     target="_blank">Cadastro</a></li>
             <li><a href="http://site.elementalpristontale.com:31206/panel/index.php" target="_blank">Painel</a></li>
             <li><a href="download.html">Download</a></li>
-            <li><a href="wiki/home.html" target="_blank" style="width: 95px;">Wiki</a>
+            <li>
+                <a href="wiki/home.html" target="_blank" style="width: 95px;">Wiki</a>
+                <!-- <ul>
+                    <li><a href="tabelaxp.html">Tabela de XP</a></li>
+                    <li><a href="ages.html">Tabela de Aging</a></li>
+                    <li><a href="bosstime.html" target="_blank">Horário dos Bosses</a></li>
+                </ul> -->
             </li>
             <li><a href="ranking.html">Ranking</a></li>
             <li><a href="donate.html">Donate</a></li>
         </ul>
-
-        <button aria-expanded="false" aria-label="Abrir Menu" onclick="openMenu()" class="open-menu">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 20H30" stroke="#fec16a" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path d="M10 12H30" stroke="#fec16a" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path d="M18 28L30 28" stroke="#fec16a" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </button>
     </nav>
     <!--LOGO-->
     <div class="header-shadow"></div>
@@ -66,136 +68,132 @@
     <div class="container_web">
         <!--BLOCO ESQUERDO-->
         <aside class="left-sidebar sidebar">
-            <div class="download">
-                <div class="bloco-download">
-                    <a href="download.html" class="flex-c-c"><span>Download<b>Jogue Gratuitamente!</b></span></a>
-                </div>
-                <div class="bloco-download responsive">
-                    <a href="download.html" class="flex-c-c"><span>Download<b>Jogue Gratuitamente!</b></span></a>
-                </div>
+            <div class="bloco-download">
+                <a href="download.html" class="flex-c-c"><span>Download<b>Jogue Gratuitamente!</b></span></a>
             </div>
-            <div class="wrapper-responsive">
-                <div class="widget red-dark">
-                    <div class="widget-title">
-                        Top 10 Level <span>Os Melhores Jogadores!</span>
-                    </div>
-                    <ul class="top-block">
-                        <iframe name="1" border="0" frameborder="0" height="280" title="-" scrolling="no" align="top"
-                            src="http://site.elementalpristontale.com:31206/include/index.php" width="240">
-                        </iframe>
+            <div class="widget red-dark">
+                <div class="widget-title">
+                    Top 10 Level <span>Os Melhores Jogadores!</span>
                 </div>
-                <div class="widgett red-dark">
-                    <div class="widget-titlee"> Boss List <span>Horário dos Boss's</span></div>
-                    <ul class="eventBody top-block">
-                        <li class="top-list event-schedule">
-                            <div style="width:50%;">
-                                <span id="bloodcastle_name"></span>
-                                <a href="bosstime.html" target="_blank"><span class="smalltext"><b>Valento</b> - Confira
-                                    </span></a>
-                            </div>
-                            <div style="width:50%;" class="text-right">
-                                <span id="bloodcastle_next"></span>
-                                <span class="smalltext" id="bloodcastle"></span>
-                            </div>
-                        </li>
-                        <li class="top-list event-schedule">
-                            <div style="width:50%;">
-                                <span id="devilsquare_name"></span>
-                                <a href="bosstime.html" target="_blank"><span class="smalltext"><b>Kelvezu</b> - Confira
-                                    </span></a>
-                            </div>
-                            <div style="width:50%;" class="text-right">
-                                <span id="devilsquare_next"></span>
-                                <span class="smalltext" id="devilsquare"></span>
-                            </div>
-                        </li>
-                        <li class="top-list event-schedule">
-                            <div style="width:50%;">
-                                <span id="chaoscastle_name"></span>
-                                <a href="bosstime.html" target="_blank"><span class="smalltext"><b>Mokova</b> - Confira
-                                    </span></a>
-                            </div>
-                            <div style="width:50%;" class="text-right">
-                                <span id="chaoscastle_next"></span>
-                                <span class="smalltext" id="chaoscastle"></span>
-                            </div>
-                        </li>
-                        <li class="top-list event-schedule">
-                            <div style="width:50%;">
-                                <span id="dragoninvasion_name"></span>
-                                <a href="bosstime.html" target="_blank"><span class="smalltext"
-                                        style="font-size: 15px;"><b>Gorgônia</b> - Confira
-                                    </span></a>
-                            </div>
-                        </li>
-                        <li class="top-list event-schedule">
-                            <div style="width:50%;">
-                                <span id="dragoninvasion_name"></span>
-                                <a href="bosstime.html" target="_blank"><span class="smalltext"
-                                        style="font-size: 12px;"><b>Golem Antigo</b> - Confira
-                                    </span></a>
-                            </div>
-                        </li>
-                        <li class="top-list event-schedule">
-                            <div style="width:50%;">
-                                <span id="dragoninvasion_name"></span>
-                                <a href="bosstime.html" target="_blank"><span class="smalltext"
-                                        style="font-size: 11px;"><b>Montanha Azul</b> - Confira
-                                    </span></a>
-                            </div>
-                        </li>
-                        <li class="top-list event-schedule">
-                            <div style="width:50%;">
-                                <span id="dragoninvasion_name"></span>
-                                <a href="bosstime.html" target="_blank"><span class="smalltext"
-                                        style="font-size: 13px;"><b>Olho de Fogo</b> - Confira
-                                    </span></a>
-                            </div>
-                        </li>
-                        <li class="top-list event-schedule">
-                            <div style="width:50%;">
-                                <span id="dragoninvasion_name"></span>
-                                <a href="bosstime.html" target="_blank"><span class="smalltext"
-                                        style="font-size: 10px;"><b>Tartaruga Dragão</b> - Confira
-                                    </span></a>
-                            </div>
-                        </li>
-                        <li class="top-list event-schedule">
-                            <div style="width:50%;">
-                                <span id="dragoninvasion_name"></span>
-                                <a href="bosstime.html" target="_blank"><span class="smalltext"
-                                        style="font-size: 12px;"><b>Cão Esqueleto</b> - Confira
-                                    </span></a>
-                            </div>
-                        </li>
-                        <li class="top-list event-schedule">
-                            <div style="width:50%;">
-                                <span id="dragoninvasion_name"></span>
-                                <a href="bosstime.html" target="_blank"><span class="smalltext"
-                                        style="font-size: 12px;"><b>Robô Mutante</b> - Confira
-                                    </span></a>
-                            </div>
-                        </li>
-                        <li class="top-list event-schedule">
-                            <div style="width:50%;">
-                                <span id="dragoninvasion_name"></span>
-                                <a href="bosstime.html" target="_blank"><span class="smalltext" style="font-size: 12px;"><b>Devil Shy</b> - Confira
-                                    </span></a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="top-block">
+                    <iframe name="1" border="0" frameborder="0" height="280" title="-" scrolling="no" align="top"
+                        src="http://site.elementalpristontale.com:31206/include/index.php" width="240">
+                    </iframe>
+            </div>
+
+            <div class="widgett red-dark">
+                <div class="widget-titlee"> Boss List <span>Horário dos Boss's</span></div>
+                <ul class="eventBody top-block">
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="bloodcastle_name"></span>
+                            <a href="bosstime.html" target="_blank"><span class="smalltext"><b>Valento</b> - Confira
+                                </span></a>
+                        </div>
+                        <div style="width:50%;" class="text-right">
+                            <span id="bloodcastle_next"></span>
+                            <span class="smalltext" id="bloodcastle"></span>
+                        </div>
+                    </li>
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="devilsquare_name"></span>
+                            <a href="bosstime.html" target="_blank"><span class="smalltext"><b>Kelvezu</b> - Confira
+                                </span></a>
+                        </div>
+                        <div style="width:50%;" class="text-right">
+                            <span id="devilsquare_next"></span>
+                            <span class="smalltext" id="devilsquare"></span>
+                        </div>
+                    </li>
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="chaoscastle_name"></span>
+                            <a href="bosstime.html" target="_blank"><span class="smalltext"><b>Mokova</b> - Confira
+                                </span></a>
+                        </div>
+                        <div style="width:50%;" class="text-right">
+                            <span id="chaoscastle_next"></span>
+                            <span class="smalltext" id="chaoscastle"></span>
+                        </div>
+                    </li>
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="dragoninvasion_name"></span>
+                            <a href="bosstime.html" target="_blank"><span class="smalltext" style="font-size: 15px;"><b>Gorgônia</b> - Confira
+                                </span></a>
+                        </div>
+                    </li>
+
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="dragoninvasion_name"></span>
+                            <a href="bosstime.html" target="_blank"><span class="smalltext" style="font-size: 12px;"><b>Golem Antigo</b> - Confira
+                                </span></a>
+                        </div>
+                    </li>
+
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="dragoninvasion_name"></span>
+                            <a href="bosstime.html" target="_blank"><span class="smalltext" style="font-size: 11px;"><b>Montanha Azul</b> - Confira
+                                </span></a>
+                        </div>
+                    </li>
+
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="dragoninvasion_name"></span>
+                            <a href="bosstime.html" target="_blank"><span class="smalltext" style="font-size: 13px;"><b>Olho de Fogo</b> - Confira
+                                </span></a>
+                        </div>
+                    </li>
+
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="dragoninvasion_name"></span>
+                            <a href="bosstime.html" target="_blank"><span class="smalltext" style="font-size: 10px;"><b>Tartaruga Dragão</b> - Confira
+                                </span></a>
+                        </div>
+                    </li>
+
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="dragoninvasion_name"></span>
+                            <a href="bosstime.html" target="_blank"><span class="smalltext" style="font-size: 12px;"><b>Cão Esqueleto</b> - Confira
+                                </span></a>
+                        </div>
+                    </li>
+
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="dragoninvasion_name"></span>
+                            <a href="bosstime.html" target="_blank"><span class="smalltext" style="font-size: 12px;"><b>Robô Mutante</b> - Confira
+                                </span></a>
+                        </div>
+                    </li>
+
+                    <li class="top-list event-schedule">
+                        <div style="width:50%;">
+                            <span id="dragoninvasion_name"></span>
+                            <a href="bosstime.html" target="_blank"><span class="smalltext" style="font-size: 12px;"><b>Devil Shy</b> - Confira
+                                </span></a>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
         </aside>
         <!--PRINCIPAL-->
         <main class="content">
             <div data-slide="slide" class="slide">
                 <div class="slide-items">
-                    <img src="images/migracao.jpeg" alt="Img 1">
-                    <img src="images/coinspromo.jpg" alt="Img 2">
-                    <img src="images/novo-update.jpg" alt="Img 3">
-                    <img src="images/evento-coin.jpeg" alt="Img 4">
-                    <img src="images/topclasse.jpg" alt="Img 5">
+					<img src="images/PromoDonatex2x3.jpeg" alt="Img 1">
+                    <img src="images/migracao.jpeg" alt="Img 2">
+                    <img src="images/coinspromo.jpg" alt="Img 3">
+                    <img src="images/novo-update.jpeg" alt="Img 4">
+                    <img src="images/evento-coin.jpeg" alt="Img 5">
+                    <img src="images/topclasse.jpg" alt="Img 6">
                 </div>
                 <nav class="slide-nav">
                     <div class="slide-thumb"></div>
@@ -320,12 +318,12 @@
 
                         <tr>
                             <td>Level Máximo</td>
-                            <td>108</td>
+                            <td>115</td>
                         </tr>
 
                         <tr>
                             <td>Aging Máx:</td>
-                            <td>+18</td>
+                            <td>+20</td>
                         </tr>
 
                         <tr>
@@ -337,21 +335,19 @@
                 </table>
             </div>
 
-            <div class="wrapper-responsive">
-                <div class="widget red-dark">
-                    <div class="widget-title2">Bless Castle<span>Clan vencedor do Castelo!</span></div>
-                    <div id="top_guilds" style="text-align: center;">
-                        <iframe name="I1" border="0" frameborder="0" height="143" title="-" scrolling="no" align="top"
-                            src="http://site.elementalpristontale.com:31206/include/liderbc.php" width="219"></iframe>
-                    </div>
+            <div class="widget red-dark">
+                <div class="widget-title2">Bless Castle<span>Clan vencedor do Castelo!</span></div>
+                <div id="top_guilds" style="text-align: center;">
+                    <iframe name="I1" border="0" frameborder="0" height="143" title="-" scrolling="no" align="top"
+                        src="http://site.elementalpristontale.com:31206/include/liderbc.php" width="219"></iframe>
                 </div>
-                <div class="widget red-dark">
-                    <div class="widget-title3">
-                        Belatra<span>Clan vencedor de SOD!</span></div>
-                    <div id="top_guilds0" style="text-align: center;">
-                        <iframe name="I2" border="0" frameborder="0" height="100" title="-" scrolling="no" align="top"
-                            src="http://site.elementalpristontale.com:31206/include/lidersod.php" width="200"></iframe>
-                    </div>
+            </div>
+            <div class="widget3 red-dark">
+                <div class="widget-title3">
+                    Belatra<span>Clan vencedor de SOD!</span></div>
+                <div id="top_guilds0" style="text-align: center;">
+                    <iframe name="I2" border="0" frameborder="0" height="100" title="-" scrolling="no" align="top"
+                        src="http://site.elementalpristontale.com:31206/include/lidersod.php" width="200"></iframe>
                 </div>
             </div>
         </aside>
@@ -409,23 +405,7 @@
             </div>
         </div>
     </footer>
-    <div id="menu-mobile" class="menu-expanded desativado">
-        <ul class="mobile">
-            <li><button class="botao" onclick="closeMenu()">X</button></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="http://site.elementalpristontale.com:31206/register/default_register.asp"
-                    target="_blank">Cadastro</a></li>
-            <li><a href="http://site.elementalpristontale.com:31206/panel/index.php" target="_blank">Painel</a></li>
-            <li><a href="download.html">Download</a></li>
-            <li><a href="wiki/home.html" target="_blank" style="width: 95px;">Wiki</a>
-            </li>
-            <li><a href="ranking.html">Ranking</a></li>
-            <li><a href="donate.html">Donate</a></li>
-        </ul>
-    </div>
-
-<script src="../js/slide-stories.js"></script>
-<script src="js/mobile.js"></script>
+    <script src="../js/slide-stories.js"></script>
 </body>
 
 </html>

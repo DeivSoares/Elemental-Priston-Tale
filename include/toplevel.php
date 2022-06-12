@@ -28,7 +28,7 @@ document.oncontextmenu = new Function("return false;")
   <tr>
     <form name="form1" method="post" action="toplevel.php"><td align="center">
       <font size="1" face="Verdana">
-      <input name="classe" type="hidden" value="Cavaleiro">
+      <input name="classe" type="hidden" value="6">
 	  </font><font face="Verdana" size="1">
 	  <input type="image" name="imageField" src="images/classe/06.gif" width="29" height="26" >
           </font>
@@ -36,7 +36,7 @@ document.oncontextmenu = new Function("return false;")
     </form>
     <form name="form1" method="post" action="toplevel.php"><td align="center">
        <font size="1" face="Verdana">
-       <input name="classe" type="hidden" value="Pikeman">
+       <input name="classe" type="hidden" value="4">
 	  	</font><font face="Verdana" size="1">
 	  <input type="image" name="imageField" src="images/classe/04.gif" width="29" height="26" >
        </font>
@@ -44,7 +44,7 @@ document.oncontextmenu = new Function("return false;")
     </form>
    <form name="form1" method="post" action="toplevel.php"> <td align="center">
        <font size="1" face="Verdana">
-       <input name="classe" type="hidden" value="Mecanico">
+       <input name="classe" type="hidden" value="2">
 	  	</font><font face="Verdana" size="1">
 	  <input type="image" name="imageField" src="images/classe/02.gif" width="29" height="26" >
         </font>
@@ -52,14 +52,14 @@ document.oncontextmenu = new Function("return false;")
    </form>
     <form name="form1" method="post" action="toplevel.php"><td align="center">
        <font size="1" face="Verdana">
-       <input name="classe" type="hidden" value="Lutador">
+       <input name="classe" type="hidden" value="1">
 	   </font><font face="Verdana" size="1">
 	   <input type="image" name="imageField" src="images/classe/01.gif" width="29" height="26" >
        </font>
        </td></form>
     <form name="form1" method="post" action="toplevel.php"><td align="center">
        <font size="1" face="Verdana">
-       <input name="classe" type="hidden" value="Mago">
+       <input name="classe" type="hidden" value="7">
 	  	</font><font face="Verdana" size="1">
 	  <input type="image" name="imageField" src="images/classe/07.gif" width="29" height="26" >
       </font>
@@ -67,7 +67,7 @@ document.oncontextmenu = new Function("return false;")
     </form>
     <form name="form1" method="post" action="toplevel.php"><td align="center">
        <font size="1" face="Verdana">
-       <input name="classe" type="hidden" value="Atalanta">
+       <input name="classe" type="hidden" value="5">
 	  	</font><font face="Verdana" size="1">
 	  <input type="image" name="imageField" src="images/classe/05.gif" width="29" height="26" >
         </font>
@@ -75,14 +75,14 @@ document.oncontextmenu = new Function("return false;")
     </form>
   <form name="form1" method="post" action="toplevel.php">  <td align="center">
       <font size="1" face="Verdana">
-      <input name="classe" type="hidden" value="Arqueira">
+      <input name="classe" type="hidden" value="3">
 	  </font><font face="Verdana" size="1">
 	  <input type="image" name="imageField" src="images/classe/03.gif" width="29" height="26" >
         </font>
         </td></form>
     <form name="form1" method="post" action="toplevel.php"><td align="center">
        <font size="1" face="Verdana">
-       <input name="classe" type="hidden" value="Sacerdotiza">
+       <input name="classe" type="hidden" value="8">
 	   </font><font face="Verdana" size="1">
 	   <input type="image" name="imageField" src="images/classe/08.gif" width="29" height="26" >
         </font>
@@ -111,14 +111,14 @@ $classechar = $_POST['classe'];
 
 if  ($classechar <> "")
 {
-$query = "SELECT TOP 50 * FROM [rPTDB].[dbo].[LevelList] Where [CharClass]='$classechar' AND (CharName NOT LIKE 'ADM-Lowang') AND (CharName NOT LIKE 'Teste2') AND (CharName NOT LIKE 'PoderosoGM') AND (CharName NOT LIKE 'ADM-Orin') AND (CharName NOT LIKE 'GM-Hermes') AND (CharName NOT LIKE '[GM]Kakashi') AND (CharName NOT LIKE 'ares') AND (CharName NOT LIKE 'Gaia') AND (CharName NOT LIKE 'GM-Papazone') AND (CharName NOT LIKE 'KronuZ') AND (CharName NOT LIKE 'GM-Midgard') AND (CharName NOT LIKE 'Pix0ka') AND (CharName NOT LIKE 'HadesGM') AND (CharName NOT LIKE 'HermesGM') AND (CharName NOT LIKE 'Orin') AND (CharName NOT LIKE 'GM-Design') AND (CharName NOT LIKE 'LexusGM') AND (CharName NOT LIKE 'gm-pandora') AND (CharName NOT LIKE 'gm-ryu') AND (CharName NOT LIKE 'gm-reaper') AND (CharName NOT LIKE 'vahvel') AND (CharName NOT LIKE 'GM-slim') AND (CharName NOT LIKE 'Administrador') AND (CharName NOT LIKE 'GmDeath') AND (CharName NOT LIKE '[ADM]Vahvel') AND (CharName NOT LIKE '[GM]Soluction') AND (CharName NOT LIKE 'lowang') AND (CharName NOT LIKE '[ADM]SyncMaster') AND (CharName NOT LIKE 'Teste') AND (CharName NOT LIKE 'DKinJR') AND (CharName NOT LIKE 'GMFasT') AND (CharName NOT LIKE 'Kelvezu') AND (CharName NOT LIKE '[GM]Meryt') AND (CharName NOT LIKE 'GM-FreeCell') AND (CharName NOT LIKE 'GM-Sune') AND (CharName NOT LIKE 'Error1111') AND (CharName NOT LIKE 'GM-Alucard') AND (CharName NOT LIKE 'Hermes') AND (CharName NOT LIKE 'GM-Dark') ORDER BY CharLevel DESC";
-
+//$query = "SELECT TOP 50 * FROM [rPTDB].[dbo].[LevelList]  ORDER BY CharLevel DESC";
+$query = "SELECT TOP 50 * FROM [ServerDB].[dbo].[PvP] where [Class]='$classechar' ORDER BY lvl DESC";
 
 }
 else
 {
-$query = "SELECT TOP 50 * FROM [rPTDB].[dbo].[LevelList] WHERE (CharName NOT LIKE 'ADM-Lowang') AND (CharName NOT LIKE 'Teste2') AND (CharName NOT LIKE 'PoderosoGM') AND (CharName NOT LIKE 'ADM-Orin') AND (CharName NOT LIKE 'GM-Hermes') AND (CharName NOT LIKE '[GM]Kakashi') AND (CharName NOT LIKE 'ares') AND (CharName NOT LIKE 'Gaia') AND (CharName NOT LIKE 'GM-Papazone') AND (CharName NOT LIKE 'KronuZ') AND (CharName NOT LIKE 'GM-Midgard') AND (CharName NOT LIKE 'Pix0ka') AND (CharName NOT LIKE 'HadesGM') AND (CharName NOT LIKE 'HermesGM') AND (CharName NOT LIKE 'Orin') AND (CharName NOT LIKE 'GM-Design') AND (CharName NOT LIKE 'LexusGM') AND (CharName NOT LIKE 'gm-pandora') AND (CharName NOT LIKE 'gm-ryu') AND (CharName NOT LIKE 'gm-reaper') AND (CharName NOT LIKE 'vahvel') AND (CharName NOT LIKE 'GM-slim') AND (CharName NOT LIKE 'Administrador') AND (CharName NOT LIKE 'GmDeath') AND (CharName NOT LIKE '[ADM]Vahvel') AND (CharName NOT LIKE '[GM]Soluction') AND (CharName NOT LIKE '[GM]Osbourne') AND (CharName NOT LIKE 'Teste') AND (CharName NOT LIKE 'lowang') AND (CharName NOT LIKE 'DKinJR') AND (CharName NOT LIKE 'ADM-Kisame') AND (CharName NOT LIKE 'Kisame') AND (CharName NOT LIKE '[GM]Meryt') AND (CharName NOT LIKE 'GM-FreeCell') AND (CharName NOT LIKE 'GM-Sune') AND (CharName NOT LIKE 'Error1111') AND (CharName NOT LIKE 'GM-Alucard') AND (CharName NOT LIKE 'Hermes') AND (CharName NOT LIKE 'GM-Dark') ORDER BY CharLevel DESC";
-
+//$query = "SELECT TOP 50 * FROM [rPTDB].[dbo].[LevelList] ORDER BY CharLevel DESC";
+$query = "SELECT TOP 50 * FROM [ServerDB].[dbo].[PvP] ORDER BY lvl DESC";
 }
                     $q = odbc_exec($connection, $query);
                     $qt = odbc_do($connection, $query);
@@ -138,9 +138,9 @@ $query = "SELECT TOP 50 * FROM [rPTDB].[dbo].[LevelList] WHERE (CharName NOT LIK
 					$i = 0;
 
                     while($rank = odbc_fetch_array($qt)){
-                    $nome = $rank['CharName'];
-                    $level = $rank['CharLevel'];
-                    $classe = $rank['CharClass'];
+                    $nome = $rank['Name'];
+                    $level = $rank['Lvl'];
+                    $classe = $rank['Class'];
 					$i++;
 
 
@@ -151,7 +151,8 @@ $query = "SELECT TOP 50 * FROM [rPTDB].[dbo].[LevelList] WHERE (CharName NOT LIK
         <td height="25" align="center" bgcolor="#333333" width="11%"><strong>
 		<font color="#FFFFFF" size="1" face="Verdana"><? echo $i; ?></font></strong></td>
         <td height="25" align="center" bgcolor="#333333" width="26%"><strong>
-		<font color="#FFFFFF" size="1" face="Verdana"><? echo $classe; ?></font></strong></td>
+		<input type="image" name="imageField" src="images/classe/0<? echo $classe; ?>.gif" width="29" height="26" >
+
         <td height="25" align="center" bgcolor="#333333" width="52%"><strong>
 		<font color="#FFFFFF" size="1" face="Verdana"><? echo $nome; ?></font></strong></td>
         <td height="25" align="center" bgcolor="#333333" width="11%"><strong>
