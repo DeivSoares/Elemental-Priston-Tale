@@ -9,7 +9,7 @@ $connection_string = 'DRIVER={SQL Server};SERVER='.$host.';DATABASE=accountdb';
 <body background-color="black">
 
 <div align="center">
-<font color="#FFFFFF" face="Tahoma" style="font-size: 8pt">
+<font color="#fec16a" face="Tahoma" style="font-size: 8pt">
     <?
 $username= "Johnnie";
 $conecta = odbc_connect( $connection_string, $user, $pass );
