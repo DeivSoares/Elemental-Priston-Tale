@@ -201,6 +201,16 @@ ol, ul, li {
   }
 }
 
+html body div.container_web main.content article section.content-wrapper div.panel.panel-news div.corpo-painel table.table tbody tr td ol li span b a.msgWhatsapp{
+  color: red;
+}
+
+html body div.container_web main.content article section.content-wrapper div.panel.panel-news div.corpo-painel table.table tbody tr td ol li span b a.msgWhatsapp:hover{
+  background-color: black;
+  color: #fec16a;
+  transition: 0.8s;
+}
+
 /* MEIO[POSTS] */
 
 .content-wrapper {
