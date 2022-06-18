@@ -30,6 +30,10 @@
         grid-area: A;
     }
 
+    aside.left-sidebar div.grid-container div.grid-a div.widget{
+        border-radius: 0px;
+    }
+
     div.widget {
         height: 100%;
         border-radius: 40px 0px 0px 40px;

@@ -501,7 +501,7 @@ header {
   text-decoration: none;
 }
 
-body>.container_web {
+body .container_web {
   display: flex;
   position: relative;
   width: 100%;
