@@ -9,6 +9,10 @@
         flex-direction: column;
     }
 
+    div.container_web{
+        flex-direction: column;
+    }
+
     aside.sidebar {
         display: block;
         width: 285px;
@@ -22,7 +26,7 @@
         grid-template-areas: 'A B C';
     }
 
-    div.col-a {
+    div.grid-a {
         grid-area: A;
     }
 
@@ -41,7 +45,7 @@
         width: 100%;
     }
 
-    div.col-b {
+    div.grid-b {
         grid-area: B;
     }
 
@@ -49,7 +53,7 @@
         height: 100%;
     }
 
-    div.col-c {
+    div.grid-c {
         grid-area: C;
     }
 
