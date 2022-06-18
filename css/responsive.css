@@ -162,4 +162,16 @@
         padding: 0px;
         padding-bottom: 10px;
     }
+
+    footer div.wrapper{
+        width: 512px;
+    }
+
+    footer div.wrapper div.col-a{
+        width: 100%;
+    }
+
+    footer div.wrapper div.col-b{
+        width: 100%
+    }
 }
