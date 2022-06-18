@@ -2,20 +2,23 @@
 
     body {
         background-size: cover;
+        width: 1024px;
+        /* teste */
     }
 
     div.wrapper-responsive {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    div.container_web{
+    div.container_web {
         flex-direction: column;
     }
 
     aside.sidebar {
         display: block;
-        width: 285px;
+        width: 100%;
         margin: auto;
     }
 
@@ -26,12 +29,26 @@
         grid-template-areas: 'A B C';
     }
 
+    aside.left-sidebar div.grid-container {
+        width: 500px;
+        margin: auto;
+    }
+
+    aside.left-sidebar div.grid-container div.grid-a, div.grid-b {
+        width: 250px;
+    }
+
     div.grid-a {
         grid-area: A;
     }
 
-    aside.left-sidebar div.grid-container div.grid-a div.widget{
+    aside.left-sidebar div.grid-container div.grid-a div.widget {
         border-radius: 0px;
+        width: 100%;
+        /* TESTE 96% */
+        padding: 10px;
+        /* TESTE */
+        height: 421px;
     }
 
     div.widget {
@@ -39,7 +56,7 @@
         border-radius: 40px 0px 0px 40px;
     }
 
-    div#top_guilds{
+    div#top_guilds {
         display: flex;
         height: 56%;
         align-items: center;
@@ -47,6 +64,7 @@
 
     div.bloco-download {
         width: 100%;
+        /* TESTE 96% */
     }
 
     div.grid-b {
@@ -55,6 +73,7 @@
 
     div.widgett {
         height: 100%;
+        width: 100%;
     }
 
     div.grid-c {
@@ -76,6 +95,43 @@
 
     main.content {
         display: block;
+        margin: auto;
+    }
+
+    main.content div.slide {
+        width: 500px;
+        margin: auto;
+    }
+
+    main.content div.slide div.slide-items {
+        width: 500px;
+    }
+
+    main.content div.slide div.slide-items img.active {
+        width: 500px;
+        height: 280px;
+    }
+
+    main.content article {
+        width: 500px;
+        margin: auto;
+    }
+
+    main.content article section.content-wrapper {
+        width: 500px;
+    }
+
+    main.content article section.content-wrapper div.panel div.corpo-painel {
+        padding: 0px;
+    }
+
+    main.content article section.content-wrapper div.panel div.rodape-painel div.col-xs-6 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    aside.right-sidebar div.grid-container{
+        width: 500px;
         margin: auto;
     }
 }
