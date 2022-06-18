@@ -30,12 +30,12 @@
     }
 
     aside.left-sidebar div.grid-container {
-        width: 500px;
+        width: 510px;
         margin: auto;
     }
 
     aside.left-sidebar div.grid-container div.grid-a, div.grid-b {
-        width: 250px;
+        width: 255px;
     }
 
     div.grid-a {
@@ -60,6 +60,7 @@
         display: flex;
         height: 56%;
         align-items: center;
+        justify-content: space-around;
     }
 
     div.bloco-download {
@@ -87,8 +88,9 @@
 
     div#top_guilds0 {
         display: flex;
-        height: 55%;
+        height: 44%;
         align-items: center;
+        justify-content: space-around;
     }
 
 
@@ -99,26 +101,26 @@
     }
 
     main.content div.slide {
-        width: 500px;
+        width: 510px;
         margin: auto;
     }
 
     main.content div.slide div.slide-items {
-        width: 500px;
+        width: 510px;
     }
 
     main.content div.slide div.slide-items img.active {
-        width: 500px;
+        width: 510px;
         height: 280px;
     }
 
     main.content article {
-        width: 500px;
+        width: 510px;
         margin: auto;
     }
 
     main.content article section.content-wrapper {
-        width: 500px;
+        width: 510px;
     }
 
     main.content article section.content-wrapper div.panel div.corpo-painel {
@@ -130,8 +132,38 @@
         font-size: 16px;
     }
 
-    aside.right-sidebar div.grid-container{
-        width: 500px;
+    aside.right-sidebar div.grid-container {
+        width: 510px;
         margin: auto;
+    }
+
+    aside.right-sidebar div.grid-container div.grid-b {
+        width: 210px;
+    }
+
+    aside.right-sidebar div.grid-container div.grid-a, div.grid-c {
+        width: 150px;
+    }
+
+    aside.right-sidebar div.grid-container div.grid-a div.widget {
+        padding: 0px;
+        padding-top: 25px;
+    }
+
+    footer {
+        width: 1024px;
+    }
+
+    footer ul {
+        gap: 10px
+    }
+
+    footer ul li {
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+
+    footer div.wrapper div.col-a{
+        margin-left: 150px;
     }
 }
