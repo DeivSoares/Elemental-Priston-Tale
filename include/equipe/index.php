@@ -9,7 +9,7 @@ $connection_string = 'DRIVER={SQL Server};SERVER='.$host.';DATABASE=accountdb';
 <body background-color="black">
 
 <div align="center">
-<font color="#fec16a" face="Tahoma" style="font-size: 8pt">
+<font color="#fec16a" face="Tahoma" style="font-size: 12pt">
     <?
 $username= "Johnnie";
 $conecta = odbc_connect( $connection_string, $user, $pass );
@@ -19,9 +19,9 @@ while($busca_resulta = odbc_fetch_array($executa)){
 $ADMINscript_gmon = $busca_resulta['ChName'];
 }
 if($ADMINscript_gmon == $username) {
-echo '<b> Johnnie <img width="10" height="10" src="images/gmon.gif">';
+echo '<b> Johnnie <img width="15" height="15" src="images/gmon.gif">';
 		  }else{
-echo '<b> Johnnie <img width="10" height="10" src="images/gmoff.gif">';
+echo '<b> Johnnie <img width="15" height="15" src="images/gmoff.gif">';
 		  }
 ?>
   <br>
@@ -34,13 +34,13 @@ while($busca_resulta = odbc_fetch_array($executa1)){
 $ADMINscript_gmon1 = $busca_resulta['ChName'];
 }
 if($ADMINscript_gmon1 == $username) {
-echo '<b> Xomps <img width="10" height="10" src="images/gmon.gif">';
+echo '<b> Xomps <img width="15" height="15" src="images/gmon.gif">';
 		  }else{
-echo '<b> Xomps <img width="10" height="10" src="images/gmoff.gif">';
+echo '<b> Xomps <img width="15" height="15" src="images/gmoff.gif">';
 		  }
 ?><br>
  <?
-$username= "Strike";
+$username= "Stalker";
 $conecta = odbc_connect( $connection_string, $user, $pass );
 $query = "SELECT * FROM [ClanDb].[dbo].[CT] WHERE [ChName]='$username'";
 $executa = odbc_exec($conecta,$query,$query2);
@@ -48,9 +48,9 @@ while($busca_resulta = odbc_fetch_array($executa)){
 $ADMINscript_gmon = $busca_resulta['ChName'];
 }
 if($ADMINscript_gmon == $username) {
-echo '<b> Strike <img width="10" height="10" src="images/gmon.gif">';
+echo '<b> Stalker <img width="15" height="15" src="images/gmon.gif">';
 		  }else{
-echo '<b> Strike <img width="10" height="10" src="images/gmoff.gif">';
+echo '<b> Stalker <img width="15" height="15" src="images/gmoff.gif">';
 		  }
 ?>
 <br>

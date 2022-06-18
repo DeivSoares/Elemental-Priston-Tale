@@ -208,6 +208,7 @@ html body div.container_web main.content article section.content-wrapper div.pan
 html body div.container_web main.content article section.content-wrapper div.panel.panel-news div.corpo-painel table.table tbody tr td ol li span b a.msgWhatsapp:hover{
   background-color: black;
   color: #fec16a;
+  font-size: 16px;
   transition: 0.8s;
 }
 
@@ -500,7 +501,7 @@ header {
   text-decoration: none;
 }
 
-body .container_web {
+body>.container_web {
   display: flex;
   position: relative;
   width: 100%;
