@@ -18,13 +18,13 @@ body main div.titulo-main button.button-mobile {
 
     body div.wrapper-responsive {
         max-width: var(--width);
+        height: 100%;
         display: block;
         margin: auto;
     }
 
     body {
         width: 1024px;
-        height: 100%;
         background-image: url(../images/images-background.png);
         background-position: center;
         background-size: cover;
