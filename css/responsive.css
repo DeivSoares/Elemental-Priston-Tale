@@ -1,3 +1,10 @@
+:root{
+    --width: 510px;
+    --width-2: calc(var(--width) / 2);
+    --width-3: calc(var(--width) - 300px);
+    --width-4: calc(300px / 2);
+}
+
 @media (max-width: 1024px) {
 
     body {
@@ -30,12 +37,12 @@
     }
 
     aside.left-sidebar div.grid-container {
-        width: 510px;
+        width: var(--width);
         margin: auto;
     }
 
     aside.left-sidebar div.grid-container div.grid-a, div.grid-b {
-        width: 255px;
+        width: var(--width-2);
     }
 
     div.grid-a {
@@ -101,30 +108,34 @@
     }
 
     main.content div.slide {
-        width: 510px;
+        width: var(--width);
         margin: auto;
     }
 
     main.content div.slide div.slide-items {
-        width: 510px;
+        width: var(--width);
     }
 
     main.content div.slide div.slide-items img.active {
-        width: 510px;
+        width: var(--width);
         height: 280px;
     }
 
     main.content article {
-        width: 510px;
+        width: var(--width);
         margin: auto;
     }
 
     main.content article section.content-wrapper {
-        width: 510px;
+        width: var(--width);
     }
 
     main.content article section.content-wrapper div.panel div.corpo-painel {
         padding: 0px;
+    }
+
+    main.content article section.content-wrapper div.panel div.corpo-painel p{
+        font-size: 18px;
     }
 
     main.content article section.content-wrapper div.panel div.rodape-painel div.col-xs-6 {
@@ -133,16 +144,16 @@
     }
 
     aside.right-sidebar div.grid-container {
-        width: 510px;
+        width: var(--width);
         margin: auto;
     }
 
     aside.right-sidebar div.grid-container div.grid-b {
-        width: 210px;
+        width: var(--width-3);
     }
 
     aside.right-sidebar div.grid-container div.grid-a, div.grid-c {
-        width: 150px;
+        width: var(--width-4);
     }
 
     aside.right-sidebar div.grid-container div.grid-a div.widget {
