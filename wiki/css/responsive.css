@@ -1,0 +1,52 @@
+:root {
+    --bg-aside: #067272;
+}
+
+body main div.titulo-main button.button-mobile{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    aside{
+        justify-content: center;
+        position: absolute;
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    aside.animar{
+        animation-name: expanded;
+        animation-duration: .3s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes expanded{
+        to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    body main{
+        height: 100vh;
+    }
+
+    body main{
+        justify-content: flex-start;
+    }
+
+    body main div.titulo-main button.button-mobile{
+        display: block;
+        margin: auto;
+        background: none;
+        border: none;
+        width: 50px;
+    }
+
+    body main div.titulo-main button.button-mobile svg path{
+        stroke: #fec16a;
+    }
+}

@@ -9,6 +9,7 @@
 
     body {
         background-size: cover;
+        background-position: center;
         width: 1024px;
         /* teste */
     }
