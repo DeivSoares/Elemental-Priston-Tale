@@ -9,9 +9,20 @@ body main div.titulo-main button.button-mobile {
 
 @media (max-width: 1024px) {
 
-    body{
-        width: 1024px;
+
+    body div.wrapper-responsive {
+        max-width: 500px;
+        display: block;
+        margin: auto;
     }
+
+    body {
+        width: 1024px;
+        background-image: url(../images/images-background.png);
+        background-position: center;
+        background-size: cover;
+    }
+
     aside {
         justify-content: center;
         position: absolute;
@@ -38,6 +49,7 @@ body main div.titulo-main button.button-mobile {
     body main {
         height: 100vh;
         justify-content: flex-start;
+        background: none;
     }
 
     body main div.titulo-main {
