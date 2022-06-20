@@ -1,20 +1,25 @@
 :root {
     --bg-aside: #067272;
+    font-size: 62.5%;
 }
 
-body main div.titulo-main button.button-mobile{
+body main div.titulo-main button.button-mobile {
     display: none;
 }
 
 @media (max-width: 1024px) {
-    aside{
+
+    body{
+        width: 1024px;
+    }
+    aside {
         justify-content: center;
         position: absolute;
         opacity: 0;
         transform: translateX(-250px);
     }
 
-    aside.animar{
+    aside.animar {
         animation-name: expanded;
         animation-duration: .3s;
         animation-timing-function: ease;
@@ -23,22 +28,28 @@ body main div.titulo-main button.button-mobile{
         animation-fill-mode: forwards;
     }
 
-    @keyframes expanded{
-        to{
+    @keyframes expanded {
+        to {
             transform: translateX(0);
             opacity: 1;
         }
     }
 
-    body main{
+    body main {
         height: 100vh;
-    }
-
-    body main{
         justify-content: flex-start;
     }
 
-    body main div.titulo-main button.button-mobile{
+    body main div.titulo-main {
+        padding: 0px;
+    }
+
+    body main div.titulo-main h1 {
+        font-size: 2.5rem;
+    }
+
+
+    body main div.titulo-main button.button-mobile {
         display: block;
         margin: auto;
         background: none;
@@ -46,7 +57,11 @@ body main div.titulo-main button.button-mobile{
         width: 50px;
     }
 
-    body main div.titulo-main button.button-mobile svg path{
+    body main div.titulo-main button.button-mobile svg path {
         stroke: #fec16a;
+    }
+
+    body main article {
+        font-size: 2rem;
     }
 }
