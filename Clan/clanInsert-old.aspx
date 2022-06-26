@@ -29,7 +29,7 @@
             chtype = GetParameter("chtype","String")
             lv = GetParameter("lv","String")
                 
-            expl = "Elemental"
+            expl = "DKPT"
     
             if userid="" Or gserver="" Or chname="" Or clName="" Or chtype="" or lv="" Then
                 Response.Write("Code=100" & strSplit)
@@ -103,7 +103,7 @@
             objReader = objCommand.ExecuteReader()
             objReader.Close()
     
-            objQuery = "INSERT INTO CL ([ClanName],[UserID],[ClanZang],[MemCnt],[Note],[MIconCnt],[RegiDate],[LimitDate],[DelActive],[PFlag],[KFlag],[Flag],[NoteCnt],[Cpoint],[CWin],[CFail],[ClanMoney],[CNFlag],[SiegeMoney], [LIDER_BC],[BPClan],[DPClan],[Pontos],[clanpoints]) values('" & clName & "','" & userid & "','" & chname & "','1','" & expl & "','" & iIMG & "',getdate(),getdate()+3600,'0','0','0','10','1','0','0','0','0','0','0','0','0','0','0','0')"
+            objQuery = "INSERT INTO CL ([ClanName],[UserID],[ClanZang],[MemCnt],[Note],[MIconCnt],[RegiDate],[LimitDate],[DelActive],[PFlag],[KFlag],[Flag],[NoteCnt],[Cpoint],[CWin],[CFail],[ClanMoney],[CNFlag],[SiegeMoney]) values('" & clName & "','" & userid & "','" & chname & "','1','" & expl & "','" & iIMG & "',getdate(),getdate()+3600,'0','0','0','0','1','0','0','0','0','0','0')"
             objCommand = New SqlCommand(objQuery, objConn)
             objReader = objCommand.ExecuteReader()
             objReader.Close()

@@ -1,8 +1,11 @@
 <!-- #include file ="settings.asp" -->
 <%
 'Written By Sandurr COPYRIGHT Sandurr 2006
+'Written By Sandurr COPYRIGHT Sandurr 2006
+'Written By Sandurr COPYRIGHT Sandurr 2006
+'Written By Sandurr COPYRIGHT Sandurr 2006
+'Written By Sandurr COPYRIGHT Sandurr 2006
 'Version 2.0 NOVEMBER 2006
-'Atualização de proteção feita por Undead (biancorezer@hotmail.com) em 06/11/2012
 
 ' Assign Global Variables
 Dim dbhost, dbuser, dbpass, dbname, userid, gserver, chname, clName, clwon, clwonUserid, lv, chtype, chlv, chipflag
@@ -14,16 +17,16 @@ strSplit = Chr("&H" & "0D")
 
 ' Parameter Variables
 ' clanInsertClanWon (userid, gserver, chname, clName, clwon, clwonUserid, lv, chtype, chlv, chipflag)
-userid = AntiInject(Trim(Request("userid"))) 'Userid of Leader
-gserver = AntiInject(Trim(Request("gserver"))) 
-chname = AntiInject(Trim(Request("chname"))) 'Char name of Leader
-clName = AntiInject(Trim(Request("clName")))
-clwon = AntiInject(Trim(Request("clwon"))) 'Char name of invited player
-clwonUserid = AntiInject(Trim(Request("clwonUserid"))) 'Userid of invited player
-lv = AntiInject(Trim(Request("lv"))) 'unimportant
-chtype = AntiInject(Trim(Request("chtype")))
-chlv = AntiInject(Trim(Request("chlv")))
-chipflag = AntiInject(Trim(Request("chipflag"))) 'char IP flag ? unimportant
+userid = Trim(Request("userid")) 'Userid of Leader
+gserver = Trim(Request("gserver")) 
+chname = Trim(Request("chname")) 'Char name of Leader
+clName = Trim(Request("clName"))
+clwon = Trim(Request("clwon")) 'Char name of invited player
+clwonUserid = Trim(Request("clwonUserid")) 'Userid of invited player
+lv = Trim(Request("lv")) 'unimportant
+chtype = Trim(Request("chtype"))
+chlv = Trim(Request("chlv"))
+chipflag = Trim(Request("chipflag")) 'char IP flag ? unimportant
 
 
 if userid = "" Or gserver = "" Or chname = "" Or clName = "" Or clwon = "" Or clwonUserid = "" Or lv = "" Or chtype = "" Or chlv = "" Then
@@ -39,35 +42,26 @@ objConn.Open "Provider=SQLOLEDB; Data Source=" & dbhost & "; Initial Catalog=" &
 Set RS = Server.CreateObject("ADODB.Recordset")
 
 
-QUERY = "SELECT IDX,ClanZang,MemCnt,clanpoints FROM CL WHERE ClanName='" & clName & "'"
+QUERY = "SELECT IDX,ClanZang,MemCnt FROM CL WHERE ClanName='" & clName & "'"
 RS.Open QUERY, objConn, 3, 1
 
 Dim strReturn
-Dim ClanLeader, ClanMembers, ClanSubChief, IDX, tclName2, KFlag
+Dim ClanLeader, ClanMembers, ClanSubChief, IDX
 if RS.RecordCount >= 1 Then
 	ClanLeader = RS("ClanZang").Value
 	ClanMembers = CInt(RS("MemCnt").Value)
 	IDX = RS("IDX").Value
-	tclName2 = RS("clanpoints").Value
 	RS.Close
 Else
 	Set RS = Nothing
 	objConn.Close
 	Set objConn = Nothing
-	strReturn = "Code=0" & strSplit //erro 64
+	strReturn = "Code=0" & strSplit
 	Response.Write(strReturn)
 	Response.End
 End if
 
-QUERY = "SELEct  top 1 * FROM ConfigPontos WHERE pontos <= " & tclName2 & " order by level desc"
-RS.Open QUERY, objConn, 3, 1
-
-Dim lvlclan, maxmember
-	lvlclan = RS("level").Value
-	maxmember = RS("maxmembers").Value
-	RS.Close
-	
-If ClanMembers >= maxmember then
+If (CInt(MemCnt) + 1) > 100 Then
 	Set RS=Nothing
 	objConn.Close
 	Set objConn = Nothing
@@ -75,7 +69,6 @@ If ClanMembers >= maxmember then
 	Response.Write(strReturn)
 	Response.End
 End If
-
 
 QUERY = "SELECT ChName FROM UL WHERE Permi=2 AND ClanName='" & clName & "'"
 RS.Open QUERY, objConn, 3, 1
@@ -126,12 +119,24 @@ RS.Close
 
 ClanMembers = ClanMembers + 1
 
+If ClanMembers > 20 Then
+    Set RS=Nothing
+    objConn.Close
+    Set objConn = Nothing
+    strReturn = "Code=4" & strSplit
+    Response.Write(strReturn)
+    Response.End
+Else
+
 QUERY = "UPDATE CL SET MemCnt='" & ClanMembers & "' WHERE ClanName='" & clName & "'"
 RS.Open QUERY, objConn, 3, 1
 QUERY = "INSERT INTO UL ([IDX],[userid],[ChName],[ClanName],[ChType],[ChLv],[Permi],[JoinDate],[DelActive],[PFlag],[KFlag],[MIconCnt]) values('" & IDX & "','" & clwonUserid & "','" & clwon & "','" & clName & "','" & chtype & "','" & chlv & "','0',getdate(),'0','0','0','0')"
 RS.Open QUERY, objConn, 3, 1
 
-strReturn = "Code=1" & strSplit //personagem no clan
+End if
+
+
+strReturn = "Code=1" & strSplit
 SET RS = Nothing
 objConn.Close
 SET objConn = Nothing
