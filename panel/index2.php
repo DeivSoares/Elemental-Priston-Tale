@@ -80,6 +80,7 @@ if($_SESSION['permissao'] >= 1)
                                     <li><a href="index.php?sessadm=mudarnick" >Mudar nick</a></li>
 									<li><a href="index.php?sessadm=characc" >Chars na ID</a></li>
                                     <li><a href="index.php?sessadm=mudarclasse" >Mudar Classe</a></li>
+									<li><a href="index.php?sessadm=sodeclan" >Clan e SoD</a></li>
 								</ul>
                             </li>
 	
@@ -162,7 +163,9 @@ switch($sessadm)
         include_once "IN-Game/mudarnick.inc.php";
     break;
 
-	
+    case "sodeclan":
+        include_once "IN-Game/sodeclan.php";
+    break;	
 
 
 	}	
