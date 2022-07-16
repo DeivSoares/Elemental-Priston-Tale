@@ -161,3 +161,102 @@ else if (hora == 23 && min < xxTime) {
 } else {
     msg.innerHTML = `Atualiza em ${hora + 1}:00`
 }
+
+function themeColor() {
+    let themebody = document.getElementById('theme')
+    let rates = document.getElementById('rates')
+    let themeLight = '../images/Backgrounds/images-background.png';
+    let themeLightDark = '../images/Backgrounds/bg-archer.jpg';
+    let themeDark = '../images/Backgrounds/bg-new.jpeg'
+    if (hora >= 0 && hora < 6) {
+        //Está de Madrugada
+        console.log('Está de Madrugada')
+        themebody.style.backgroundImage = `url(${themeDark})`;
+
+    } else if (hora >= 6 && hora < 12) {
+        //Bom dia
+        console.log('Bom dia')
+        themebody.style.backgroundImage = `url(${themeLight})`;
+    } else if (hora >= 12 && hora < 18) {
+        //Boa Tarde
+        console.log('Boa Tarde')
+        themebody.style.backgroundImage = `url(${themeLightDark})`;
+
+    } else {
+        //Boa Noite
+        console.log('Boa Noite')
+        themebody.style.backgroundImage = `url(${themeDark})`;
+    }
+}
+
+function verRanking() {
+    let criaRanking = document.getElementById('ranking')
+    let padding = document.getElementById('rankings')
+    let iframe = '<iframe name="1" border="0" frameborder="0" height="100%" title="-" scrolling="yes" align="top" src="http://site.elementalpristontale.com:31206/include/toplevel.php" width="100%"></iframe>';
+    let titulo = '<div class="titulo"><h2>Top 10 Melhores Jogadores</h2></div>'
+
+
+    criaRanking.innerHTML = `${titulo}<div id="criaIframe">${iframe}</div>`
+    criaRanking.style.height = '100vh'
+    criaRanking.style.borderRadius = '1rem'
+    padding.style.padding = '2.5rem'
+    let div = document.getElementById('criaIframe')
+    div.style.height = '95%'
+}
+
+function showBossTime() {
+    let active = document.getElementById('bossT')
+    active.classList.add('active')
+}
+
+function closeBossTime() {
+    let active = document.getElementById('bossT')
+    active.classList.remove('active')
+}
+
+function changeImage() {
+    var img = document.getElementById('trocaimg')
+    img.innerHTML = '<div><img src="images/Services/Equipe.jpeg" alt="Equipe"></div>'
+
+    console.log("Imagem Padrão")
+}
+
+function changeEmail() {
+    var img = document.getElementById('trocaimg')
+    img.innerHTML = '<div><img src="images/Services/Trocaemail.jpeg" alt="Troca de Email"></div>'
+
+    console.log("Trocou a Imagem")
+    console.log("Trocou o Email")
+}
+
+function changeNick() {
+    var img = document.getElementById('trocaimg')
+    img.innerHTML = '<div id="sld"><img class="selected" src="images/Services/Stalker.jpeg" alt="Stalker"><img src="images/Services/Stalker-Xomps.jpeg" alt="Stalker-Xomps"></div>'
+
+    console.log("Trocou a Imagem")
+    console.log("Trocou o Nick")
+}
+
+function changeClass() {
+    var img = document.getElementById('trocaimg')
+    img.innerHTML = '<div id="sld"><img class="selected" src="images/Services/Stalker.jpeg" alt="Stalker"><img src="images/Services/Johnnie-Stalker.jpeg" alt="Johnnie-Stalker"></div>'
+
+    console.log("Trocou a Imagem")
+    console.log("Trocou a Classe")
+}
+
+function changeClassAndEquips() {
+    var img = document.getElementById('trocaimg')
+    img.innerHTML = '<div><img src="images/Services/trocaclasseequips.jpeg" alt="Troca de Classe + Equipamentos"></div>'
+
+    console.log("Trocou a Imagem")
+    console.log("Trocou a Classe e os Equipamentos")
+}
+
+function changeIntermedio() {
+    var img = document.getElementById('trocaimg')
+    img.innerHTML = '<div><img src="images/Services/intermedio.jpeg" alt="Intermédio"></div>'
+
+    console.log("Trocou a Imagem")
+    console.log("Fez um intermédio")
+}

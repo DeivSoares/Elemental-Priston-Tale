@@ -1,0 +1,1031 @@
+/*========================================================GERAL========================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f18e02;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+::-webkit-scrollbar-track {
+    background: #d1d8ee;
+}
+
+:root {
+    --bg-color: #13272c;
+    --bg-navcolor: #13272cb5;
+    --bg-allcontainer: #01445fcf;
+    --bg-allcontainer2: #13272ce3;
+    --bg-auction: #13272ce3;
+    --fontcolor: #fec16a;
+    --table-color: #5c6975;
+    --table-color2: #434c55;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*=========================================================CORPO=========================================================*/
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-image: url(../images/Backgrounds/bg-new.jpeg);
+    /* background-image: url(../images/Backgrounds/bg-archer.jpg); */
+    /* background-image: url(../images/Backgrounds/images-background.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/*======================================================NAVEGAÇÃO======================================================*/
+body #navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 0px;
+    height: 6.6rem;
+    /* position: absolute; */
+    background: var(--bg-navcolor);
+    border-bottom: 1px solid #fec16a;
+    z-index: 10;
+}
+
+#flexlist {
+    display: flex;
+    align-self: center;
+    margin: auto;
+}
+
+#flexlist li {
+    margin: 0px 8px;
+    list-style-type: none;
+}
+
+#flexlist a {
+    color: var(--fontcolor);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 0rem 2.6rem;
+    display: block;
+    position: relative;
+    height: 6.6rem;
+    line-height: 6.6rem;
+}
+
+#flexlist a:after {
+    content: "";
+    transition: 0.3s;
+    height: 0px;
+    width: 0px;
+}
+
+#flexlist a:hover:after {
+    content: "";
+    height: 0.2rem;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    background: #000000;
+}
+
+/*===============================================================MAIN GENERAL===============================================================*/
+/*================================================================ÁREA RATES================================================================*/
+
+main div.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+main div.wrapper h1 {
+    color: var(--fontcolor);
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 6rem;
+    background-color: var(--bg-allcontainer2);
+    border-top: 1px solid #fec16a;
+}
+
+main div.wrapper div.isnt-col {
+    margin: auto;
+    margin-top: 5.5rem;
+}
+
+main div.wrapper div.isnt-col div.slide div.slide-items img {
+    width: 80vw;
+}
+
+main div.wrapper div.content-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A B';
+    background-color: var(--bg-allcontainer2);
+    padding: 2.5rem;
+    border-bottom: 1px solid #fec16a;
+    margin-bottom: 2.5rem;
+}
+
+main div.wrapper div.content-main div.col-a {
+    grid-area: A;
+    color: var(--fontcolor);
+    text-align: center;
+    align-self: center;
+    border-radius: 15rem;
+    padding: 1.5rem;
+    margin-block: 1rem;
+}
+
+main div.wrapper div.content-main div.col-a h1 {
+    font-size: 5rem;
+}
+
+main div.wrapper div.content-main div.col-a h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main div.wrapper div.content-main div.col-a div.news table {
+    width: 50%;
+    font-size: 2rem;
+    margin: auto;
+}
+
+main div.wrapper div.content-main div.col-a div.news table tr {
+    background-color: var(--table-color);
+}
+
+main div.wrapper div.content-main div.col-b {
+    grid-area: B;
+    color: var(--fontcolor);
+}
+
+main div.wrapper div.content-main div.col-b div.corpo-painel {
+    font-size: 1.8rem;
+}
+
+main div.wrapper div.content-main div.col-b div.corpo-painel ul {
+    list-style: none;
+}
+
+main div.wrapper div.content-main div.col-b div.corpo-painel a {
+    text-decoration: none;
+    color: var(--fontcolor);
+}
+
+main div.wrapper div.content-main div.col-b div.corpo-painel a:hover {
+    color: black;
+    font-weight: bold;
+    font-size: 1.9rem;
+    transition: 1s;
+}
+
+/*===============================================================ÁREA RANKINGS===============================================================*/
+main div.wrapper div.content-iframes {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A B'
+        'C C';
+    border-bottom: 1px solid var(--fontcolor);
+}
+
+main div.wrapper div.content-iframes div.col-a {
+    grid-area: A;
+    background-color: var(--bg-allcontainer2);
+    height: 9.5rem;
+    padding: 0;
+    margin: 0;
+    border-radius: 6rem 5rem 0 0;
+    border-top: 1px solid #fec16a;
+    border-left: 1px solid #fec16a;
+    border-right: 1px solid #fec16a;
+}
+
+main div.wrapper div.content-iframes div.col-b {
+    grid-area: B;
+    background-color: var(--bg-allcontainer2);
+    height: 9.5rem;
+    border-radius: 6rem 5rem 0 0;
+    border-top: 1px solid #fec16a;
+    border-left: 1px solid #fec16a;
+    border-right: 1px solid #fec16a;
+}
+
+main div.wrapper div.content-iframes div.col-c {
+    grid-area: C;
+    margin: auto;
+    width: 100%;
+    background-color: var(--bg-allcontainer2);
+}
+
+main div.wrapper div.content-iframes div.col-c div.titulo {
+    color: var(--fontcolor);
+    text-align: center;
+}
+
+main div.wrapper div.content-iframes div.col-c div.titulo h1 {
+    border: none;
+}
+
+main div.wrapper div.content-iframes div.col-c div.titulo button {
+    cursor: pointer;
+    border: none;
+    border-radius: 0.8rem;
+    background-color: black;
+    color: var(--fontcolor);
+    width: 18rem;
+    height: 2.5rem;
+}
+
+main div.wrapper div.content-iframes div.col-c div.titulo button:hover {
+    font-size: 1.4rem;
+    transition: 1s;
+    background-color: #fec16a;
+    color: black;
+    font-weight: bold;
+}
+
+/*=============================================================ÁREA DE DOWNLOAD=============================================================*/
+body main div.content-download {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A B';
+    background-color: var(--bg-allcontainer2);
+    height: 50rem;
+    border-bottom: 1px solid #fec16a;
+}
+
+body main div.content-download div.col-a {
+    grid-area: A;
+    margin: auto;
+}
+
+body main div.content-download div.col-a img {
+    width: 100%;
+}
+
+body main div.content-download div.col-b {
+    grid-area: B;
+    margin: auto;
+    color: var(--fontcolor);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+body main div.content-download div.col-b table {
+    border-collapse: collapse;
+}
+
+body main div.content-download div.col-b table tr {
+    background-color: var(--table-color);
+    height: 4rem;
+}
+
+
+body main div.content-download div.col-b table tr td {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+body main div.content-download div.col-b table tr td:nth-child(3):hover {
+    background-color: black;
+}
+
+@keyframes colortransition {
+    from {
+        color: var(--fontcolor);
+    }
+
+    to {
+        color: white;
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+}
+
+body main div.content-download div.col-b table tr td:nth-child(3):hover a {
+    animation: colortransition 1s;
+    animation-fill-mode: forwards;
+}
+
+body main div.content-download div.col-b table tr td span {
+    color: #FF0000;
+    font-size: 9pt;
+}
+
+
+body main div.content-download div.col-b table a {
+    color: var(--fontcolor);
+    text-decoration: none;
+}
+
+
+/*==============================================================ÁREA DE DONATE==============================================================*/
+body main div.content-donate {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A B';
+    background-color: var(--bg-allcontainer2);
+    border-bottom: 1px solid #fec16a;
+}
+
+body main div.content-donate div.col-a {
+    grid-area: A;
+    margin: auto;
+    color: var(--fontcolor);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+body main div.content-donate div.col-a h2 {
+    margin-bottom: 2rem;
+}
+
+body main div.content-donate div.col-a table {
+    border-collapse: collapse;
+}
+
+body main div.content-donate div.col-a table thead tr {
+    background-color: var(--table-color2);
+}
+
+body main div.content-donate div.col-a table thead tr td {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+body main div.content-donate div.col-a table tr {
+    background-color: var(--table-color);
+    height: 2rem;
+}
+
+body main div.content-donate div.col-a table tr td {
+    border: 1px solid black;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    width: 20rem;
+    font-weight: bold;
+}
+
+body main div.content-donate div.col-a table tbody tr:hover td {
+    background-color: var(--table-color2);
+    transition: 0.2s;
+    font-size: 1.6rem;
+}
+
+body main div.content-donate div.col-a table tfoot tr td button {
+    background-color: #fec16a;
+    border: none;
+    border-radius: 2rem;
+    width: 20rem;
+    height: 4rem;
+}
+
+body main div.content-donate div.col-a table tfoot tr td button {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+body main div.content-donate div.col-a table tfoot tr td button:hover {
+    background-color: black;
+    color: var(--fontcolor);
+    font-weight: bold;
+    transition: 1s;
+}
+
+body main div.content-donate div.col-b {
+    grid-area: B;
+    margin: auto;
+}
+
+body main div.content-donate div.col-b div.content-pagamentos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+body main div.content-donate div.col-b div.content-pagamentos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0f252b;
+    border-radius: 2.5rem;
+    padding: 1rem;
+}
+
+body main div.content-donate div.col-b div.content-pagamentos div img {
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+body main div.content-donate div.col-b div.content-pagamentos div span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--fontcolor);
+}
+
+body main div.content-donate div.col-b div.content-pagamentos div div.content-pagamentos-span span:nth-child(2) {
+    font-size: 1.1rem;
+}
+
+body main div.content-donate div.col-b div.content-pagamentos div div.content-pagamentos-span {
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+
+body main div.content-donate div.col-b div.content-pagamentos div div.content-pagamentos-span span {
+    font-weight: normal;
+}
+
+body main div.content-donate div.col-b div.content-pagamentos div div.content-pagamentos-span button {
+    background-color: #fec16a;
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2rem;
+    width: 20rem;
+    height: 4rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+body main div.content-donate div.col-b div.content-pagamentos div div.content-pagamentos-span button:hover {
+    background-color: black;
+    color: var(--fontcolor);
+    font-weight: bold;
+    transition: 1s;
+}
+
+/*=============================================================ÁREA DE SERVIÇOS=============================================================*/
+body main div.content-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A B';
+    background-color: var(--bg-allcontainer2);
+    color: var(--fontcolor);
+    height: 40rem;
+    border-bottom: 1px solid #fec16a;
+}
+
+body main div.content-services div.col-a {
+    grid-area: A;
+    text-align: center;
+    margin: auto;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+body main div.content-services div.col-a h2 {
+    margin-bottom: 2rem;
+}
+
+body main div.content-services div.col-a table {
+    border-collapse: collapse;
+}
+
+body main div.content-services div.col-a table thead tr {
+    background-color: var(--table-color2);
+}
+
+body main div.content-services div.col-a table thead tr td {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+body main div.content-services div.col-a table tr {
+    background-color: var(--table-color);
+    height: 2rem;
+}
+
+body main div.content-services div.col-a table tr td {
+    border: 1px solid black;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    width: 20rem;
+    font-weight: bold;
+}
+
+body main div.content-services div.col-a table tbody tr:hover td {
+    background-color: var(--table-color2);
+    transition: 0.2s;
+    font-size: 1.6rem;
+}
+
+body main div.content-services div.col-a table tfoot tr td button {
+    background-color: #fec16a;
+    border: none;
+    border-radius: 2rem;
+    width: 20rem;
+    height: 4rem;
+}
+
+body main div.content-services div.col-a table tfoot tr td button {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+body main div.content-services div.col-a table tfoot tr td button:hover {
+    background-color: black;
+    color: var(--fontcolor);
+    font-weight: bold;
+    transition: 1s;
+}
+
+body main div.content-services div.col-b {
+    grid-area: B;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+body main div.content-services div.col-b img {
+    width: 25rem;
+    height: 35rem;
+    animation: changeImage 1s linear;
+    animation-fill-mode: forwards;
+    border: 1px solid #fec16a;
+}
+
+@keyframes changeImage {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*==============================================================ÁREA DO LEILÃO==============================================================*/
+body main div.content-auction {
+    background-color: var(--bg-allcontainer2);
+    color: var(--fontcolor);
+    height: fit-content;
+    border-bottom: 1px solid #fec16a;
+}
+
+body main div.content-auction h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+body main div.content-auction p.text-auction {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    text-align: justify;
+    background-color: #383636;
+    color: white;
+    font-weight: bold;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    border: 3px solid black;
+}
+
+body main div.content-auction div.area-auction {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 5rem;
+    width: 98%;
+    margin: auto;
+}
+
+body main div.content-auction div.area-auction div.box-char {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+}
+
+body main div.content-auction div.area-auction div.box-char div.area-preta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 14.5rem;
+    height: 29rem;
+    border-radius: 2rem 0 0 2rem;
+    border-top: 1px solid #fec16a;
+    border-left: 1px solid #fec16a;
+    border-bottom: 1px solid #fec16a;
+    border-right: 1px solid #fec16a;
+
+}
+
+body main div.content-auction div.area-auction div.box-char div.area-preta img {
+    width: 10rem;
+    height: 16rem;
+}
+
+body main div.content-auction div.area-auction div.box-char div.content-infos {
+    background-color: white;
+    color: black;
+    width: 20rem;
+    height: 29rem;
+    padding: 2rem;
+    border-radius: 0 2rem 2rem 0;
+    border-top: 1px solid #fec16a;
+    border-bottom: 1px solid #fec16a;
+    border-right: 1px solid #fec16a;
+}
+
+body main div.content-auction div.area-auction div.box-char div.content-infos h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+body main div.content-auction div.area-auction div.box-char div.content-infos p.last {
+    margin-bottom: 0.5rem;
+}
+
+body main div.content-auction div.area-auction div.box-char div.content-infos p span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+body main div.content-auction div.area-auction div.box-char div.content-infos a {
+    text-decoration: none;
+
+}
+
+body main div.content-auction div.area-auction div.box-char div.content-infos a button {
+    display: block;
+    width: 10rem;
+    height: 2.5rem;
+    margin: auto;
+    border-radius: 2.5rem;
+    border: 1px solid black;
+    background-color: lightgrey;
+    color: black;
+    cursor: pointer;
+}
+
+body main div.content-auction div.area-auction div.box-char div.content-infos a button:hover {
+    border: 1px solid #fec16a;
+    background-color: black;
+    color: var(--fontcolor);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 2s;
+}
+
+/*==================================================================FOOTER==================================================================*/
+footer {
+    background-image: url(../images/Backgrounds/bg-footer.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fec16a;
+    border-top: 1px solid #fec16a;
+    padding-block: 0.5rem;
+    text-align: left;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li {
+    list-style-type: none;
+    padding: 20px;
+}
+
+footer a {
+    color: var(--fontcolor);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer .wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A B';
+}
+
+footer .wrapper {
+    width: min(112rem, 63%);
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer .col-a {
+    align-self: center;
+}
+
+footer .col-a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div.leftside img {
+    width: 80px;
+}
+
+footer div.leftside p {
+    margin: 0 0 20px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+footer div.leftside img:hover {
+    filter: brightness(120%);
+}
+
+footer div.leftside span {
+    display: flex;
+}
+
+footer .col-b {
+    align-self: center;
+    justify-self: flex-end;
+}
+
+footer .col-b {
+    grid-area: B;
+}
+
+
+/* BOTÃO FLUTUANTE */
+
+.Buttons {
+    position: fixed;
+    z-index: 2;
+    right: 0px;
+    top: 56%;
+    margin-top: -300px;
+    background: #13272c8c;
+    padding: 0px 20px;
+    border-top: 1px solid #fec16a;
+    border-left: 1px solid #fec16a;
+    border-bottom: 1px solid #fec16a;
+    border-radius: 28px 0px 0px 28px;
+    z-index: 10;
+    height: fit-content;
+}
+
+.Buttons a {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 20px 0px;
+    opacity: 0.6;
+    transition: all 200ms;
+    -moz-transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
+}
+
+.Buttons a:hover {
+    color: #fff;
+    opacity: 1;
+    transition: all 200ms;
+    -moz-transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
+}
+
+.Buttons a:hover:after {
+    opacity: 1;
+}
+
+.Buttons a p {
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+.Buttons p {
+    color: #eeba7c;
+}
+
+.Buttons a.fac:after {
+    left: -1px;
+    top: 2px;
+}
+
+.Buttons a:after {
+    content: "";
+    position: absolute;
+    border: 0px solid #ffb432;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.Buttons2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    left: 0px;
+    top: 56%;
+    margin-top: -300px;
+    background: #13272c8c;
+    border-top: 1px solid #fec16a;
+    border-left: 1px solid #fec16a;
+    border-bottom: 1px solid #fec16a;
+    border-radius: 15px 0px 0px 15px;
+    z-index: 10;
+    height: 14.9rem;
+    transform: scaleX(-1);
+}
+
+.Buttons2 a {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 20px 0px;
+    opacity: 0.6;
+    transition: all 200ms;
+    -moz-transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
+}
+
+.Buttons2 a:hover {
+    color: #fff;
+    opacity: 1;
+    transition: all 200ms;
+    -moz-transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
+}
+
+.Buttons2 a:hover:after {
+    opacity: 1;
+}
+
+.Buttons2 a p {
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+.Buttons2 p {
+    transform: scaleX(-1);
+    color: #eeba7c;
+    font-size: 1.8rem;
+}
+
+.Buttons2 a.fac:after {
+    left: -1px;
+    top: 2px;
+}
+
+.Buttons2 a:after {
+    content: "";
+    position: absolute;
+    border: 0px solid #ffb432;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+/*======================================================BOSS TIME======================================================*/
+
+body div.bosstime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f252b;
+    position: fixed;
+    top: 94%;
+    left: 75%;
+    width: 25rem;
+    height: 4rem;
+    border-radius: 15px 15px 0px 0px;
+    animation: closeBTL 1s linear;
+    animation-fill-mode: forwards;
+}
+
+body div.bosstime div.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+body div.bosstime button {
+    border: none;
+    color: var(--fontcolor);
+    background: none;
+    cursor: pointer;
+}
+
+@keyframes bosstimelist {
+    from {
+        top: 94%;
+        height: 4rem;
+    }
+
+    to {
+        top: 62%;
+        height: 25rem;
+    }
+}
+
+@keyframes closeBTL {
+    from {
+        top: 75%;
+        height: 17rem;
+    }
+
+    to {
+        top: 94%;
+        height: 4rem;
+    }
+}
+
+body div.bosstime div.buttons button.close-popup {
+    display: none;
+}
+
+body div.bosstime.active div.buttons button.close-popup {
+    display: block;
+    position: absolute;
+    top: 3%;
+    left: 78%;
+    box-shadow: 3px 6px 9px 0px #000000ba;
+    border-radius: 100%;
+}
+
+body div.bosstime div.script {
+    display: none;
+}
+
+body div.bosstime.active {
+    animation: bosstimelist 1s linear;
+    animation-fill-mode: forwards;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+body div.bosstime.active div.script {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+body div.bosstime a {
+    text-decoration: none;
+    color: var(--fontcolor);
+    font-size: 1.6rem;
+}
