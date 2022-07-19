@@ -1,0 +1,125 @@
+@media (max-width: 1024px) {
+    :root {
+        --bg-color: #13272c;
+        --bg-navcolor: #13272cb5;
+        --bg-allcontainer: #01445fcf;
+        --bg-allcontainer2: #13272ce3;
+        --bg-auction: #13272ce3;
+        --fontcolor: #fec16a;
+        --table-color: #5c6975;
+        --table-color2: #434c55;
+        font-size: 62.5%;
+    }
+
+    html, body{
+        width: 100vw;
+    }
+
+    body div.content-web {
+        /* width: 100vw; */
+        width: 100%;
+        margin: auto;
+    }
+
+    body nav#navbar {
+        display: none;
+    }
+
+    body div.content-web main {
+        /* width: 100vw; */
+        width: 100%;
+    }
+
+    main div.wrapper div.isnt-col div.slide div.slide-items img {
+        width: 80vw;
+    }
+
+    main div.wrapper div.content-main {
+        grid-template-areas: 'A A''B B';
+    }
+
+    main div.wrapper div.content-main div.col-a div.news table {
+        width: 100%;
+    }
+
+    body div.content-web main div.wrapper div.content-iframes div.col-a, div.col-b {
+        width: 50vw;
+    }
+
+    body div.content-web main div.wrapper div.content-iframes div.col-c {
+        width: 100vw;
+    }
+
+    body main div.content-download {
+        grid-template-areas: 'B B''A A';
+    }
+
+    body main div.content-download div.col-a {
+        width: 100%;
+    }
+
+    body main div.content-download div.col-b {
+        width: 100%;
+    }
+
+    body main div.content-donate {
+        grid-template-areas: 'A A''B B';
+    }
+
+    body main div.content-donate div.col-a table thead tr td {
+        font-size: 1rem;
+    }
+
+    body main div.content-donate div.col-b {
+        width: 100%;
+    }
+
+    body main div.content-donate div.col-b div.content-pagamentos div {
+        padding: 0.5rem;
+    }
+
+    body main div.content-services {
+        grid-template-areas: 'A A''B B';
+    }
+
+    body main div.content-services div.col-b div#sld {
+        display: flex;
+        width: 100%;
+    }
+
+    body main div.content-services div.col-b img {
+        width: 30rem;
+        height: 15rem;
+    }
+
+    body footer ul.responsive-adjustment {
+        display: none;
+    }
+
+    .Buttons {
+        top: 80%;
+        right: 30px;
+    }
+
+    .Buttons a {
+        margin: 0;
+    }
+
+    .Buttons a img {
+        /* width: 10rem;
+        height: 9.1rem; */
+        width: 6rem;
+        height: 7.1rem;
+    }
+
+    .Buttons2 {
+        top: 80%;
+        width: 10rem;
+        height: fit-content;
+    }
+
+    body div.bosstime {
+        /* left: 40%; */
+        left: 15%;
+    }
+}

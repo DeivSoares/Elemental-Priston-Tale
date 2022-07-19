@@ -824,6 +824,10 @@ footer .col-b {
     -o-transition: all 200ms;
 }
 
+.Buttons a img{
+    width: 9rem;
+}
+
 .Buttons a:hover {
     color: #fff;
     opacity: 1;
