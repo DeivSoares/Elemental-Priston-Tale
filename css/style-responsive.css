@@ -11,7 +11,8 @@
         font-size: 62.5%;
     }
 
-    html, body{
+    html,
+    body {
         width: 100vw;
         overflow-x: hidden;
     }
@@ -47,8 +48,10 @@
         width: 100%;
     }
 
-    body div.content-web main div.wrapper div.content-iframes div.col-a, div.col-b {
+    body div.content-web main div.wrapper div.content-iframes div.col-a,
+    div.col-b {
         width: 50vw;
+        text-align: center;
     }
 
     body div.content-web main div.wrapper div.content-iframes div.col-c {
