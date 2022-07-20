@@ -199,7 +199,6 @@ function verRanking() {
     criaRanking.innerHTML = `${titulo}<div id="criaIframe">${iframe}</div>`
     criaRanking.style.height = '100vh'
     criaRanking.style.borderRadius = '1rem'
-    padding.style.padding = '2.5rem'
     let div = document.getElementById('criaIframe')
     div.style.height = '95%'
 }
