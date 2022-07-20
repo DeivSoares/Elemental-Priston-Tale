@@ -66,96 +66,73 @@ let bosses23 = 'Gorgônia<br>Montanha Azul<br>Robô Mutante';
 if (hora == 0 && min < 32) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses00}`
     msg2.innerHTML = `Ás ${hora0}`
-}
-else if (hora == 1 && min < xxTime) {
+} else if (hora == 1 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses01}`
     msg2.innerHTML = `Ás ${hora1}`
-}
-else if (hora == 2 && min < xxTime) {
+} else if (hora == 2 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses02}`
     msg2.innerHTML = `Ás ${hora2}`
-}
-else if (hora == 3 && min < xxTime) {
+} else if (hora == 3 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses03}`
     msg2.innerHTML = `Ás ${hora3}`
-}
-else if (hora == 4 && min < xxTime) {
+} else if (hora == 4 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses04}`
     msg2.innerHTML = `Ás ${hora4}`
-}
-else if (hora == 5 && min < xxTime) {
+} else if (hora == 5 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses05}`
     msg2.innerHTML = `Ás ${hora5}`
-}
-else if (hora == 6 && min < xxTime) {
+} else if (hora == 6 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses06}`
     msg2.innerHTML = `Ás ${hora6}`
-}
-else if (hora == 7 && min < xxTime) {
+} else if (hora == 7 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses07}`
     msg2.innerHTML = `Ás ${hora7}`
-}
-else if (hora == 8 && min < xxTime) {
+} else if (hora == 8 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses08}`
     msg2.innerHTML = `Ás ${hora8}`
-}
-else if (hora == 9 && min < xxTime) {
+} else if (hora == 9 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses09}`
     msg2.innerHTML = `Ás ${hora9}`
-}
-else if (hora == 10 && min < xxTime) {
+} else if (hora == 10 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses10}`
     msg2.innerHTML = `Ás ${hora10}`
-}
-else if (hora == 11 && min < xxTime) {
+} else if (hora == 11 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses11}`
     msg2.innerHTML = `Ás ${hora11}`
-}
-else if (hora == 12 && min < xxTime) {
+} else if (hora == 12 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses12}`
     msg2.innerHTML = `Ás ${hora12}`
-}
-else if (hora == 13 && min < xxTime) {
+} else if (hora == 13 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses13}`
     msg2.innerHTML = `Ás ${hora13}`
-}
-else if (hora == 14 && min < xxTime) {
+} else if (hora == 14 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses14}`
     msg2.innerHTML = `Ás ${hora14}`
-}
-else if (hora == 15 && min < xxTime) {
+} else if (hora == 15 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses15}`
     msg2.innerHTML = `Ás ${hora15}`
-}
-else if (hora == 16 && min < xxTime) {
+} else if (hora == 16 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses16}`
     msg2.innerHTML = `Ás ${hora16}`
-}
-else if (hora == 17 && min < xxTime) {
+} else if (hora == 17 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses17}`
     msg2.innerHTML = `Ás ${hora17}`
-}
-else if (hora == 18 && min < xxTime) {
+} else if (hora == 18 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses18}`
     msg2.innerHTML = `Ás ${hora18}`
-}
-else if (hora == 19 && min < xxTime) {
+} else if (hora == 19 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses19}`
     msg2.innerHTML = `Ás ${hora19}`
-}
-else if (hora == 20 && min < xxTime) {
+} else if (hora == 20 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses20}`
     msg2.innerHTML = `Ás ${hora20}`
-}
-else if (hora == 21 && min < xxTime) {
+} else if (hora == 21 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses21}`
     msg2.innerHTML = `Ás ${hora21}`
-}
-else if (hora == 22 && min < xxTime) {
+} else if (hora == 22 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses22}`
     msg2.innerHTML = `Ás ${hora22}`
-}
-else if (hora == 23 && min < xxTime) {
+} else if (hora == 23 && min < xxTime) {
     msg.innerHTML = `Os próximos Bosses são <br><br>${bosses23}`
     msg2.innerHTML = `Ás ${hora23}`
 } else {
@@ -258,4 +235,33 @@ function changeIntermedio() {
 
     console.log("Trocou a Imagem")
     console.log("Fez um intermédio")
+}
+
+function leftsidebars() {
+    let equipe = document.getElementById('equipe')
+    let equipelink = '<p>Equipe</p><iframe style="transform: scaleX(-1);" src="http://site.elementalpristontale.com:31206/include/equipe/index.php" name="I3" width="130" height="68" scrolling="No" frameborder="0" id="I4" border="0"></iframe>'
+
+    equipe.style.width = '10rem'
+    equipe.innerHTML = `${equipelink}`
+}
+
+function rightsidebars() {
+    let discord = document.getElementById('discord')
+    let discordlink = '<a href="https://discord.gg/b6PGaSSgdd"><img src="images/discord.gif" alt="Discord"><p>Discord</p></a>'
+
+    discord.style.padding = '0px 20px'
+    discord.style.textAlign = 'center'
+    discord.innerHTML = `${discordlink}`
+}
+
+function xtremetop() {
+    let x;
+    let xtremetop = confirm('Vote diariamente no Elemental Priston Tale para ajudar o servidor a crescer no ranking mundial!')
+
+    if (xtremetop == true) {
+        x = window.location.href = 'https://www.xtremetop100.com/in.php?site=1132372951'
+        window.open('_blank')
+    }else{
+        addCharLeilao()
+    }
 }

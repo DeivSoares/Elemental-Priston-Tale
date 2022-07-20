@@ -209,5 +209,5 @@ function addCharLeilao() {
     </div>`
 
     inserindoABoxDoChar.innerHTML = `
-    ${adicionandoPriest}`
+    ${adicionandoPriest}${adicionandoPriest}`
 }

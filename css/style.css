@@ -138,7 +138,7 @@ main div.wrapper div.isnt-col div.slide div.slide-items img {
 main div.wrapper div.content-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'A B';
+    grid-template-areas: 'A B''C C';
     background-color: var(--bg-allcontainer2);
     padding: 2.5rem;
     border-bottom: 1px solid #fec16a;
@@ -197,6 +197,27 @@ main div.wrapper div.content-main div.col-b div.corpo-painel a:hover {
     font-weight: bold;
     font-size: 1.9rem;
     transition: 1s;
+}
+
+main div.wrapper div.content-main div.col-c{
+    grid-area: C;
+    text-align: center;
+    color: var(--fontcolor);
+    margin: auto;
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+
+main div.wrapper div.content-main div.col-c a{
+    text-decoration: none;
+}
+
+main div.wrapper div.content-main div.col-c p{
+    color: var(--fontcolor);
+}
+
+main div.wrapper div.content-main div.col-c img{
+    width: 50%;
 }
 
 /*===============================================================ÁREA RANKINGS===============================================================*/
@@ -936,6 +957,13 @@ footer .col-b {
     border-radius: 50%;
     transition: 0.3s;
     opacity: 0;
+}
+
+.Buttons-mobile{
+    display: none;
+}
+.Buttons2-mobile{
+    display: none;
 }
 
 /*======================================================BOSS TIME======================================================*/

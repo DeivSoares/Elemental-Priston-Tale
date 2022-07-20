@@ -37,7 +37,7 @@
     }
 
     main div.wrapper div.content-main {
-        grid-template-areas: 'A A''B B';
+        grid-template-areas: 'A A''B B''C C';
     }
 
     main div.wrapper div.content-main div.col-a div.news table {
@@ -46,6 +46,15 @@
 
     main div.wrapper div.content-main div.col-b {
         width: 100%;
+    }
+
+    main div.wrapper div.content-main div.col-c {
+        grid-area: C;
+    }
+
+    main div.wrapper div.content-main div.col-c img {
+        width: 100%;
+        margin-top: 2.5rem;
     }
 
     body div.content-web main div.wrapper div.content-iframes div.col-a,
@@ -72,6 +81,7 @@
 
     body main div.content-donate {
         grid-template-areas: 'A A''B B';
+        gap: 4rem;
     }
 
     body main div.content-donate div.col-a table thead tr td {
@@ -105,29 +115,88 @@
     }
 
     .Buttons {
-        top: 80%;
+        display: none;
+    }
+
+    .Buttons2 {
+        display: none;
+    }
+
+    .Buttons-mobile {
+        display: block;
+        position: fixed;
+        z-index: 2;
         right: 0px;
+        top: 80%;
+        margin-top: -300px;
+        background: #13272c8c;
+        padding: 0px;
+        border-top: 1px solid #fec16a;
+        border-left: 1px solid #fec16a;
+        border-bottom: 1px solid #fec16a;
+        border-radius: 28px 0px 0px 28px;
+        z-index: 10;
+        height: fit-content;
     }
 
-    .Buttons a {
+    .Buttons-mobile a {
         margin: 0;
+        text-decoration: none;
     }
 
-    .Buttons a img {
+    .Buttons-mobile a p {
+        margin-bottom: 0px;
+        font-size: 1.5rem;
+    }
+
+    .Buttons-mobile p {
+        color: #eeba7c;
+    }
+
+    .Buttons-mobile a img {
         /* width: 10rem;
         height: 9.1rem; */
         width: 6rem;
         height: 7.1rem;
     }
 
-    .Buttons2 {
+    .Buttons2-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 2;
+        left: 0px;
         top: 80%;
-        width: 10rem;
+        margin-top: -300px;
+        background: #13272c8c;
+        border-top: 1px solid #fec16a;
+        border-left: 1px solid #fec16a;
+        border-bottom: 1px solid #fec16a;
+        border-radius: 15px 0px 0px 15px;
+        z-index: 10;
         height: fit-content;
+        transform: scaleX(-1);
+    }
+
+    .Buttons2-mobile p {
+        transform: scaleX(-1);
+        color: #eeba7c;
+        font-size: 1.8rem;
+    }
+
+    .Buttons2-mobile div.gen-popup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Buttons2-mobile div.gen-popup img {
+        width: 3rem;
     }
 
     body div.bosstime {
-        /* left: 40%; */
         left: 15%;
     }
 }
