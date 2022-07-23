@@ -1,0 +1,10 @@
+Armadura Minotauro
+Defesa: 290 - 310
+Absorção: 12.3 - 12.7
+Integridade: 130 - 170
+Res. Orgânica: 5 - 12
+Res. a Fogo: 5 - 12
+Res. a Gelo: 5 - 12
+Res. a Raio: 5 - 12
+Res. a Veneno: 5 - 12
+Nível Necessário: 80

@@ -1,0 +1,10 @@
+Armadura Dragão
+Defesa: 410 - 430
+Absorção: 23.5 - 23.8
+Integridade: 175 - 210
+Res. Orgânica: 8 - 14
+Res. a Fogo: 8 - 14
+Res. a Gelo: 8 - 14
+Res. a Raio: 8 - 14
+Res. a Veneno: 8 - 14
+Nível Necessário: 100
