@@ -1,0 +1,3795 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset=" UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+<title>Elemental Wiki</title>
+</head>
+
+<body onload="Estrutura()">
+    <div class="content-web">
+        <aside>
+            <img src="images/pt2logo.png" alt="Logo Elemental Priston Tale">
+
+            <button onclick="BackToSite()">Voltar para o Site</button>
+
+            <button onclick="MixList()">Lista de Mix</button>
+
+            <button onclick="AgingList()">Lista de Aging</button>
+
+            <button onclick="ShopList()">Item Shop</button>
+
+            <button onclick="Equipments()">Equipamentos</button>
+
+            <button onclick="MapList()">Mapas</button>
+
+            <button onclick="ExperienceTable()">Tabela de XP</button>
+
+            <footer>
+                <p>Desenvolvido por <br>
+                    <a href="https://api.whatsapp.com:31206/send/?phone=5522992533137&text=Olá+Deivison&app_absent=0"
+                        target="_blank">
+                        <abbr title="Entre em contato pelo WhatsApp" style="text-decoration: none;">Deivison
+                            Soares</abbr>
+                    </a>
+                    ©
+                </p>
+            </footer>
+        </aside>
+
+        <main>
+            <div id="janelaWelcome" class="welcome">
+                <h1>Seja muito bem vindo ao Elemental Wiki !</h1>
+                <p>Aqui você vai poder encontrar a maioria das informações do nosso Servidor.</p>
+            </div>
+
+
+
+            <div id="janelaMix" class="mixwindow">
+                <div class="titulo-main">
+                    <h1>Elemental Wiki</h1>
+                </div>
+                <div class="seletor">
+                    <button onclick="mostrarMixBotas()">Ver Tabela Mix das Botas</button>
+                    <button onclick="mostrarMixBraceletes()">Ver Tabela Mix dos Braceletes</button>
+                    <button onclick="mostrarMixLuvas()">Ver Tabela Mix das Luvas </button>
+                </div>
+
+                <div id="Botas" class="tableboots">
+                    <table align="center" border="1" width="98%">
+                        <tbody>
+                            <tr class="table_header">
+                                <td align="center">
+                                    Nome Mix
+                                </td>
+                                <td align="center">
+                                    Sheltons
+                                </td>
+                                <td align="center">
+                                    Descrição
+                                </td>
+                            </tr>
+                            <tr class="row0" align="center">
+                                <td>Mix Devine</td>
+                                <td>
+                                    6x <img src="../images/mixing/devine.png" alt="Shelton Devine">
+                                    3x <img src="../images/mixing/murky.png" alt="Shelton Murky">
+                                </td>
+                                <td>DEF(+80) ABS(+1.5) Speed(+2.0) HP(+20)</td>
+                            </tr>
+                            <tr class="row1" align="center">
+                                <td>Mix Celesto</td>
+                                <td>
+                                    6x <img src="../images/mixing/celesto.png" alt="Shelton Celesto">
+                                    3x <img src="../images/mixing/devine.png" alt="Shelton Devine">
+                                </td>
+                                <td>DEF(+140) ABS(+4.0) Speed(+3.0) HP(+50)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="Braceletes" class="tablebrac">
+                    <table align="center" border="1" width="98%">
+                        <tbody>
+                            <tr class="table_header">
+                                <td align="center">
+                                    Nome Mix
+                                </td>
+                                <td align="center">
+                                    Sheltons
+                                </td>
+                                <td align="center">
+                                    Descrição
+                                </td>
+                            </tr>
+                            <tr class="row0" align="center">
+                                <td>Mix Devine</td>
+                                <td>
+                                    6x <img src="../images/mixing/devine.png" alt="Shelton Devine">
+                                    3x <img src="../images/mixing/murky.png" alt="Shelton Murky">
+                                </td>
+                                <td>DEF(+80) Taxa(+80) HP(+20)</td>
+                            </tr>
+                            <tr class="row1" align="center">
+                                <td>Mix Celesto</td>
+                                <td>
+                                    6x <img src="../images/mixing/celesto.png" alt="Shelton Celesto">
+                                    3x <img src="../images/mixing/devine.png" alt="Shelton Devine">
+                                </td>
+                                <td>DEF(+140) Taxa(+140) HP(+50)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="Luvas" class="tablegloves">
+                    <table align="center" border="1" width="98%">
+                        <tbody>
+                            <tr class="table_header">
+                                <td align="center">
+                                    Nome Mix
+                                </td>
+                                <td align="center">
+                                    Sheltons
+                                </td>
+                                <td align="center">
+                                    Descrição
+                                </td>
+                            </tr>
+                            <tr class="row0" align="center">
+                                <td>Mix Devine</td>
+                                <td>
+                                    6x <img src="../images/mixing/devine.png" alt="Shelton Devine">
+                                    3x <img src="../images/mixing/murky.png" alt="Shelton Murky">
+                                </td>
+                                <td>DEF(+80) ABS(+1.5) HP(+20)</td>
+                            </tr>
+                            <tr class="row1" align="center">
+                                <td>Mix Celesto</td>
+                                <td>
+                                    6x <img src="../images/mixing/celesto.png" alt="Shelton Celesto">
+                                    3x <img src="../images/mixing/devine.png" alt="Shelton Devine">
+                                </td>
+                                <td>DEF(+140) ABS(+2.5) HP(+100)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div id="janelaAge" class="agewindow">
+                <div class="titulo-main">
+                    <h1>Elemental Wiki</h1>
+                    <h4>Lista de Aging</h4>
+                </div>
+
+                <div>
+                    <table cellspacing="1" cellpadding="0">
+
+                        <colgroup>
+                            <col width="40">
+                            <col width="22">
+                            <col width="22">
+                            <col width="22">
+                            <col width="22">
+                            <col width="22">
+                            <col width="22">
+                            <col width="22">
+                            <col width="22">
+                            <col width="22">
+                            <col width="22">
+                            <col width="22">
+                            <col width="22">
+                            <col width="50">
+                            <col width="50">
+                            <col width="50">
+                        </colgroup>
+
+                        <thead>
+                            <tr>
+                                <td>Aging</td>
+                                <td><img src="images/mixing/fadeo.png" alt="Fadeo"></td>
+                                <td><img src="images/mixing/sparky.png" alt="Sparky"></td>
+                                <td><img src="images/mixing/raident.png" alt="Raident"></td>
+                                <td><img src="images/mixing/transparo.png" alt="Transparo"></td>
+                                <td><img src="images/mixing/murky.png" alt="Murky"></td>
+                                <td><img src="images/mixing/devine.png" alt="Devine"></td>
+                                <td><img src="images/mixing/celesto.png" alt="Celesto"></td>
+                                <td><img src="images/mixing/mirage.png" alt="Mirage"></td>
+                                <td><img src="images/mixing/inferna.png" alt="Inferna"></td>
+                                <td><img src="images/mixing/enigma.png" alt="Enigma"></td>
+                                <td><img src="images/mixing/bellum.png" alt="Bellum"></td>
+                                <td><img src="images/mixing/oredo.png" alt="Oredo"></td>
+                                <td><img src="images/mixing/not.png" alt="not"><br>Falha</td>
+                                <td><img src="images/mixing/pedraage.png" alt="PedraAging"><br>Falha</td>
+                                <td><img src="images/mixing/spedraage.png" alt="sPedraAging"><br>Falha</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>+1</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>0%</td>
+                                <td>0%</td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td>+2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>0%</td>
+                                <td>0%</td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td>+3</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>0%</td>
+                                <td>0%</td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td>+4</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>0%</td>
+                                <td>0%</td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td>+5</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>0%</td>
+                                <td>0%</td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td>+6</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>0%</td>
+                                <td>0%</td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td>+7</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>0%</td>
+                                <td>0%</td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td>+8</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>0%</td>
+                                <td>0%</td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td>+9</td>
+                                <td></td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>0%</td>
+                                <td>0%</td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td>+10</td>
+                                <td></td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>5%</td>
+                                <td>0%</td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td>+11</td>
+                                <td></td>
+                                <td></td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>10%</td>
+                                <td>5%</td>
+                                <td>5%</td>
+                            </tr>
+                            <tr>
+                                <td>+12</td>
+                                <td></td>
+                                <td></td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>20%</td>
+                                <td>15%</td>
+                                <td>15%</td>
+                            </tr>
+                            <tr>
+                                <td>+13</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>25%</td>
+                                <td>20%</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>+14</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>30%</td>
+                                <td>25%</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>+15</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td>40%</td>
+                                <td>35%</td>
+                                <td>35%</td>
+                            </tr>
+                            <tr>
+                                <td>+16</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td>45%</td>
+                                <td>40%</td>
+                                <td>40%</td>
+                            </tr>
+                            <tr>
+                                <td>+17</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td></td>
+                                <td>50%</td>
+                                <td>45%</td>
+                                <td>45%</td>
+                            </tr>
+                            <tr>
+                                <td>+18</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td></td>
+                                <td>55%</td>
+                                <td>50%</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr>
+                                <td>+19</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>70%</td>
+                                <td>65%</td>
+                                <td>65%</td>
+                            </tr>
+                            <tr>
+                                <td>+20</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>80%</td>
+                                <td>70%</td>
+                                <td>70%</td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td>Aging</td>
+                                <td><img src="images/mixing/fadeo.png" alt="Fadeo"></td>
+                                <td><img src="images/mixing/sparky.png" alt="Sparky"></td>
+                                <td><img src="images/mixing/raident.png" alt="Raident"></td>
+                                <td><img src="images/mixing/transparo.png" alt="Transparo"></td>
+                                <td><img src="images/mixing/murky.png" alt="Murky"></td>
+                                <td><img src="images/mixing/devine.png" alt="Devine"></td>
+                                <td><img src="images/mixing/celesto.png" alt="Celesto"></td>
+                                <td><img src="images/mixing/mirage.png" alt="Mirage"></td>
+                                <td><img src="images/mixing/inferna.png" alt="Inferna"></td>
+                                <td><img src="images/mixing/enigma.png" alt="Enigma"></td>
+                                <td><img src="images/mixing/bellum.png" alt="Bellum"></td>
+                                <td><img src="images/mixing/oredo.png" alt="Oredo"></td>
+                                <td><img src="images/mixing/not.png" alt="not"><br>Falha</td>
+                                <td><img src="images/mixing/pedraage.png" alt="PedraAging"><br>Falha</td>
+                                <td><img src="images/mixing/spedraage.png" alt="sPedraAging"><br>Falha</td>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+                </div>
+            </div>
+
+            <div id="janelaShop" class="shopwindow">
+                <div class="titulo-main">
+                    <h1>Elemental Wiki</h1>
+                    <p>Aqui você pode encontrar uma lista de todos os itens vendidos por Coins!</p>
+
+                    <div class="seletor">
+                        <button onclick="CoinShop()">Itens por Coins</button>
+                        <button onclick="TimeShop()">Itens por Time Coins</button>
+                    </div>
+
+                </div>
+
+                <div id="coinshop" class="item-area">
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itDA276.bmp" alt="Armadura Noel Masc">
+                        </div>
+                        <div class="info-area">
+                            <h1>Armadura Noel Verde(M)</h1>
+                            <p>
+                                Taxa de Defesa: <b>230</b> <br>
+                                Absorção: <b>10.5</b> <br>
+                                Integridade: <b>140/140</b> <br>
+                                Res. Orgânica: <b>11</b> <br>
+                                Res. Fogo: <b>11</b> <br>
+                                Res. Gelo: <b>11</b> <br>
+                                Res. Raio: <b>11</b> <br>
+                                Res. Veneno: <b>11</b> <br>
+                                Add. HP: <b>50</b> <br>
+                                Add. MP: <b>50</b> <br>
+                                Add. RES: <b>50</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">20</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itDA277.bmp" alt="Armadura Noel Fem">
+                        </div>
+                        <div class="info-area">
+                            <h1>Armadura Noel Verde(F)</h1>
+                            <p>
+                                Taxa de Defesa: <b>230</b> <br>
+                                Absorção: <b>10.5</b> <br>
+                                Integridade: <b>140/140</b> <br>
+                                Res. Orgânica: <b>11</b> <br>
+                                Res. Fogo: <b>11</b> <br>
+                                Res. Gelo: <b>11</b> <br>
+                                Res. Raio: <b>11</b> <br>
+                                Res. Veneno: <b>11</b> <br>
+                                Add. HP: <b>50</b> <br>
+                                Add. MP: <b>50</b> <br>
+                                Add. RES: <b>50</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">20</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itDA276.bmp" alt="Armadura Noel Masc">
+                        </div>
+                        <div class="info-area">
+                            <h1>Roupão Noel Verde(M)</h1>
+                            <p>
+                                Taxa de Defesa: <b>230</b> <br>
+                                Absorção: <b>10.5</b> <br>
+                                Integridade: <b>140/140</b> <br>
+                                Res. Orgânica: <b>11</b> <br>
+                                Res. Fogo: <b>11</b> <br>
+                                Res. Gelo: <b>11</b> <br>
+                                Res. Raio: <b>11</b> <br>
+                                Res. Veneno: <b>11</b> <br>
+                                Add. HP: <b>50</b> <br>
+                                Add. MP: <b>50</b> <br>
+                                Add. RES: <b>50</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">20</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itDA277.bmp" alt="Armadura Noel Fem">
+                        </div>
+                        <div class="info-area">
+                            <h1>Roupão Noel Verde(F)</h1>
+                            <p>
+                                Taxa de Defesa: <b>230</b> <br>
+                                Absorção: <b>10.5</b> <br>
+                                Integridade: <b>140/140</b> <br>
+                                Res. Orgânica: <b>11</b> <br>
+                                Res. Fogo: <b>11</b> <br>
+                                Res. Gelo: <b>11</b> <br>
+                                Res. Raio: <b>11</b> <br>
+                                Res. Veneno: <b>11</b> <br>
+                                Add. HP: <b>50</b> <br>
+                                Add. MP: <b>50</b> <br>
+                                Add. RES: <b>50</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">20</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itDS131.BMP" alt="Escudo Anjo">
+                        </div>
+                        <div class="info-area">
+                            <h1>Escudo Anjo</h1>
+                            <p>
+                                Taxa de Defesa: <b>95</b> <br>
+                                Absorção: <b>4.8</b> <br>
+                                Bloqueio: <b>20%</b> <br>
+                                Add. HP: <b>20</b> <br>
+                                Add. MP: <b>20</b> <br>
+                                Add. RES: <b>20</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">20</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Acessórios/itoa231.bmp" alt="Bracelete Especial">
+                        </div>
+                        <div class="info-area">
+                            <h1>Bracelete Especial</h1>
+                            <p>
+                                Taxa de Defesa: <b>60</b> <br>
+                                Taxa de Ataque: <b>60</b> <br>
+                                Limite de Poções: <b>100</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">20</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itdb131.bmp" alt="Botas da Velocidade">
+                        </div>
+                        <div class="info-area">
+                            <h1>Botas da Velocidade</h1>
+                            <p>
+                                Taxa de Defesa: <b>65</b> <br>
+                                Absorção: <b>7.5</b> <br>
+                                Velocidade: <b>11.0</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itCA110.bmp" alt="Traje M">
+                        </div>
+                        <div class="info-area">
+                            <h1>Traje Hambok (M)</h1>
+                            <p>
+                                Taxa de Defesa: <b>130</b> <br>
+                                Absorção: <b>12.0</b> <br>
+                                Add. HP: <b>130</b> <br>
+                                Add. MP: <b>120</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itCA109.bmp" alt="Traje F">
+                        </div>
+                        <div class="info-area">
+                            <h1>Traje Hambok (F)</h1>
+                            <p>
+                                Taxa de Defesa: <b>130</b> <br>
+                                Absorção: <b>12.0</b> <br>
+                                Add. HP: <b>130</b> <br>
+                                Add. MP: <b>120</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itCA607.bmp" alt="Traje M">
+                        </div>
+                        <div class="info-area">
+                            <h1>Traje Fraque (M)</h1>
+                            <p>
+                                Taxa de Defesa: <b>130</b> <br>
+                                Absorção: <b>12.0</b> <br>
+                                Add. HP: <b>130</b> <br>
+                                Add. MP: <b>120</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itCA608.bmp" alt="Traje F">
+                        </div>
+                        <div class="info-area">
+                            <h1>Traje Fraque (F)</h1>
+                            <p>
+                                Taxa de Defesa: <b>130</b> <br>
+                                Absorção: <b>12.0</b> <br>
+                                Add. HP: <b>130</b> <br>
+                                Add. MP: <b>120</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itCA617.bmp" alt="Traje M">
+                        </div>
+                        <div class="info-area">
+                            <h1>Traje Romântico (M)</h1>
+                            <p>
+                                Taxa de Defesa: <b>130</b> <br>
+                                Absorção: <b>12.0</b> <br>
+                                Add. HP: <b>130</b> <br>
+                                Add. MP: <b>120</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itCA619.bmp" alt="Traje F">
+                        </div>
+                        <div class="info-area">
+                            <h1>Traje Romântico (F)</h1>
+                            <p>
+                                Taxa de Defesa: <b>130</b> <br>
+                                Absorção: <b>12.0</b> <br>
+                                Add. HP: <b>130</b> <br>
+                                Add. MP: <b>120</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itCA639.bmp" alt="Traje M">
+                        </div>
+                        <div class="info-area">
+                            <h1>Traje Combatente (M)</h1>
+                            <p>
+                                Taxa de Defesa: <b>130</b> <br>
+                                Absorção: <b>12.0</b> <br>
+                                Add. HP: <b>130</b> <br>
+                                Add. MP: <b>120</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itCA641.BMP" alt="Traje F">
+                        </div>
+                        <div class="info-area">
+                            <h1>Traje Combatente (F)</h1>
+                            <p>
+                                Taxa de Defesa: <b>130</b> <br>
+                                Absorção: <b>12.0</b> <br>
+                                Add. HP: <b>130</b> <br>
+                                Add. MP: <b>120</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itCA643.bmp" alt="Traje M">
+                        </div>
+                        <div class="info-area">
+                            <h1>Traje Comandante (M)</h1>
+                            <p>
+                                Taxa de Defesa: <b>130</b> <br>
+                                Absorção: <b>12.0</b> <br>
+                                Add. HP: <b>130</b> <br>
+                                Add. MP: <b>120</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itCA645.bmp" alt="Traje F">
+                        </div>
+                        <div class="info-area">
+                            <h1>Traje Comandante (F)</h1>
+                            <p>
+                                Taxa de Defesa: <b>130</b> <br>
+                                Absorção: <b>12.0</b> <br>
+                                Add. HP: <b>130</b> <br>
+                                Add. MP: <b>120</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Acessórios/itoa133.BMP" alt="Colar Eliot">
+                        </div>
+                        <div class="info-area">
+                            <h1>Colar Eliot</h1>
+                            <p>
+                                HP Regen: <b>1.5</b> <br>
+                                MP Regen: <b>1.5</b> <br>
+                                STM Regen: <b>1.5</b> <br>
+                                Add. HP: <b>50</b> <br>
+                                Add. MP: <b>50</b> <br>
+                                Add. Res: <b>50</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Acessórios/itor228.BMP" alt="Anel Eliot">
+                        </div>
+                        <div class="info-area">
+                            <h1>Anel Eliot</h1>
+                            <p>
+                                Taxa de Defesa: <b>25</b> <br>
+                                Taxa de Ataque: <b>25</b> <br>
+                                Absorção: <b>2.1</b> <br>
+                                HP Regen: <b>1.5</b> <br>
+                                MP Regen: <b>1.5</b> <br>
+                                STM Regen: <b>1.5</b> <br>
+                                Add. HP: <b>35</b> <br>
+                                Add. MP: <b>35</b> <br>
+                                Add. Res: <b>35</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Acessórios/itOE102.bmp" alt="Bless Castle Earring">
+                        </div>
+                        <div class="info-area">
+                            <h1>Bless Castle Earring</h1>
+                            <p>
+                                Poder de Ataque: <b>1-2</b> <br>
+                                Taxa de Defesa: <b>30</b> <br>
+                                Absorção: <b>1.0</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">40</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Acessórios/itOE103.bmp" alt="Gladiator Earring">
+                        </div>
+                        <div class="info-area">
+                            <h1>Gladiator Earring</h1>
+                            <p>
+                                Poder de Ataque: <b>2-4</b> <br>
+                                Taxa de Defesa: <b>40</b> <br>
+                                Absorção: <b>1.5</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">40</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-FS.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec FS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-FS.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec FS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-MS.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec MS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-PS.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec PS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-AS.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec AS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-KS.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec KS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-ATA.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec ATS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-MG.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec MGS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-SC.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec PRS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/MATURE1.bmp" alt="Mature A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Mestre do Aging A</h1>
+                            <p>
+                                Matura uma <b>Arma</b> que passou pelo processo de <b>Aging</b>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/MATURE2.bmp" alt="Mature B">
+                        </div>
+                        <div class="info-area">
+                            <h1>Mestre do Aging b</h1>
+                            <p>
+                                Matura um <b>Escudo</b> ou <b>Orbital</b> que passou pelo processo de <b>Aging</b>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/MATURE3.bmp" alt="Mature C">
+                        </div>
+                        <div class="info-area">
+                            <h1>Mestre do Aging C</h1>
+                            <p>
+                                Matura uma <b>Armadura</b> ou <b>Roupão</b> que passou pelo processo de <b>Aging</b>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Shelton/itfo110.bmp" alt="Força Mirage">
+                        </div>
+                        <div class="info-area">
+                            <h1>Força Mirage</h1>
+                            <p>
+                                Poder de ATQ Add: <b>100</b> <br>
+                                Poder de ATQ Add%: <b>10%</b> <br>
+                                Duração: <b>02:00:00</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">50</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Shelton/itfo130.bmp" alt="Força Mágica Mirage">
+                        </div>
+                        <div class="info-area">
+                            <h1>Força Mágica Mirage</h1>
+                            <p>
+                                Poder de ATQ Add: <b>100</b> <br>
+                                Poder de ATQ Add%: <b>10%</b> <br>
+                                Duração: <b>02:00:00</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">65</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Shelton/itfo111.bmp" alt="Força Inferna">
+                        </div>
+                        <div class="info-area">
+                            <h1>Força Inferna</h1>
+                            <p>
+                                Poder de ATQ Add: <b>120</b> <br>
+                                Poder de ATQ Add%: <b>15%</b> <br>
+                                Duração: <b>03:00:00</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">50</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Shelton/itfo131.bmp" alt="Força Mágica Inferna">
+                        </div>
+                        <div class="info-area">
+                            <h1>Força Mágica Inferna</h1>
+                            <p>
+                                Poder de ATQ Add: <b>120</b> <br>
+                                Poder de ATQ Add%: <b>15%</b> <br>
+                                Duração: <b>03:00:00</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">70</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Shelton/itfo112.bmp" alt="Força Enigma">
+                        </div>
+                        <div class="info-area">
+                            <h1>Força Enigma</h1>
+                            <p>
+                                Poder de ATQ Add: <b>140</b> <br>
+                                Poder de ATQ Add%: <b>20%</b> <br>
+                                Duração: <b>02:00:00</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">50</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Shelton/itfo132.bmp" alt="Força Mágica Enigma">
+                        </div>
+                        <div class="info-area">
+                            <h1>Força Mágica Enigma</h1>
+                            <p>
+                                Poder de ATQ Add: <b>140</b> <br>
+                                Poder de ATQ Add%: <b>20%</b> <br>
+                                Duração: <b>02:00:00</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">90</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/AGE1.bmp" alt="Pedra do Aging">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra do Aging</h1>
+                            <p>
+                                Reduz a chance de falha do processo de Aging.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/AGE2.bmp" alt="Ouro Mágico">
+                        </div>
+                        <div class="info-area">
+                            <h1>Ouro Mágico</h1>
+                            <p>
+                                Reduz a chance de quebra do processo de Aging.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/EYE2.bmp" alt="Olho Mágico">
+                        </div>
+                        <div class="info-area">
+                            <h1>Olho Mágico</h1>
+                            <p>
+                                Aumenta 50% na chance de dropar mais itens de um Monstro.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/KITUP.bmp" alt="Pacote de UP 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pacote de UP 1D</h1>
+                            <p>
+                                O Pacote possui: <br>
+                                01 Olho Mágico 50% 1D <br>
+                                01 Poção de Experiência 50% 1D <br>
+                                01 Presa de Vampiro 1D <br>
+                                01 Drena Almas 1D <br>
+                                01 Poção Redut. de MP 30% 1D <br>
+                                01 Poção Redut. de STM 30% 1D <br>
+                                01 Fênix 1D <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/XP3.bmp" alt="Poção de Experiência 30% 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Poção de Experiência 30% 1D</h1>
+                            <p>
+                                Aumenta em 30% a Experiência adquirida de um monstro.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/XP3.bmp" alt="Poção de Experiência 50% 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Poção de Experiência 50% 1D</h1>
+                            <p>
+                                Aumenta em 50% a Experiência adquirida de um monstro.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/DOWN-MP3.bmp" alt="Poção Redut. MP 30% 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Poção Redut. MP 30% 1D</h1>
+                            <p>
+                                Reduz o uso de MP em 30%
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/DOWN-STM3.bmp" alt="Poção Redut. STM 30% 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Poção Redut. STM 30% 1D</h1>
+                            <p>
+                                Reduz o uso de STM em 30%
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/Presa3.bmp" alt="Presa de Vampiro 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Presa de Vampiro 1D</h1>
+                            <p>
+                                Converte % do dano em HP
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RegenM3.bmp" alt="Drena Almas 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Drena Almas 1D</h1>
+                            <p>
+                                Converte % do dano em MP
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/Fenix3.BMP" alt="Fênix 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Fênix 1D</h1>
+                            <p>
+                                Invoca um Fênix para ajudar nas batalhas. <br>
+                                Aumenta 20% na chance de dropar mais itens de um monstro.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/Terry.bmp" alt="Terry 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Terry 1D</h1>
+                            <p>
+                                Invoca um pequeno dragão com o poder de fogo para ajudar nas batalhas.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/Eor.bmp" alt="Eor 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Eor 1D</h1>
+                            <p>
+                                Invoca um pequeno dragão com o poder de fogo para ajudar nas batalhas.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/WEIGHT.bmp" alt="Pedra da Gravidade">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra da Gravidade</h1>
+                            <p>
+                                Aumenta +50 do peso total no personagem permanentemente. <br>
+                                Limite de uso: <b>5 vezes</b>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/Spresa3.bmp" alt="Super Presa de Vampiro 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Super Presa de Vampiro 1D</h1>
+                            <p>
+                                Converte % do dano em HP
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/BIG-HEAD.bmp" alt="Poção Cabeção 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Poção Cabeção 1D</h1>
+                            <p>
+                                Deixa o personagem inchado e aumenta 15% do poder de ATQ.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/GOLD-LOOTER.bmp" alt="Coletor de Ouro 12H">
+                        </div>
+                        <div class="info-area">
+                            <h1>Coletor de Ouro 12H</h1>
+                            <p>
+                                Gold Looter <br>
+                                Mate os monstros e colete o ouro automaticamente.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/GOLD-LOOTER.bmp" alt="Coletor de Ouro 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Coletor de Ouro 1D</h1>
+                            <p>
+                                Gold Looter <br>
+                                Mate os monstros e colete o ouro automaticamente.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/BOOSTER-HP.bmp" alt="HP Booster 12H">
+                        </div>
+                        <div class="info-area">
+                            <h1>HP Booster 12H</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/BOOSTER-HP.bmp" alt="HP Booster 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>HP Booster 1D</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/BOOSTER-MP.bmp" alt="MP Booster 12H">
+                        </div>
+                        <div class="info-area">
+                            <h1>MP Booster 12H</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/BOOSTER-MP.bmp" alt="MP Booster 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>MP Booster 1D</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/AGE+10.bmp" alt="Aging Direto +10">
+                        </div>
+                        <div class="info-area">
+                            <h1>Aging Direto +10</h1>
+                            <p>
+                                Leva o item direto ao nível de Aging +10
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/Perf-Item.bmp" alt="Pedra da Honra">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra da Honra</h1>
+                            <p>
+                                Item usado no processo de Re-Especialização para obter status 100% perfeitos.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/Remove.bmp" alt="Pedra da Limpeza">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra da Limpeza</h1>
+                            <p>
+                                Item usado no processo de reversão do mix ou aging.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/VIP.bmp" alt="Vip 07 Dias">
+                        </div>
+                        <div class="info-area">
+                            <h1>Vip 07 Dias</h1>
+                            <p>
+                                Vip com vários beneficios <br>
+                                Use <b>/comandos</b> para verificar.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/VIP.bmp" alt="Vip 30 Dias">
+                        </div>
+                        <div class="info-area">
+                            <h1>Vip 30 Dias</h1>
+                            <p>
+                                Vip com vários beneficios <br>
+                                Use <b>/comandos</b> para verificar.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="timeshop" class="item-area">
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/DROP2-1.bmp" alt="Baú de Bronze 1H">
+                        </div>
+                        <div class="info-area">
+                            <h1>Baú de Bronze 1H</h1>
+                            <p>
+                                Aumenta 20% na chance de dropar mais itens de um monstro. <br>
+                                Aumenta em 10% a Experiência adquirida de um monstro.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/DROP2-1.bmp" alt="Baú de Prata 1H">
+                        </div>
+                        <div class="info-area">
+                            <h1>Baú de Prata 1H</h1>
+                            <p>
+                                Aumenta 30% na chance de dropar mais itens de um monstro. <br>
+                                Aumenta em 20% a Experiência adquirida de um monstro.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/Terry.bmp" alt="Terry 1H">
+                        </div>
+                        <div class="info-area">
+                            <h1>Terry 1H</h1>
+                            <p>
+                                Invoca um pequeno dragão com o poder de fogo para ajudar nas batalhas.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/Eor.bmp" alt="Eor 1H">
+                        </div>
+                        <div class="info-area">
+                            <h1>Eor 1H</h1>
+                            <p>
+                                Invoca um pequeno dragão com o poder de fogo para ajudar nas batalhas.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/Fenix1.BMP" alt="Fênix 1H">
+                        </div>
+                        <div class="info-area">
+                            <h1>Fênix 1H</h1>
+                            <p>
+                                Invoca uma Fênix para ajudar nas batalhas.
+                                <br>
+                                Aumenta 20% na chance de dropar mias itens de um monstro.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/BIG-HEAD.bmp" alt="Poção Cabeção 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Poção Cabeção 1D</h1>
+                            <p>
+                                Deixa o personagem inchado e aumenta 15% do poder de ATQ.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/Presa3.bmp" alt="Presa de Vampiro 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Presa de Vampiro 1D</h1>
+                            <p>
+                                Converte % do dano em HP
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RegenM3.bmp" alt="Drena Almas 1D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Drena Almas 1D</h1>
+                            <p>
+                                Converte % do dano em MP
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Shelton/itfo109.bmp" alt="Força Celesto">
+                        </div>
+                        <div class="info-area">
+                            <h1>Força Celesto</h1>
+                            <p>
+                                Poder de ATQ Add: <b>80</b> <br>
+                                Poder de ATQ Add%: <b>10%</b> <br>
+                                Duração: <b>01:00:00</b>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">50</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Shelton/itfo129.bmp" alt="Força Mágica Celesto">
+                        </div>
+                        <div class="info-area">
+                            <h1>Força Mágica Celesto</h1>
+                            <p>
+                                Poder de ATQ Add: <b>80</b> <br>
+                                Poder de ATQ Add%: <b>10%</b> <br>
+                                Duração: <b>01:00:00</b>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">60</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Shelton/itfo108.bmp" alt="Força Devine">
+                        </div>
+                        <div class="info-area">
+                            <h1>Força Devine</h1>
+                            <p>
+                                Poder de ATQ Add: <b>60</b> <br>
+                                Poder de ATQ Add%: <b>10%</b> <br>
+                                Duração: <b>00:40:00</b>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">50</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Shelton/itfo128.bmp" alt="Força Mágica Devine">
+                        </div>
+                        <div class="info-area">
+                            <h1>Força Mágica Devine</h1>
+                            <p>
+                                Poder de ATQ Add: <b>60</b> <br>
+                                Poder de ATQ Add%: <b>10%</b> <br>
+                                Duração: <b>00:40:00</b>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">55</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Acessórios/itOE101.bmp" alt="Bellatra Earring">
+                        </div>
+                        <div class="info-area">
+                            <h1>Bellatra Earring</h1>
+                            <p>
+                                Taxa de Defesa: <b>30</b> <br>
+                                Absorção: <b>0.5</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">40</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itCA610.bmp" alt="Traje M">
+                        </div>
+                        <div class="info-area">
+                            <h1>Traje Vampiro (M)</h1>
+                            <p>
+                                Taxa de Defesa: <b>100</b> <br>
+                                Absorção: <b>10.0</b> <br>
+                                Add. HP: <b>100</b> <br>
+                                Add. MP: <b>100</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itCA611.bmp" alt="Traje F">
+                        </div>
+                        <div class="info-area">
+                            <h1>Traje Vampiro (F)</h1>
+                            <p>
+                                Taxa de Defesa: <b>100</b> <br>
+                                Absorção: <b>10.0</b> <br>
+                                Add. HP: <b>100</b> <br>
+                                Add. MP: <b>100</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itCA610.bmp" alt="Traje Mágico M">
+                        </div>
+                        <div class="info-area">
+                            <h1>Traje Mágico Vampiro (M)</h1>
+                            <p>
+                                Taxa de Defesa: <b>100</b> <br>
+                                Absorção: <b>10.0</b> <br>
+                                Add. HP: <b>100</b> <br>
+                                Add. MP: <b>100</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Defesa/itCA611.bmp" alt="Traje Mágico F">
+                        </div>
+                        <div class="info-area">
+                            <h1>Traje Mágico Vampiro (F)</h1>
+                            <p>
+                                Taxa de Defesa: <b>100</b> <br>
+                                Absorção: <b>10.0</b> <br>
+                                Add. HP: <b>100</b> <br>
+                                Add. MP: <b>100</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">10</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/AGE1.bmp" alt="Pedra do Aging">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra do Aging</h1>
+                            <p>
+                                Reduz a chance de falha do processo de Aging.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/AGE2.bmp" alt="Ouro Mágico">
+                        </div>
+                        <div class="info-area">
+                            <h1>Ouro Mágico</h1>
+                            <p>
+                                Reduz a chance de quebra do processo de Aging.
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/MATURE1.bmp" alt="Mature A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Mestre do Aging A</h1>
+                            <p>
+                                Matura uma <b>Arma</b> que passou pelo processo de <b>Aging</b>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/MATURE2.bmp" alt="Mature B">
+                        </div>
+                        <div class="info-area">
+                            <h1>Mestre do Aging b</h1>
+                            <p>
+                                Matura um <b>Escudo</b> ou <b>Orbital</b> que passou pelo processo de <b>Aging</b>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/MATURE3.bmp" alt="Mature C">
+                        </div>
+                        <div class="info-area">
+                            <h1>Mestre do Aging C</h1>
+                            <p>
+                                Matura uma <b>Armadura</b> ou <b>Roupão</b> que passou pelo processo de <b>Aging</b>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">1</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-FS.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec FS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-FS.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec FS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-MS.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec MS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-PS.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec PS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-AS.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec AS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-KS.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec KS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-ATA.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec ATS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-MG.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec MGS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="itemshop/Premiuns/RESPECT-SC.bmp" alt="Respect">
+                        </div>
+                        <div class="info-area">
+                            <h1>Pedra de Respec PRS</h1>
+                            <p>
+
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">0-108</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="janelaEquipments" class="equipswindow">
+                <div class="titulo-main">
+                    <h1>Elemental Wiki</h1>
+                </div>
+                <div class="seletor">
+
+                    <div id="ataque" class="ataque">
+                        <p>Ataque</p>
+                        <button onclick="Arcos()">Arcos</button>
+                        <button onclick="CajadoeVarinha()">Cajados e Varinhas</button>
+                        <button onclick="Espadas()">Espadas</button>
+                        <button onclick="Foices()">Foices</button>
+                        <button onclick="Garras()">Garras</button>
+                        <button onclick="Lancas()">Lanças</button>
+                        <button onclick="Machados()">Machados</button>
+                        <button onclick="Martelos()">Martelos</button>
+                    </div>
+
+                    <div id="defesa" class="defesa">
+                        <p>Defesa</p>
+                        <button onclick="Armaduras()">Armaduras</button>
+                        <button onclick="Robes()">Robes</button>
+                        <button onclick="Escudos()">Escudos</button>
+                        <button onclick="Orbitais()">Orbitais</button>
+                        <button onclick="Braceletes()">Braceletes</button>
+                        <button onclick="Luvas()">Luvas</button>
+                        <button onclick="Botas()">Botas</button>
+                    </div>
+
+                    <div id="acessorios" class="acessorios">
+                        <p>Acessórios</p>
+                        <button onclick="Aneis()">Anéis</button>
+                        <button onclick="Colares()">Colares</button>
+                        <button onclick="Brincos()">Brincos</button>
+                        <button onclick="Sheltons()">Sheltons</button>
+                    </div>
+                </div>
+
+                <div id="ArcosSelecionado" class="item-area">
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Arcos/65/64.bmp" alt="Armadura 60">
+                        </div>
+                        <div class="info-area">
+                            <h1>Arco do Caos</h1>
+                            <p>
+                                Poder de Ataque: <b> (20 - 23) - (32 - 35)</b> <br>
+                                Vel. da Arma: <b>6</b> <br>
+                                Alcance: <b>240</b> <br>
+                                Crítico: <b>16%</b> <br>
+                                Taxa de Ataque: <b>68 - 85</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">64</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Arcos/70/70.bmp" alt="Armadura 70">
+                        </div>
+                        <div class="info-area">
+                            <h1>Arco do Vento</h1>
+                            <p>
+                                Poder de Ataque: <b>(22 - 24) - (35 - 39)</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Alcance: <b>245</b> <br>
+                                Crítico: <b>16%</b> <br>
+                                Taxa de Ataque: <b>90 - 110</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">70</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Arcos/75/75.bmp" alt="Armadura 75">
+                        </div>
+                        <div class="info-area">
+                            <h1>Arco Antigo</h1>
+                            <p>
+                                Poder de Ataque: <b>(25 - 27) - (41 - 44)</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Alcance: <b>250</b> <br>
+                                Crítico: <b>17%</b> <br>
+                                Taxa de Ataque: <b>85 - 120</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">75</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Arcos/80A/A.bmp" alt="Armadura 80A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Arco do Trovão</h1>
+                            <p>
+                                Poder de Ataque: <b>(29 - 32) - (46 - 49)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Alcance: <b>250</b> <br>
+                                Crítico: <b>16%</b> <br>
+                                Taxa de Ataque: <b>89 - 124</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Arcos/80B/B.bmp" alt="Armadura 80B">
+                        </div>
+                        <div class="info-area">
+                            <h1>Arco Onda</h1>
+                            <p>
+                                Poder de Ataque: <b>(33 - 36) - (51 - 54)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Alcance: <b>255</b> <br>
+                                Crítico: <b>16%</b> <br>
+                                Taxa de Ataque: <b>96 - 130</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Arcos/80C/C.bmp" alt="Armadura 80C">
+                        </div>
+                        <div class="info-area">
+                            <h1>Arco Grandioso</h1>
+                            <p>
+                                Poder de Ataque: <b>(38 - 40) - (56 - 59)</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Alcance: <b>255</b> <br>
+                                Crítico: <b>17%</b> <br>
+                                Taxa de Ataque: <b>104 - 135</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Arcos/80D/D.bmp" alt="Armadura 80D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Arco Miragem</h1>
+                            <p>
+                                Poder de Ataque: <b>(42 - 45) - (62 - 65)</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Alcance: <b>255</b> <br>
+                                Crítico: <b>17%</b> <br>
+                                Taxa de Ataque: <b>112 - 144</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Arcos/100/100.bmp" alt="Armadura 100A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Arco Wyvern</h1>
+                            <p>
+                                Poder de Ataque: <b>(51 - 54) - (74 - 77)</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Alcance: <b>255</b> <br>
+                                Crítico: <b>18%</b> <br>
+                                Taxa de Ataque: <b>128 - 138</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Arcos/Q/Q.bmp" alt="Armadura 100A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Arco da Vingança</h1>
+                            <p>
+                                Poder de Ataque: <b>60 - 81</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Alcance: <b>270</b> <br>
+                                Crítico: <b>25%</b> <br>
+                                Taxa de Ataque: <b>240 - 240</b> <br>
+                                Adic. HP: <b>50</b> <br>
+                                MP Adicional: <b>50</b> <br>
+                                RES Adicional: <b>50</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="CajadoeVarinhaSelecionado" class="item-area">
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/cajadoevarinha/60/60.bmp" alt="Varinha 60">
+                        </div>
+                        <div class="info-area">
+                            <h1>Varinha Arch</h1>
+                            <p>
+                                Poder de Ataque: <b>(10 - 13) - (16 - 19)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>4</b>% <br>
+                                Alcance: <b>155</b> <br>
+                                Taxa de Ataque: <b>65 - 80</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">60</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/cajadoevarinha/65/65.bmp" alt="Cajado 65">
+                        </div>
+                        <div class="info-area">
+                            <h1>Cajado do Caos</h1>
+                            <p>
+                                Poder de Ataque: <b>(16 - 19) - (24 - 27)</b> <br>
+                                Vel. da Arma: <b>6</b> <br>
+                                Crítico: <b>6%</b> <br>
+                                Alcance: <b>175</b> <br>
+                                Taxa de Ataque: <b>78 - 98</b> <br>
+                                Bloqueio: 6%
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">65</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/cajadoevarinha/70/70.bmp" alt="Varinha 70">
+                        </div>
+                        <div class="info-area">
+                            <h1>Varinha Mágica</h1>
+                            <p>
+                                Poder de Ataque: <b>(12 - 15) - (17 - 20)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>5%</b> <br>
+                                Alcance: <b>180</b> <br>
+                                Taxa de Ataque: <b>100 - 125</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">70</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/cajadoevarinha/75/75.bmp" alt="Cajado 75">
+                        </div>
+                        <div class="info-area">
+                            <h1>Cajado Mágico</h1>
+                            <p>
+                                Poder de Ataque: <b>(22 - 24) - (28 - 30)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>7%</b> <br>
+                                Alcance: <b>185</b> <br>
+                                Taxa de Ataque: <b>110 - 130</b> <br>
+                                Bloqueio: <b>7%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">75</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/cajadoevarinha/80A/A.bmp" alt="Varinha 80A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Varinha dos Apóstolos</h1>
+                            <p>
+                                Poder de Ataque: <b>(20 - 23) - (29 - 31)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>6%</b> <br>
+                                Alcance: <b>165</b> <br>
+                                Taxa de Ataque: <b>118 - 140</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/cajadoevarinha/80B/B.bmp" alt="Cajado 80B">
+                        </div>
+                        <div class="info-area">
+                            <h1>Cajado Antigo</h1>
+                            <p>
+                                Poder de Ataque: <b>(28 - 30) - (35 - 38)</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Crítico: <b>7%</b> <br>
+                                Alcance: <b>190</b> <br>
+                                Taxa de Ataque: <b>130 - 148</b> <br>
+                                Bloqueio: <b>8%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/cajadoevarinha/80C/C.bmp" alt="Cajado 80C">
+                        </div>
+                        <div class="info-area">
+                            <h1>Cajado do Dragão</h1>
+                            <p>
+                                Poder de Ataque: <b>(32 - 35) - (40 - 42)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>8</b> <br>
+                                Alcance: <b>195</b> <br>
+                                Taxa de Ataque: <b>137 - 155</b> <br>
+                                Bloqueio: <b>8%</b>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/cajadoevarinha/80D/D.bmp" alt="Varinha 80D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Varinha Wyvern</h1>
+                            <p>
+                                Poder de Ataque: <b>(28 - 30) - (37 - 39)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>7%</b> <br>
+                                Alcance: <b>180</b> <br>
+                                Taxa de Ataque: <b>146 - 164</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/cajadoevarinha/100/100.bmp" alt="Varinha 100A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Varinha Oráculo</h1>
+                            <p>
+                                Poder de Ataque: <b>(36 - 40) - (43 - 45)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>9%</b> <br>
+                                Alcance: <b>195</b> <br>
+                                Taxa de Ataque: <b>164 - 174</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/cajadoevarinha/Q/Q.bmp" alt="Cajado 100Q">
+                        </div>
+                        <div class="info-area">
+                            <h1>Cajado Gótico</h1>
+                            <p>
+                                Poder de Ataque: <b>53 - 60</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Crítico: <b>12%</b> <br>
+                                Alcance: <b>200</b> <br>
+                                Taxa de Ataque: <b>180</b> <br>
+                                Bloqueio: <b>13%</b> <br>
+                                Regen MP: <b>3.2</b> <br>
+                                Adic. HP: <b>25</b> <br>
+                                MP. Adic: <b>100</b> <br>
+                                RES. Adic: <b>25</b><br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="EspadasSelecionado" class="item-area">
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Espadas/60/60.bmp" alt="Espada 60">
+                        </div>
+                        <div class="info-area">
+                            <h1>Espada Bastarda</h1>
+                            <p>
+                                Poder de Ataque: <b>(23 - 26) - (36 - 40)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>16%</b> <br>
+                                Taxa de Ataque: <b>100 - 114</b> <br>
+                                Bloqueio: <b>9%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">61</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Espadas/65/65.bmp" alt="Espada 65">
+                        </div>
+                        <div class="info-area">
+                            <h1>Espada Fatal</h1>
+                            <p>
+                                Poder de Ataque: <b>(25 - 29) - (39 - 44)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>17%</b> <br>
+                                Taxa de Ataque: <b>110 - 130</b> <br>
+                                Bloqueio: <b>8%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">65</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Espadas/70/70.bmp" alt="Espada 70">
+                        </div>
+                        <div class="info-area">
+                            <h1>Espada Antiga</h1>
+                            <p>
+                                Poder de Ataque: <b>(22 - 26) - (35 - 38)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>11%</b> <br>
+                                Taxa de Ataque: <b>100 - 120</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">70</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Espadas/75/75.bmp" alt="Espada 75">
+                        </div>
+                        <div class="info-area">
+                            <h1>Espada Gêmea</h1>
+                            <p>
+                                Poder de Ataque: <b>(32 - 35) - (48 - 51)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>18%</b> <br>
+                                Taxa de Ataque: <b>118 - 142</b> <br>
+                                Bloqueio: <b>9%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">75</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Espadas/80A/A.bmp" alt="Espada 80A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Espada Salamandra</h1>
+                            <p>
+                                Poder de Ataque: <b>(38 - 40) - (53 - 56)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>18%</b> <br>
+                                Taxa de Ataque: <b>126 - 150</b> <br>
+                                Bloqueio: <b>10%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Espadas/80B/B.bmp" alt="Espada 80B">
+                        </div>
+                        <div class="info-area">
+                            <h1>Espada da Vingança</h1>
+                            <p>
+                                Poder de Ataque: <b>(34 - 36) - (47 - 50)</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Crítico: <b>11%</b> <br>
+                                Taxa de Ataque: <b>130 - 156</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Espadas/80C/C.bmp" alt="Espada 80C">
+                        </div>
+                        <div class="info-area">
+                            <h1>Espada Titan</h1>
+                            <p>
+                                Poder de Ataque: <b>(47 - 50) - (63 - 66)</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Crítico: <b>18%</b> <br>
+                                Taxa de Ataque: <b>136 - 164</b> <br>
+                                Bloqueio: <b>10%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Espadas/80D/D.bmp" alt="Espada 80D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Espada Wyvern</h1>
+                            <p>
+                                Poder de Ataque: <b>(36 - 39) - (51 - 55)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>11%</b> <br>
+                                Taxa de Ataque: <b>144 - 170</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Espadas/100/100.bmp" alt="Espada 100A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Espada da Justiça</h1>
+                            <p>
+                                Poder de Ataque: <b>(52 - 54) - (71 - 74)</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Crítico: <b>20%</b> <br>
+                                Taxa de Ataque: <b>160 - 164</b> <br>
+                                Bloqueio: <b>12%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Espadas/Q/Q.bmp" alt="Espada 100A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Espada Imortal</h1>
+                            <p>
+                                Poder de Ataque: <b>71 - 86</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Crítico: <b>24%</b> <br>
+                                Taxa de Ataque: <b>285</b> <br>
+                                Adic. HP: <b>50</b> <br>
+                                MP Adic: <b>50</b> <br>
+                                RES Adic: <b>50</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="FoicesSelecionado" class="item-area">
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Foices/60/60.bmp" alt="Foice 60">
+                        </div>
+                        <div class="info-area">
+                            <h1>Foice Styx</h1>
+                            <p>
+                                Poder de Ataque: <b>(18 - 45) - (22 - 49)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>14%</b> <br>
+                                Taxa de Ataque: <b>105 - 122</b> <br>
+                                Bloqueio: <b>11%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">60</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Foices/65/65.bmp" alt="Foice 65">
+                        </div>
+                        <div class="info-area">
+                            <h1>Asa do Dragão</h1>
+                            <p>
+                                Poder de Ataque: <b>(21 - 23) - (49 - 53)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>17%</b> <br>
+                                Taxa de Ataque: <b>120 - 135</b> <br>
+                                Bloqueio: <b>12%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">65</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Foices/70/70.bmp" alt="Foice 70">
+                        </div>
+                        <div class="info-area">
+                            <h1>Borboleta</h1>
+                            <p>
+                                Poder de Ataque: <b>(23 - 52) - (25 - 56)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>16%</b> <br>
+                                Taxa de Ataque: <b>130 - 151</b> <br>
+                                Bloqueio: <b>14%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">70</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Foices/75/75.bmp" alt="Foice 75">
+                        </div>
+                        <div class="info-area">
+                            <h1>Foice Mística</h1>
+                            <p>
+                                Poder de Ataque: <b>(26 - 28) - (58 - 61)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>17%</b> <br>
+                                Taxa de Ataque: <b>144 - 160</b> <br>
+                                Bloqueio: <b>13%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">75</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Foices/80A/A.bmp" alt="Foice 80A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Hiper Foice</h1>
+                            <p>
+                                Poder de Ataque: <b>(29 - 31) - (63 - 66)</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Crítico: <b>18%</b> <br>
+                                Taxa de Ataque: <b>150 - 169</b> <br>
+                                Bloqueio: <b>13%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Foices/80B/B.bmp" alt="Foice 80B">
+                        </div>
+                        <div class="info-area">
+                            <h1>Oráculo</h1>
+                            <p>
+                                Poder de Ataque: <b>(32 - 35) - (68 - 71)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>17%</b> <br>
+                                Taxa de Ataque: <b>158 - 178</b> <br>
+                                Bloqueio: <b>14%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Foices/80C/C.bmp" alt="Foice 80C">
+                        </div>
+                        <div class="info-area">
+                            <h1>Imortal</h1>
+                            <p>
+                                Poder de Ataque: <b>(37 - 39) - (73 - 76)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>17%</b> <br>
+                                Taxa de Ataque: <b>166 - 185</b> <br>
+                                Bloqueio: <b>14%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Foices/80D/D.bmp" alt="Foice 80D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Foice Extrema</h1>
+                            <p>
+                                Poder de Ataque: <b>(41 - 43) - (78 - 82)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>17%</b> <br>
+                                Taxa de Ataque: <b>170 - 192</b> <br>
+                                Bloqueio: <b>14%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Foices/100/100.bmp" alt="Foice 100A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Foice Implacável</h1>
+                            <p>
+                                Poder de Ataque: <b>(49 - 52) - (92 - 95)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>18%</b> <br>
+                                Taxa de Ataque: <b>181 - 199</b> <br>
+                                Bloqueio: <b>15%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Foices/Q/Q.bmp" alt="Foice Quest">
+                        </div>
+                        <div class="info-area">
+                            <h1>HellFire</h1>
+                            <p>
+                                Poder de Ataque: <b>58-98</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Crítico: <b>25%</b> <br>
+                                Taxa de Ataque: <b>250</b> <br>
+                                Adic: HP: <b>50</b> <br>
+                                MP Adic: <b>50</b> <br>
+                                RES Adic: <b>50</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="GarrasSelecionado" class="item-area">
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Garras/60/60.bmp" alt="Garra 60">
+                        </div>
+                        <div class="info-area">
+                            <h1>Garra Wyvern</h1>
+                            <p>
+                                Poder de Ataque: <b>(19 - 22) - (28 - 31)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>11%</b> <br>
+                                Taxa de Defesa: <b>38 - 45</b> <br>
+                                Taxa de Ataque: <b>95 - 108</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">60</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Garras/65/65.bmp" alt="Garra 65">
+                        </div>
+                        <div class="info-area">
+                            <h1>Garra do Caos</h1>
+                            <p>
+                                Poder de Ataque: <b>(21 - 23) - (31 - 35)</b> <br>
+                                Vel. da Arma: <b>6</b> <br>
+                                Crítico: <b>13%</b> <br>
+                                Taxa de Defesa: <b>43 - 50</b> <br>
+                                Taxa de Ataque: <b>100 - 114</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">65</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Garras/70/70.bmp" alt="Garra 70">
+                        </div>
+                        <div class="info-area">
+                            <h1>Garra Alada</h1>
+                            <p>
+                                Poder de Ataque: <b>(23 - 26) - (34 - 38)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>13%</b> <br>
+                                Taxa de Defesa: <b>55 - 60</b> <br>
+                                Taxa de Ataque: <b>108 - 123</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">70</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Garras/75/75.bmp" alt="Garra 75">
+                        </div>
+                        <div class="info-area">
+                            <h1>Garra Maldita</h1>
+                            <p>
+                                Poder de Ataque: <b>(26 - 28) - (37 - 42)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>14%</b> <br>
+                                Taxa de Defesa: <b>50 - 60</b> <br>
+                                Taxa de Ataque: <b>120 - 133</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">75</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Garras/80A/A.bmp" alt="Garra 80A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Garra Titan</h1>
+                            <p>
+                                Poder de Ataque: <b>(30 - 33) - (44 - 47)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>15%</b> <br>
+                                Taxa de Defesa: <b>55 - 60</b> <br>
+                                Taxa de Ataque: <b>118 - 130</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Garras/80B/B.bmp" alt="Garra 80B">
+                        </div>
+                        <div class="info-area">
+                            <h1>Garra Salamandra</h1>
+                            <p>
+                                Poder de Ataque: <b>(35 - 37) - (49 - 52)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>16%</b> <br>
+                                Taxa de Defesa: <b>55 - 60</b> <br>
+                                Taxa de Ataque: <b>125 - 142</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Garras/80C/C.bmp" alt="Garra 80C">
+                        </div>
+                        <div class="info-area">
+                            <h1>Garra Fênix</h1>
+                            <p>
+                                Poder de Ataque: <b>(39 - 42) - (54 - 57)</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Crítico: <b>15%</b> <br>
+                                Taxa de Defesa: <b>55 - 65</b> <br>
+                                Taxa de Ataque: <b>135 - 154</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Garras/80D/D.bmp" alt="Garra 80D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Garra Chiemere</h1>
+                            <p>
+                                Poder de Ataque: <b>(44 - 47) - (60 - 63)</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Crítico: <b>15%</b> <br>
+                                Taxa de Defesa: <b>60 - 65</b> <br>
+                                Taxa de Ataque: <b>147 - 165</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Garras/100/100.bmp" alt="Garra 100A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Garra Víbora</h1>
+                            <p>
+                                Poder de Ataque: <b>(54 - 58) - (71 - 74)</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Crítico: <b>16%</b> <br>
+                                Taxa de Defesa: <b>70 - 75</b> <br>
+                                Taxa de Ataque: <b>163 - 181</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Garras/Q/Q.bmp" alt="Garra 100Q">
+                        </div>
+                        <div class="info-area" style="height: 276px;">
+                            <h1>Garra Extrema</h1>
+                            <p>
+                                Poder de Ataque: <b>63-80</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Crítico: <b>20%</b> <br>
+                                Taxa de Defesa: <b>75</b> <br>
+                                Taxa de Ataque: <b>278</b> <br>
+                                Adic. HP: <b>50</b> <br>
+                                MP Adic: <b>50</b> <br>
+                                RES Adic: <b>50</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="LancasSelecionado" class="item-area">
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Lancas/60/60.bmp" alt="Armadura 60">
+                        </div>
+                        <div class="info-area">
+                            <h1>Lança Wyvern</h1>
+                            <p>
+                                Poder de Ataque: <b>(16 - 19) - (25 - 28))</b> <br>
+                                Vel. da Arma: <b>6</b> <br>
+                                Alcance: <b>225</b> <br>
+                                Crítico: <b>8%</b> <br>
+                                Taxa de Ataque: <b>(64 - 80)</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">60</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Lancas/65/65.bmp" alt="Armadura 65">
+                        </div>
+                        <div class="info-area">
+                            <h1>Lança Retorcida</h1>
+                            <p>
+                                Poder de Ataque: <b>(18 - 22) - (27 - 31))</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Alcance: <b>225</b> <br>
+                                Crítico: <b>9%</b> <br>
+                                Taxa de Ataque: <b>(70 - 96)</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">65</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Lancas/70/70.bmp" alt="Armadura 70">
+                        </div>
+                        <div class="info-area">
+                            <h1>Link</h1>
+                            <p>
+                                Poder de Ataque: <b>(20 - 23) - (31 - 34))</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Alcance: <b>230</b> <br>
+                                Crítico: <b>9%</b> <br>
+                                Taxa de Ataque: <b>(82 - 104)</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">70</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Lancas/75/75.bmp" alt="Armadura 75">
+                        </div>
+                        <div class="info-area">
+                            <h1>Miragem</h1>
+                            <p>
+                                Poder de Ataque: <b>(24 - 27) - (35 - 38))</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Alcance: <b>240</b> <br>
+                                Crítico: <b>10%</b> <br>
+                                Taxa de Ataque: <b>(90 - 15)</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">75</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Lancas/80A/A.bmp" alt="Armadura 80A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Lança Mística</h1>
+                            <p>
+                                Poder de Ataque: <b>(28 - 30) - (40 - 43))</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Alcance: <b>240</b> <br>
+                                Crítico: <b>12%</b> <br>
+                                Taxa de Ataque: <b>(104 - 124)</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Lancas/80B/B.bmp" alt="Armadura 80B">
+                        </div>
+                        <div class="info-area">
+                            <h1>Lança Extrema</h1>
+                            <p>
+                                Poder de Ataque: <b>(31 - 33) - (45 - 48))</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Alcance: <b>240</b> <br>
+                                Crítico: <b>11%</b> <br>
+                                Taxa de Ataque: <b>(112 - 130)</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Lancas/80C/C.bmp" alt="Armadura 80C">
+                        </div>
+                        <div class="info-area">
+                            <h1>Lança do Dragão</h1>
+                            <p>
+                                Poder de Ataque: <b>(35 - 38) - (50 - 53))</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Alcance: <b>240</b> <br>
+                                Crítico: <b>12%</b> <br>
+                                Taxa de Ataque: <b>(120 - 140)</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Lancas/80D/D.bmp" alt="Armadura 80D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Lança Espinhosa</h1>
+                            <p>
+                                Poder de Ataque: <b>(40 - 43) - (55 - 58))</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Alcance: <b>240</b> <br>
+                                Crítico: <b>12%</b> <br>
+                                Taxa de Ataque: <b>(128 - 148)</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Lancas/100/100.bmp" alt="Armadura 100A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Lança Imortal</h1>
+                            <p>
+                                Poder de Ataque: <b>(51 - 54) - (65 - 68))</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Alcance: <b>250</b> <br>
+                                Crítico: <b>14%</b> <br>
+                                Taxa de Ataque: <b>(144 - 165)</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Lancas/Q/Q.bmp" alt="Armadura 100A">
+                        </div>
+                        <div class="info-area" style="height: 276px;">
+                            <h1>Lança Salamandra</h1>
+                            <p>
+                                Poder de Ataque: <b>(58 - 73)</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Alcance: <b>265</b> <br>
+                                Crítico: <b>22%</b> <br>
+                                Taxa de Ataque: <b>265</b> <br>
+                                Adic. HP: <b>50</b> <br>
+                                MP Adic: <b>50</b> <br>
+                                RES Adic: <b>50</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="MachadosSelecionado" class="item-area">
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Machados/60/60.bmp" alt="Armadura 60">
+                        </div>
+                        <div class="info-area">
+                            <h1>Fatiador</h1>
+                            <p>
+                                Poder de Ataque: <b>(22 - 35) - (35 - 39)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>15%</b> <br>
+                                Taxa de Ataque: <b>84 - 102</b> <br>
+                                Bloqueio: <b>7%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">60</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Machados/65/65.bmp" alt="Armadura 65">
+                        </div>
+                        <div class="info-area">
+                            <h1>Machado Gigante</h1>
+                            <p>
+                                Poder de Ataque: <b>(24 - 27) - (40 - 46)</b> <br>
+                                Vel. da Arma: <b>6</b> <br>
+                                Crítico: <b>16%</b> <br>
+                                Taxa de Ataque: <b>90 - 110</b> <br>
+                                Bloqueio: <b>7%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">65</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Machados/70/70.bmp" alt="Armadura 70">
+                        </div>
+                        <div class="info-area">
+                            <h1>Tomahawk</h1>
+                            <p>
+                                Poder de Ataque: <b>(23 - 35) - (35 - 38)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>9%</b> <br>
+                                Taxa de Ataque: <b>95 - 120</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">70</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Machados/75/75.bmp" alt="Armadura 75">
+                        </div>
+                        <div class="info-area">
+                            <h1>Machado Titan</h1>
+                            <p>
+                                Poder de Ataque: <b>(31 - 34) - (52 - 55)</b> <br>
+                                Vel. da Arma: <b>6</b> <br>
+                                Crítico: <b>17%</b> <br>
+                                Taxa de Ataque: <b>116 - 128</b> <br>
+                                Bloqueio: <b>8%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">75</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Machados/80A/A.bmp" alt="Armadura 80A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Machado do Caos</h1>
+                            <p>
+                                Poder de Ataque: <b>(36 - 38) - (57 - 59)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>17%</b> <br>
+                                Taxa de Ataque: <b>125 - 140</b> <br>
+                                Bloqueio: <b>9%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Machados/80B/B.bmp" alt="Armadura 80B">
+                        </div>
+                        <div class="info-area">
+                            <h1>Machado Ancião</h1>
+                            <p>
+                                Poder de Ataque: <b>(40 - 42) - (62 - 65)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>18%</b> <br>
+                                Taxa de Ataque: <b>134 - 148</b> <br>
+                                Bloqueio: <b>9%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Machados/80C/C.bmp" alt="Armadura 80C">
+                        </div>
+                        <div class="info-area">
+                            <h1>Machado Antigo</h1>
+                            <p>
+                                Poder de Ataque: <b>(36 - 39) - (57 - 60)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>10%</b> <br>
+                                Taxa de Ataque: <b>146 - 160</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Machados/80D/D.bmp" alt="Armadura 80D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Machado Elemental</h1>
+                            <p>
+                                Poder de Ataque: <b>(50 - 53) - (71 - 74)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>18%</b> <br>
+                                Taxa de Ataque: <b>158 - 170</b> <br>
+                                Bloqueio: <b>10%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Machados/100/100.bmp" alt="Armadura 100A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Machado Wyvern</h1>
+                            <p>
+                                Poder de Ataque: <b>(64 - 67) - (82 - 85)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>20%</b> <br>
+                                Taxa de Ataque: <b>182 - 192</b> <br>
+                                Bloqueio: <b>11%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Machados/Q/Q.bmp" alt="Armadura 100A">
+                        </div>
+                        <div class="info-area" style="height: 276px;">
+                            <h1>Machado Minotauro</h1>
+                            <p>
+                                Poder de Ataque: <b>(68 - 90)</b> <br>
+                                Vel. da Arma: <b>8</b> <br>
+                                Crítico: <b>22%</b> <br>
+                                Taxa de Ataque: <b>275</b> <br>
+                                Bloqueio: <b>13%</b> <br>
+                                Adic. HP: <b>50</b> <br>
+                                MP Adic: <b>50</b> <br>
+                                RES Adic: <b>50</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="MartelosSelecionado" class="item-area">
+
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Martelos/65/65.bmp" alt="Martelo 64">
+                        </div>
+                        <div class="info-area">
+                            <h1>Porrete de Guerra</h1>
+                            <p>
+                                Poder de Ataque: <b>(20 - 24) - (40 - 46)</b> <br>
+                                Vel. da Arma: <b>5</b> <br>
+                                Crítico: <b>16%</b> <br>
+                                Taxa de Ataque: <b>105 - 120</b> <br>
+                                Bloqueio: <b>7%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">64</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Martelos/70/70.bmp" alt="Martelo 69">
+                        </div>
+                        <div class="info-area">
+                            <h1>Porrete Titan</h1>
+                            <p>
+                                Poder de Ataque: <b>(24 - 27) - (46 - 51)</b> <br>
+                                Vel. da Arma: <b>5</b> <br>
+                                Crítico: <b>16%</b> <br>
+                                Taxa de Ataque: <b>120 - 132</b> <br>
+                                Bloqueio: <b>9%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">69</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Martelos/75/75.bmp" alt="Martelo 75">
+                        </div>
+                        <div class="info-area">
+                            <h1>Porrete do Caos</h1>
+                            <p>
+                                Poder de Ataque: <b>(29 - 32) - (53 - 56)</b> <br>
+                                Vel. da Arma: <b>6</b> <br>
+                                Crítico: <b>18%</b> <br>
+                                Taxa de Ataque: <b>128 - 144</b> <br>
+                                Bloqueio: <b>8%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">75</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Martelos/80A/A.bmp" alt="Martelo 80A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Martelo Brutal</h1>
+                            <p>
+                                Poder de Ataque: <b>(26 - 28) - (48 - 51)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>10%</b> <br>
+                                Taxa de Ataque: <b>135 - 149</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Martelos/80B/B.bmp" alt="Martelo 80B">
+                        </div>
+                        <div class="info-area">
+                            <h1>Martelo Gladiador</h1>
+                            <p>
+                                Poder de Ataque: <b>(37 - 40) - (63 - 66)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>18%</b> <br>
+                                Taxa de Ataque: <b>144 - 165</b> <br>
+                                Bloqueio: <b>10%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Martelos/80C/C.bmp" alt="Martelo 80C">
+                        </div>
+                        <div class="info-area">
+                            <h1>Martelo Archon</h1>
+                            <p>
+                                Poder de Ataque: <b>(42 - 45) - (69 - 72)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>19%</b> <br>
+                                Taxa de Ataque: <b>153 - 173</b> <br>
+                                Bloqueio: <b>12%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Martelos/80D/D.bmp" alt="Armadura 80D">
+                        </div>
+                        <div class="info-area">
+                            <h1>Martelo da Justiça</h1>
+                            <p>
+                                Poder de Ataque: <b>(38 - 41) - (63 - 67)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>11%</b> <br>
+                                Taxa de Ataque: <b>160-180</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">80</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Martelos/100/100.bmp" alt="Armadura 100A">
+                        </div>
+                        <div class="info-area">
+                            <h1>Martelo Guardião</h1>
+                            <p>
+                                Poder de Ataque: <b>(58 - 61) - (83 - 87)</b> <br>
+                                Vel. da Arma: <b>7</b> <br>
+                                Crítico: <b>20%</b> <br>
+                                Taxa de Ataque: <b>177-186</b> <br>
+                                Bloqueio: <b>13%</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="item-box">
+                        <div class="area-preta">
+                            <img src="images/Martelos/Q/Q.bmp" alt="Armadura 100A">
+                        </div>
+                        <div class="info-area" style="height: 276px;">
+                            <h1>Martelo do Dragão</h1>
+                            <p>
+                                Poder de Ataque: <b>63 - 93</b> <br>
+                                Vel. da Arma: <b85</b> <br>
+                                Crítico: <b>22%</b> <br>
+                                Taxa de Ataque: <b>282</b> <br>
+                                Bloqueio: <b>12%</b> <br>
+                                Adic. HP: <b>50</b> <br>
+                                MP Adicional: <b>50</b> <br>
+                                RES Adicional: <b>50</b> <br>
+                            </p>
+                            <p class="info-main">
+                                <b>Nível Necessário:</b> <span class="item-level">100</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
